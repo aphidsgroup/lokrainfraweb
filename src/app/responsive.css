@@ -1,0 +1,229 @@
+/* ────────────────────────────────
+   LOKRA INFRA — RESPONSIVE STYLES
+   Mobile-first overrides
+──────────────────────────────── */
+
+/* ── TABLET (max 1024px) ── */
+@media (max-width: 1024px) {
+  .container-lokra {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Process section sticky becomes normal */
+  .proc-header {
+    position: static !important;
+  }
+
+  /* Why choose us — 2 col on tablet */
+  .why-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Footer — 2 col on tablet */
+  footer .container-lokra > div {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* ── MOBILE (max 768px) ── */
+@media (max-width: 768px) {
+  :root {
+    --section-py: clamp(60px, 12vw, 90px);
+  }
+
+  .container-lokra {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Display type scale adjustments */
+  .display-xl {
+    font-size: clamp(2.75rem, 11vw, 4rem);
+  }
+
+  .display-lg {
+    font-size: clamp(2.25rem, 9vw, 3rem);
+  }
+
+  .display-md {
+    font-size: clamp(1.625rem, 7vw, 2.25rem);
+  }
+
+  /* Hide desktop nav on mobile explicitly */
+  #site-header nav.hidden {
+    display: none !important;
+  }
+
+  /* Hero adjustments */
+  #hero {
+    min-height: 100svh;
+  }
+
+  /* Value proposition — stack */
+  #value-proposition .container-lokra > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Services — adjust grid col */
+  .svc-row-item {
+    grid-template-columns: 40px 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .svc-row-item > svg {
+    display: none;
+  }
+
+  /* Project grid — 2 col on mobile, no spans */
+  .proj-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .proj-grid .proj-card {
+    grid-column: span 1 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+
+  /* Why grid — 1 col on mobile */
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    border-left: 1px solid var(--border-warm) !important;
+  }
+
+  /* Process section — stack */
+  #process .container-lokra > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Residential/Commercial — stack */
+  #capability .container-lokra > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* JV section — stack */
+  #jv-partnerships .jv-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  #jv-partnerships .jv-content .rc-right,
+  #jv-partnerships .jv-content .rc-left {
+    transform: none !important;
+  }
+
+  /* CTA section — stack */
+  #contact-cta .cta-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Testimonials — 1 col on mobile */
+  .testi-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer — 1 col on mobile */
+  footer .container-lokra > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Trust strip caps — hide overflow, allow scroll */
+  .trust-caps > div {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-bottom: 4px;
+  }
+
+  /* Why pillars — adjust padding */
+  .why-pillar {
+    padding: 1.75rem 1.25rem !important;
+  }
+
+  /* Header height */
+  #site-header .container-lokra > div {
+    height: 76px !important;
+  }
+
+  /* JV banner */
+  #jv-partnerships .container-lokra > div:last-child {
+    flex-direction: column !important;
+    padding: 1.5rem !important;
+  }
+
+  /* Svc header grid */
+  .svc-header {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Process — left panel sticky off */
+  .proc-header {
+    position: static !important;
+    top: auto !important;
+  }
+}
+
+/* ── SMALL MOBILE (max 480px) ── */
+@media (max-width: 480px) {
+  .display-xl {
+    font-size: clamp(2.25rem, 12vw, 3rem);
+    letter-spacing: -0.03em;
+  }
+
+  .display-lg {
+    font-size: clamp(1.875rem, 10vw, 2.5rem);
+  }
+
+  /* Project grid — 1 col */
+  .proj-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .proj-grid .proj-card {
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  /* Service rows */
+  .svc-row-item {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  /* CTA buttons wrap */
+  .hero-ctas {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-ctas a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Capability bg letters */
+  #capability .container-lokra > div:last-child > div > div:first-of-type span {
+    font-size: 7rem !important;
+  }
+}
+
+/* ── HOVER: disable on touch ── */
+@media (hover: none) {
+  .project-card:hover .card-img {
+    transform: none !important;
+  }
+
+  .service-row:hover {
+    padding-left: 0 !important;
+  }
+
+  .svc-row-item:hover {
+    background-color: transparent !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* ── PRINT ── */
+@media print {
+  .nav-base,
+  .mobile-nav {
+    display: none !important;
+  }
+}
