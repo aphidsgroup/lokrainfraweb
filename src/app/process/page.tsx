@@ -74,7 +74,7 @@ export default function ProcessPage() {
         <section className="section-py" style={{ backgroundColor: "var(--warm-white)" }}>
           <div className="container-lokra">
             {/* Intro banner */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5px", backgroundColor: "var(--border-light)", marginBottom: "5rem" }}>
+            <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5px", backgroundColor: "var(--border-light)", marginBottom: "5rem" }}>
               {[["6-Phase Model", "From first conversation to final handover"], ["Single Team", "One accountable partner throughout"], ["Client Visible", "Progress documented at every milestone"]].map(([title, desc]) => (
                 <div key={title} style={{ backgroundColor: "var(--stone-white)", padding: "2rem", borderLeft: "2px solid var(--accent)" }}>
                   <p style={{ fontFamily: "var(--font-display)", fontSize: "0.875rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "-0.01em", color: "var(--text-dark)", marginBottom: "0.5rem" }}>{title}</p>

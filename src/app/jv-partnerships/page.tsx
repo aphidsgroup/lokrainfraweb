@@ -47,7 +47,7 @@ export default function JVPage() {
         {/* Who it's for */}
         <section className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
           <div className="container-lokra">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(3rem,6vw,7rem)", alignItems: "start" }}>
+            <div className="page-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(3rem,6vw,7rem)", alignItems: "start" }}>
               {/* Left: who */}
               <div>
                 <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
@@ -58,7 +58,13 @@ export default function JVPage() {
                   Landowners & Development Partners
                 </h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-                  {["Landowners with a plot in Chennai looking to develop", "Individuals exploring residential or commercial development potential", "Business partners seeking a credible construction execution partner", "NRI landowners needing a trusted local development team", "Investors evaluating Chennai real estate development opportunities"].map((item) => (
+                  {[
+                    "Landowners with a plot in Chennai looking to develop",
+                    "Individuals exploring residential or commercial development potential",
+                    "Business partners seeking a credible construction execution partner",
+                    "NRI landowners needing a trusted local development team",
+                    "Investors evaluating Chennai real estate development opportunities",
+                  ].map((item) => (
                     <div key={item} style={{ display: "flex", gap: "1rem", alignItems: "flex-start", padding: "1rem 0", borderBottom: "1px solid var(--border-warm)" }}>
                       <div style={{ width: "6px", height: "6px", backgroundColor: "var(--accent)", marginTop: "0.5rem", flexShrink: 0 }} />
                       <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9375rem", color: "var(--warm-white)", lineHeight: 1.6 }}>{item}</span>
@@ -92,7 +98,7 @@ export default function JVPage() {
         {/* Inquiry Form */}
         <section className="section-py" style={{ backgroundColor: "var(--warm-white)" }}>
           <div className="container-lokra">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(3rem,6vw,7rem)", alignItems: "start" }}>
+            <div className="page-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(3rem,6vw,7rem)", alignItems: "start" }}>
               {/* Left: context */}
               <div>
                 <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>

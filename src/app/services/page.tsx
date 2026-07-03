@@ -86,6 +86,7 @@ export default function ServicesPage() {
             {SERVICES.map((svc, i) => (
               <div
                 key={svc.num}
+                className="service-detail-row"
                 style={{
                   display: "grid",
                   gridTemplateColumns: "60px 1fr",

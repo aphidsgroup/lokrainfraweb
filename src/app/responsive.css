@@ -66,7 +66,12 @@
     min-height: 100svh;
   }
 
-  /* Value proposition — stack */
+  /* Universal page grid collapsers for mobile */
+  .page-grid-2,
+  .page-grid-3,
+  .contact-main-grid,
+  .form-row-2,
+  .service-detail-row,
   #value-proposition .container-lokra > div:last-child {
     grid-template-columns: 1fr !important;
   }
@@ -81,14 +86,14 @@
     display: none;
   }
 
-  /* Project grid — 2 col on mobile, no spans */
+  /* Project grid — 1 col on mobile for clean, readable cards */
   .proj-grid {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr !important;
   }
 
   .proj-grid .proj-card {
     grid-column: span 1 !important;
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 4 / 3 !important;
   }
 
   /* Why grid — 1 col on mobile */

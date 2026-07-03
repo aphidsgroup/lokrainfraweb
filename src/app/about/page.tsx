@@ -71,6 +71,7 @@ export default function AboutPage() {
         >
           <div className="container-lokra">
             <div
+              className="page-grid-2"
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",

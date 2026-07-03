@@ -53,6 +53,7 @@ export default function ProjectsPage() {
         <section className="section-py" style={{ backgroundColor: "var(--carbon)" }}>
           <div className="container-lokra">
             <div
+              className="page-grid-3"
               style={{
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
