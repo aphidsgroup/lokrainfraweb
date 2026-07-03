@@ -33,8 +33,14 @@
   }
 
   .container-lokra {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Completely eliminate horizontal overflow on mobile pinch zoom */
+  main, section, header, footer {
+    max-width: 100vw;
+    overflow-x: clip;
   }
 
   /* Display type scale adjustments */

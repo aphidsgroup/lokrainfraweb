@@ -85,13 +85,17 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-body);
   background-color: var(--carbon);
   color: var(--warm-white);
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
   line-height: 1.65;
   font-weight: 400;
 }
