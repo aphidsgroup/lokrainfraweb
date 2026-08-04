@@ -1,0 +1,22 @@
+import type { MetadataRoute } from "next";
+
+const SITE_URL = "https://www.lokrainfra.in";
+
+const PUBLIC_ROUTES = [
+  "",
+  "/about",
+  "/services",
+  "/projects",
+  "/process",
+  "/jv-partnerships",
+  "/contact",
+] as const;
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return PUBLIC_ROUTES.map((route) => ({
+    url: `${SITE_URL}${route}`,
+    lastModified: new Date(),
+    changeFrequency: route === "" ? "weekly" : "monthly",
+    priority: route === "" ? 1 : 0.7,
+  }));
+}
