@@ -4,6 +4,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "./globals.css";
 import "./responsive.css";
 
+const SITE_URL = "https://www.lokrainfra.in";
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -19,6 +21,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
   description:
     "Expert PhD-led engineering team making smart homes & infrastructure truly future-ready across Chennai. Delivering premium residential and commercial projects with rigorous structural clarity.",
@@ -35,12 +38,16 @@ export const metadata: Metadata = {
     "Lokra Infra",
   ],
   authors: [{ name: "Lokra Infra" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
       "Expert PhD-led engineering team making smart homes & infrastructure truly future-ready in Chennai.",
     type: "website",
     locale: "en_IN",
+    url: SITE_URL,
     siteName: "Lokra Infra",
   },
   twitter: {
