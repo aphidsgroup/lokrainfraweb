@@ -164,12 +164,12 @@ export default function FinalCTA() {
                 {
                   icon: Phone,
                   label: "Phone",
-                  value: "+91 00000 00000",
+                  value: "Direct contact shared after project inquiry",
                 },
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "info@lokrainfra.com",
+                  value: "Use the project inquiry form for first contact",
                 },
               ].map((item) => (
                 <div
@@ -238,8 +238,8 @@ export default function FinalCTA() {
                 color: "var(--concrete)",
               }}
             >
-              Response within 1 business day. For urgent project enquiries,
-              call directly.
+              Response within 1 business day. Submit the inquiry form and our
+              team will share the right direct contact path for your project.
             </p>
           </div>
         </div>

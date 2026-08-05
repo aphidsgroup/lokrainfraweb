@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: "Projects — Lokra Infra | Construction Portfolio Chennai",
   description:
     "Lokra Infra construction project portfolio — residential homes, villas, apartment developments, commercial spaces, civil works, and JV development projects across Chennai.",
+  alternates: {
+    canonical: "/projects",
+  },
+  openGraph: {
+    title: "Projects — Lokra Infra | Construction Portfolio Chennai",
+    description:
+      "Lokra Infra construction project portfolio — residential homes, villas, apartment developments, commercial spaces, civil works, and JV development projects across Chennai.",
+    url: "https://www.lokrainfra.in/projects",
+    type: "website",
+    siteName: "Lokra Infra",
+    locale: "en_IN",
+  },
 };
 
 const CATEGORIES = [

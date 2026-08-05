@@ -139,7 +139,7 @@ export default function JVPage() {
 
                     {[
                       { id: "jv-name", label: "Your Name", type: "text", key: "name", placeholder: "Full name" },
-                      { id: "jv-phone", label: "Phone Number", type: "tel", key: "phone", placeholder: "+91 00000 00000" },
+                      { id: "jv-phone", label: "Phone Number", type: "tel", key: "phone", placeholder: "Your phone number" },
                       { id: "jv-email", label: "Email Address", type: "email", key: "email", placeholder: "you@example.com" },
                       { id: "jv-location", label: "Land Location", type: "text", key: "landLocation", placeholder: "Area / locality in Chennai" },
                       { id: "jv-area", label: "Approximate Land Area", type: "text", key: "landArea", placeholder: "e.g. 2400 sq ft / 5 grounds" },

@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: "Our Process — Lokra Infra | How We Work",
   description:
     "Lokra Infra's 6-phase construction delivery process — from project understanding and site assessment through engineering planning, execution, quality review, and handover.",
+  alternates: {
+    canonical: "/process",
+  },
+  openGraph: {
+    title: "Our Process — Lokra Infra | How We Work",
+    description:
+      "Lokra Infra's 6-phase construction delivery process — from project understanding and site assessment through engineering planning, execution, quality review, and handover.",
+    url: "https://www.lokrainfra.in/process",
+    type: "website",
+    siteName: "Lokra Infra",
+    locale: "en_IN",
+  },
 };
 
 const STEPS = [

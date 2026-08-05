@@ -94,7 +94,7 @@ export default function Footer() {
                   color: "var(--concrete)",
                 }}
               >
-                📞 +91 00000 00000
+                📞 Direct contact shared after project inquiry
               </span>
               <span
                 style={{
@@ -103,7 +103,7 @@ export default function Footer() {
                   color: "var(--concrete)",
                 }}
               >
-                ✉ info@lokrainfra.com
+                ✉ Use the project inquiry form for first contact
               </span>
             </div>
           </div>
