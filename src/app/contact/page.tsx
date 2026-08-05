@@ -51,8 +51,8 @@ export default function ContactPage() {
                 <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
                   {[
                     { icon: MapPin, label: "Office Location", value: "Chennai, Tamil Nadu, India", sub: "Serving Chennai & surrounding districts" },
-                    { icon: Phone, label: "Phone", value: "+91 00000 00000", sub: "Mon–Sat, 9am – 6pm IST" },
-                    { icon: Mail, label: "Email", value: "info@lokrainfra.com", sub: "We respond within 1 business day" },
+                    { icon: Phone, label: "Phone", value: "Shared after initial project inquiry", sub: "Submit the form and our team will route you correctly" },
+                    { icon: Mail, label: "Email", value: "Shared after initial project inquiry", sub: "We respond within 1 business day" },
                   ].map((item, idx) => (
                     <div key={item.label} style={{ paddingBottom: "1.75rem", marginBottom: "1.75rem", borderBottom: idx < 2 ? "1px solid var(--border-light)" : "none" }}>
                       <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                     <div className="form-row-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "1rem" }}>
                       {[
                         { id: "contact-name", label: "Full Name", type: "text", key: "name", placeholder: "Your name", required: true },
-                        { id: "contact-phone", label: "Phone Number", type: "tel", key: "phone", placeholder: "+91 00000 00000", required: true },
+                        { id: "contact-phone", label: "Phone Number", type: "tel", key: "phone", placeholder: "Your phone number", required: true },
                       ].map((field) => (
                         <div key={field.id}>
                           <label htmlFor={field.id} style={{ fontFamily: "var(--font-display)", fontSize: "0.5625rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--text-dark)", display: "block", marginBottom: "0.5rem" }}>

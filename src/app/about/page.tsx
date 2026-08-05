@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: "About Lokra Infra — Engineering-Led Construction, Chennai",
   description:
     "Learn about Lokra Infra — a Chennai-based premium construction and infrastructure company with an engineering-first approach to residential and commercial projects.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Lokra Infra — Engineering-Led Construction, Chennai",
+    description:
+      "Learn about Lokra Infra — a Chennai-based premium construction and infrastructure company with an engineering-first approach to residential and commercial projects.",
+    url: "https://www.lokrainfra.in/about",
+    type: "website",
+    siteName: "Lokra Infra",
+    locale: "en_IN",
+  },
 };
 
 export default function AboutPage() {

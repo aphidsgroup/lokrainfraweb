@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: "Services — Lokra Infra | Construction & Infrastructure Chennai",
   description:
     "Full-spectrum construction services in Chennai: residential construction, commercial construction, turnkey execution, renovation, civil works, and JV development partnerships.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Services — Lokra Infra | Construction & Infrastructure Chennai",
+    description:
+      "Full-spectrum construction services in Chennai: residential construction, commercial construction, turnkey execution, renovation, civil works, and JV development partnerships.",
+    url: "https://www.lokrainfra.in/services",
+    type: "website",
+    siteName: "Lokra Infra",
+    locale: "en_IN",
+  },
 };
 
 const SERVICES = [
