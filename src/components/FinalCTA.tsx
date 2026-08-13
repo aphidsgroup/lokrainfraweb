@@ -159,17 +159,17 @@ export default function FinalCTA() {
                 {
                   icon: MapPin,
                   label: "Location",
-                  value: "Chennai, Tamil Nadu, India",
+                  value: "55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107",
                 },
                 {
                   icon: Phone,
                   label: "Phone",
-                  value: "Direct contact shared after project inquiry",
+                  value: "93446 43324",
                 },
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "Use the project inquiry form for first contact",
+                  value: "lokrainfra@gmail.com",
                 },
               ].map((item) => (
                 <div
@@ -238,8 +238,8 @@ export default function FinalCTA() {
                 color: "var(--concrete)",
               }}
             >
-              Response within 1 business day. Submit the inquiry form and our
-              team will share the right direct contact path for your project.
+              Response within 1 business day. Call, email, or send an inquiry and our
+              team will help you with the right next step for your project.
             </p>
           </div>
         </div>
