@@ -85,26 +85,30 @@ export default function Footer() {
                   color: "var(--concrete)",
                 }}
               >
-                📍 Chennai, Tamil Nadu, India
+                📍 55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107
               </span>
-              <span
+              <a
+                href="tel:9344643324"
                 style={{
                   fontFamily: "var(--font-body)",
                   fontSize: "0.8125rem",
                   color: "var(--concrete)",
+                  textDecoration: "none",
                 }}
               >
-                📞 Direct contact shared after project inquiry
-              </span>
-              <span
+                📞 93446 43324
+              </a>
+              <a
+                href="mailto:lokrainfra@gmail.com"
                 style={{
                   fontFamily: "var(--font-body)",
                   fontSize: "0.8125rem",
                   color: "var(--concrete)",
+                  textDecoration: "none",
                 }}
               >
-                ✉ Use the project inquiry form for first contact
-              </span>
+                ✉ lokrainfra@gmail.com
+              </a>
             </div>
           </div>
 

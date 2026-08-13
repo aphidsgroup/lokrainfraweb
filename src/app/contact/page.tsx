@@ -32,7 +32,7 @@ export default function ContactPage() {
               Let&rsquo;s Discuss Your Next Project With Clarity.
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "540px" }}>
-              Share your requirement and our team will guide the next steps with a practical, engineering-led approach. No obligation. No sales pressure. Just a structured conversation.
+              Share your requirement and our team will guide the next steps with a practical, engineering-led approach. You can also call 93446 43324 or email lokrainfra@gmail.com for direct contact.
             </p>
           </div>
         </section>
@@ -50,9 +50,9 @@ export default function ContactPage() {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
                   {[
-                    { icon: MapPin, label: "Office Location", value: "Chennai, Tamil Nadu, India", sub: "Serving Chennai & surrounding districts" },
-                    { icon: Phone, label: "Phone", value: "Shared after initial project inquiry", sub: "Submit the form and our team will route you correctly" },
-                    { icon: Mail, label: "Email", value: "Shared after initial project inquiry", sub: "We respond within 1 business day" },
+                    { icon: MapPin, label: "Office Location", value: "55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107", sub: "Serving Chennai & surrounding districts" },
+                    { icon: Phone, label: "Phone", value: "93446 43324", sub: "Call directly for project discussions and site requirements" },
+                    { icon: Mail, label: "Email", value: "lokrainfra@gmail.com", sub: "We respond within 1 business day" },
                   ].map((item, idx) => (
                     <div key={item.label} style={{ paddingBottom: "1.75rem", marginBottom: "1.75rem", borderBottom: idx < 2 ? "1px solid var(--border-light)" : "none" }}>
                       <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
