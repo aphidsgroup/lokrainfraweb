@@ -59,7 +59,7 @@ export default function Header() {
 
             {/* Desktop Nav */}
             <nav
-              className="hidden md:flex"
+              className="desktop-nav"
               style={{ alignItems: "center", gap: "2.25rem" }}
             >
               {NAV_LINKS.map((link) => (
@@ -96,9 +96,10 @@ export default function Header() {
             {/* Mobile Toggle */}
             <button
               id="mobile-menu-toggle"
-              className="md:hidden"
+              className="mobile-menu-toggle"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle navigation"
+              aria-expanded={mobileOpen}
               style={{
                 background: "none",
                 border: "1px solid var(--border-warm)",
@@ -120,6 +121,7 @@ export default function Header() {
       {/* Mobile Drawer */}
       <div
         id="mobile-nav"
+        className="mobile-nav-drawer"
         style={{
           position: "fixed",
           inset: 0,
@@ -127,23 +129,24 @@ export default function Header() {
           backgroundColor: "var(--carbon)",
           display: "flex",
           flexDirection: "column",
-          padding: "6rem 1.75rem 3rem",
+          padding: "5.5rem 1.25rem 1.25rem",
           transform: mobileOpen ? "translateX(0)" : "translateX(100%)",
           transition: "transform 0.45s cubic-bezier(0.25, 0, 0, 1)",
         }}
       >
-        {/* Logo inside drawer */}
-        <div style={{ marginBottom: "3rem" }}>
-          <Image
-            src="/logo-white-trimmed.png"
-            alt="Lokra Infra"
-            width={130}
-            height={42}
-            style={{ objectFit: "contain", objectPosition: "left center", height: "40px", width: "auto", display: "block", marginLeft: 0 }}
-          />
-        </div>
+        <div className="mobile-nav-scroll" style={{ display: "flex", flexDirection: "column", minHeight: 0, flex: 1 }}>
+          {/* Logo inside drawer */}
+          <div style={{ marginBottom: "1.5rem", flexShrink: 0 }}>
+            <Image
+              src="/logo-white-trimmed.png"
+              alt="Lokra Infra"
+              width={130}
+              height={42}
+              style={{ objectFit: "contain", objectPosition: "left center", height: "40px", width: "auto", display: "block", marginLeft: 0 }}
+            />
+          </div>
 
-        <nav style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          <nav className="mobile-nav-links" style={{ display: "flex", flexDirection: "column", gap: "0" }}>
           {[{ label: "Home", href: "/" }, ...NAV_LINKS].map((link, i) => (
             <Link
               key={link.href}
@@ -173,18 +176,19 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-        </nav>
+          </nav>
 
-        <div style={{ marginTop: "auto" }}>
-          <Link
-            href="/contact"
-            className="btn-primary"
-            onClick={() => setMobileOpen(false)}
-            style={{ width: "100%", justifyContent: "center" }}
-          >
-            <span>Start a Project</span>
-            <ArrowUpRight size={13} style={{ position: "relative", zIndex: 1 }} />
-          </Link>
+          <div className="mobile-nav-cta" style={{ marginTop: "1rem", paddingTop: "1rem", borderTop: "1px solid var(--border-warm)", flexShrink: 0 }}>
+            <Link
+              href="/contact"
+              className="btn-primary"
+              onClick={() => setMobileOpen(false)}
+              style={{ width: "100%", justifyContent: "center" }}
+            >
+              <span>Start a Project</span>
+              <ArrowUpRight size={13} style={{ position: "relative", zIndex: 1 }} />
+            </Link>
+          </div>
         </div>
       </div>
     </>
