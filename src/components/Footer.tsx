@@ -87,7 +87,16 @@ export default function Footer() {
                   color: "var(--concrete)",
                 }}
               >
-                📍 55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107
+                📍 Office: 343, First Floor, Kundrathur Main Rd, Subam Nagar, KK Nagar, Mangadu, Chennai, Mangadu, Tamil Nadu 600122
+              </span>
+              <span
+                style={{
+                  fontFamily: "var(--font-body)",
+                  fontSize: "0.8125rem",
+                  color: "var(--concrete)",
+                }}
+              >
+                Registered Address: 55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107
               </span>
               <a
                 href="tel:9344643324"

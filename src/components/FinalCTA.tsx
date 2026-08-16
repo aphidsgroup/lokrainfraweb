@@ -159,6 +159,11 @@ export default function FinalCTA() {
                 {
                   icon: MapPin,
                   label: "Location",
+                  value: "343, First Floor, Kundrathur Main Rd, Subam Nagar, KK Nagar, Mangadu, Chennai, Mangadu, Tamil Nadu 600122",
+                },
+                {
+                  icon: MapPin,
+                  label: "Registered Address",
                   value: "55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107",
                 },
                 {
