@@ -50,6 +50,12 @@ type MatrixRow = {
   values: string[];
 };
 
+type ScopeCostRow = {
+  item: string;
+  specification: string;
+  rate: string;
+};
+
 const packageHeaders = [
   "LS-1 ₹1,899",
   "LS-2 ₹1,999",
@@ -66,7 +72,10 @@ const jumpLinks = [
   { id: "package-ladder", label: "Package Ladder" },
   { id: "quick-compare", label: "Quick Compare" },
   { id: "technical-compare", label: "Technical Details" },
-  { id: "delivery-compare", label: "Warranty & Handover" },
+  { id: "brand-progress", label: "Brands & Specs" },
+  { id: "scope-boundary", label: "Scope Boundary" },
+  { id: "additional-works", label: "Additional Works" },
+  { id: "delivery-compare", label: "Docs & Handover" },
   { id: "faq", label: "FAQ" },
 ];
 
@@ -433,6 +442,214 @@ const engineeringRows: MatrixRow[] = [
   },
 ];
 
+const brandRows: MatrixRow[] = [
+  {
+    label: "Reinforcement brand progression",
+    values: [
+      "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit",
+      "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit",
+      "ARS / iSTEEL branded set",
+      "ARS / iSTEEL / SAIL / Suryadev",
+      "ARS / iSTEEL / SAIL / Vizag",
+      "ARS / iSTEEL / SAIL / Vizag",
+      "ARS / iSTEEL / SAIL / JSW / Tata",
+      "CRS / premium reinforcement by exposure need",
+      "CRS / corrosion-protection strategy with premium hardware",
+    ],
+  },
+  {
+    label: "Electrical stack progression",
+    values: [
+      "ISI copper, MCB",
+      "FR modular",
+      "FR + AC points",
+      "FR + RCCB wet areas",
+      "FR + RCCB",
+      "RCCB all power + EV",
+      "RCBO + CCTV + LAN + VDP",
+      "RCCB / RCBO / CCTV / VDP",
+      "Automation-ready electrical planning",
+    ],
+  },
+  {
+    label: "Plumbing / sanitary progression",
+    values: [
+      "CPVC SDR11 / SWR inspection caps / ₹16k sanitaryware",
+      "Approved brand / ₹19k sanitaryware",
+      "Approved brand / ₹23k sanitaryware",
+      "Premium valves / ₹28k sanitaryware",
+      "Premium brand / ₹34k sanitaryware",
+      "Premium brand / ₹40k sanitaryware",
+      "Manifold distribution / ₹50k sanitaryware",
+      "Manifold + PRV / ₹55k sanitaryware",
+      "High-service layout / ₹60.5k sanitaryware",
+    ],
+  },
+  {
+    label: "Finish allowance progression",
+    values: [
+      "₹55 flooring",
+      "₹60 flooring",
+      "₹70 flooring",
+      "₹80 flooring",
+      "₹95 flooring",
+      "₹110 flooring",
+      "₹135 flooring",
+      "₹150–160 flooring base",
+      "₹175–180 flooring base",
+    ],
+  },
+];
+
+const scopeBaseRows = [
+  "Architectural and structural design",
+  "Excavation, foundation and RCC structure",
+  "Masonry, plastering, waterproofing",
+  "Flooring, tiling, kitchen counter and dado",
+  "Doors, windows, joinery and metal works",
+  "Electrical and plumbing systems",
+  "Painting, testing, supervision and handover",
+];
+
+const scopeStatutoryRows = [
+  "Rainwater harvesting structure",
+  "Underground sump and septic tank",
+  "Sewer, water and EB connections",
+  "Borewell and pump set",
+  "Plan approval and statutory fees",
+  "Abnormal foundation / piling / raft ground improvement",
+  "Rock excavation, dewatering and shoring",
+  "Compound wall, gate and external infrastructure",
+];
+
+const scopeUpgradeRows = [
+  "Modular kitchen, wardrobes and carpentry",
+  "False ceiling and TV units",
+  "Premium façade elements",
+  "Landscaping, paving and pergola",
+  "Lift, generator, solar and automation",
+  "Higher tile or sanitaryware allowance",
+  "Loose furniture, appliances and curtains",
+];
+
+const clientScopeRows = [
+  "Construction water and electricity",
+  "Space for material storage and labour rest",
+  "Land, title and boundary clarity",
+  "Access permissions from association or authority",
+  "Selection decisions within the agreed schedule dates",
+  "Payment of statutory fees at authority rates",
+];
+
+const separatelyPricedWaterRows: ScopeCostRow[] = [
+  { item: "Rainwater harvesting structure", specification: "Statutory under Chennai byelaw; verify current requirement at approval stage", rate: "₹18,000–₹85,000 by specification" },
+  { item: "Underground sump", specification: "Per litre capacity", rate: "₹28 per litre" },
+  { item: "Septic tank / bio tank / fire chambered tank", specification: "Per litre", rate: "₹16–₹28 per litre" },
+  { item: "Soak pit", specification: "3 ft dia × 5 ft depth", rate: "₹18,000–₹28,000" },
+  { item: "Borewell with pump set", specification: "Depth dependent", rate: "₹1,20,000–₹2,50,000" },
+  { item: "Water softener / pressure pump", specification: "Domestic", rate: "₹18,000–₹90,000" },
+  { item: "CMDA / DTCP plan approval", specification: "Within city limits", rate: "₹50–₹80 per sq.ft" },
+  { item: "CMWSSB sewer connection", specification: "110 mm / 140 mm", rate: "₹24,500 / ₹26,500" },
+  { item: "CMWSSB advance tax", specification: "Per dwelling unit, where unassessed", rate: "₹3,000" },
+  { item: "TNEB service connection", specification: "Single or three phase, subject to TNEB sanction", rate: "₹25,000–₹45,000" },
+  { item: "Geotechnical investigation", specification: "Boreholes, tests, report, laboratory (included from LS-6)", rate: "₹18,000–₹25,000" },
+  { item: "Water-table / permeability testing", specification: "Exposure sites", rate: "₹8,000–₹15,000" },
+];
+
+const separatelyPricedSiteRows: ScopeCostRow[] = [
+  { item: "Compound wall, basic", specification: "4.5\" solid block to sill", rate: "₹700–₹900 per running foot" },
+  { item: "Compound wall, standard", specification: "With 2 ft setback finish", rate: "₹1,400–₹1,800 per running foot" },
+  { item: "Compound wall, finished", specification: "With elevation treatment", rate: "₹2,300–₹2,800 per running foot" },
+  { item: "M.S. gate, 15 ft", specification: "—", rate: "₹30,000–₹45,000" },
+  { item: "SS or designer gate, 15 ft", specification: "—", rate: "₹60,000–₹99,000" },
+  { item: "External paving and driveway", specification: "Per sq.ft", rate: "₹120–₹280" },
+  { item: "Lift shaft and site infrastructure where a lift is part of the design", specification: "Quoted on the lift specification", rate: "Quoted on the lift specification" },
+  { item: "Piling / raft / ground improvement", specification: "Assessed against geotechnical report", rate: "Quoted after investigation" },
+  { item: "Rock excavation, soil replacement, dewatering", specification: "Beyond normal excavation", rate: "Measured and quoted" },
+  { item: "Excess excavation and imported filling soil", specification: "Beyond standard excavation and filling assumption", rate: "Measured and quoted" },
+  { item: "Road cutting and restoration", specification: "Authority permission and reinstatement", rate: "At authority rates plus works" },
+  { item: "Below-ground bituminous coating at LS-1", specification: "Two coats, measured on actual treated surface area", rate: "Measured add-on, quoted on area" },
+];
+
+const separatelyPricedAccessRows: ScopeCostRow[] = [
+  { item: "Existing building demolition", specification: "Dismantling, debris removal and cart-away", rate: "Measured and quoted" },
+  { item: "Neighbouring structure protection", specification: "Underpinning or support to adjoining walls", rate: "Design-specific, quoted" },
+  { item: "Temporary shoring and earth retention", specification: "Deep excavation or tight urban plots", rate: "Design-specific, quoted" },
+  { item: "Restricted-access material handling", specification: "Manual or head-load movement where machinery cannot reach", rate: "Assessed per site" },
+  { item: "Traffic and road occupancy", specification: "Authority permission, escort or night delivery", rate: "At authority rates plus handling" },
+  { item: "Soil disposal beyond haul assumption", specification: "Cart-away past the standard distance", rate: "Per load, measured" },
+  { item: "Major tree removal", specification: "Where authority permission is applicable", rate: "Quoted; statutory fee at actuals" },
+];
+
+const documentationRows = [
+  "Approved architectural and structural drawings",
+  "Material and brand approvals against the agreement",
+  "Stage photographs at hold points",
+  "Concrete pour and curing records",
+  "Cube test results",
+  "Plumbing pressure and electrical test records",
+  "Snag list and rectification record",
+  "Handover certificate and warranty letter",
+  "DB circuit schedule and product warranty cards",
+];
+
+const higherLevelDocRows = [
+  "Laboratory test certificates issued — LS-3 upward",
+  "Digital project file — LS-5 upward",
+  "Signed structural calculation report — LS-6 upward",
+  "Geotechnical investigation report — LS-6 upward",
+  "Structural analysis model file — LS-7 upward",
+  "Durability records and exposure design basis — LS-8 upward",
+  "Comprehensive dossier and maintenance schedule — LS-9",
+];
+
+const holdPointGroups = [
+  {
+    title: "Foundation pre-pour",
+    items: [
+      "Footing location against setting-out",
+      "Excavation depth and founding condition",
+      "PCC level and dimensions",
+      "Footing dimensions and shuttering",
+      "Bar diameter, spacing and laps",
+      "Column starter position and verticality",
+      "Pre-pour photographs and engineer approval",
+    ],
+  },
+  {
+    title: "Slab pre-pour",
+    items: [
+      "Formwork line, level, slab thickness and beam depth",
+      "Props, supports and joint tightness",
+      "Main and distribution reinforcement",
+      "Electrical conduits, fan boxes and sleeves",
+      "Approved grade, slump check and cube sampling",
+      "Pour record and curing regime logged",
+    ],
+  },
+  {
+    title: "Pre-plaster and plumbing test",
+    items: [
+      "Wall alignment and plumb",
+      "Conduits and junction boxes",
+      "Plumbing lines and pressure-test status",
+      "Door frame fixing",
+      "Leakage inspection and rectification",
+      "Written approval recorded before concealment",
+    ],
+  },
+];
+
+const handoverRows = [
+  "Joint pre-handover inspection covering cracks, tile hollowness, alignment, doors, windows and locks, plumbing leakage and drainage, sanitary fixtures, electrical points and DB, paint, railings, façade and external drainage",
+  "Written snag list issued to you, with an agreed rectification programme",
+  "Rectification and joint re-inspection until the list is closed",
+  "System testing and commissioning — electrical circuits, water supply, drainage and fixtures",
+  "Full final cleaning of the house and the site",
+  "Client walkthrough with demonstration of services, valves, DB and maintenance points",
+  "Handover of keys, drawings, test records, warranties and the project dossier",
+];
+
 const faqs = [
   {
     q: "How should I compare Lokra Infra packages?",
@@ -501,6 +718,41 @@ function ComparisonTable({ title, description, rows }: { title: string; descript
                     {value}
                   </td>
                 ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function ScopeCostTable({ title, description, rows }: { title: string; description: string; rows: ScopeCostRow[] }) {
+  return (
+    <section style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
+      <div style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
+        <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>
+          {title}
+        </h3>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "900px" }}>
+          {description}
+        </p>
+      </div>
+      <div style={{ overflowX: "auto" }}>
+        <table style={{ width: "100%", minWidth: "960px", borderCollapse: "collapse" }}>
+          <thead>
+            <tr style={{ backgroundColor: "var(--charcoal)" }}>
+              <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase" }}>Item</th>
+              <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase" }}>Specification</th>
+              <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase" }}>Rate / Basis</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, rowIndex) => (
+              <tr key={row.item} style={{ backgroundColor: rowIndex % 2 === 0 ? "transparent" : "rgba(245,241,234,0.02)" }}>
+                <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--warm-white)", fontFamily: "var(--font-display)", fontSize: "0.83rem", lineHeight: 1.5, textTransform: "uppercase", minWidth: "220px" }}>{row.item}</td>
+                <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--concrete)", fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.65, minWidth: "360px" }}>{row.specification}</td>
+                <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.9rem", lineHeight: 1.6, minWidth: "220px" }}>{row.rate}</td>
               </tr>
             ))}
           </tbody>
@@ -712,31 +964,183 @@ export default function PackagesPage() {
           </div>
         </section>
 
-        <section id="delivery-compare" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra">
-            <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", padding: "1.5rem" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1rem" }}>
+        <section id="brand-progress" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
+          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
-                <span className="label-sm">How To Read The Ladder</span>
+                <span className="label-sm">Brands & Specification Progression</span>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.25rem" }}>
-                {[
-                  {
-                    title: "Early ladder",
-                    text: "LS-1 to LS-3 suit standard inland builds where the main upgrade path is moisture control and documented structural QA.",
-                  },
-                  {
-                    title: "Mid ladder",
-                    text: "LS-4 to LS-6 shift into stronger documentation, longer structural assurance, retention-backed accountability, and a fuller engineering dossier.",
-                  },
-                  {
-                    title: "High-durability ladder",
-                    text: "LS-7 to LS-9 are for larger, higher-exposure, longer-life, or system-heavier builds where durability design and stronger service coordination matter more.",
-                  },
-                ].map((item) => (
-                  <div key={item.title} style={{ border: "1px solid var(--border-warm)", padding: "1.1rem", backgroundColor: "var(--carbon)" }}>
-                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "0.95rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.55rem" }}>{item.title}</h3>
-                    <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--concrete)" }}>{item.text}</p>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
+                Brand Progression, Service Progression, And Allowance Progression — In One View.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "920px" }}>
+                This is the missing density layer: how the package ladder changes by reinforcement set, electrical stack, plumbing quality, sanitaryware band, and finish allowance. It makes the upgrade logic much more explicit instead of hiding it inside short bullets.
+              </p>
+            </div>
+            <ComparisonTable
+              title="Brand and system progression"
+              description="Use this table to compare how the package ladder changes by material family, service stack, and allowance band — especially if you want a clearer view of where premium package pricing starts to show up in real specifications."
+              rows={brandRows}
+            />
+          </div>
+        </section>
+
+        <section id="scope-boundary" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
+          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+                <div className="accent-bar" style={{ margin: 0 }} />
+                <span className="label-sm">Scope Boundary</span>
+              </div>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
+                What The Rate Covers, What Is Site-Specific, And What The Client Still Controls.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
+                The PDF separates base building package scope from statutory or site-specific works and optional client upgrades. This section makes that boundary visible so the package price is not read as an unlimited all-inclusive number.
+              </p>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
+              {[
+                {
+                  title: "A — Base building package",
+                  copy: "Everything priced inside the ₹ / sq.ft. rate.",
+                  items: scopeBaseRows,
+                },
+                {
+                  title: "B — Statutory and site-specific",
+                  copy: "Mandatory or site-driven works typically priced separately.",
+                  items: scopeStatutoryRows,
+                },
+                {
+                  title: "C — Optional client upgrades",
+                  copy: "Chosen by you and priced separately when required.",
+                  items: scopeUpgradeRows,
+                },
+              ].map((group) => (
+                <div key={group.title} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>{group.title}</h3>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--accent)", marginBottom: "0.9rem" }}>{group.copy}</p>
+                  <div style={{ display: "grid", gap: "0.7rem" }}>
+                    {group.items.map((item) => (
+                      <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                        <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                        <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>Client scope and approvals</h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--concrete)", marginBottom: "0.9rem", maxWidth: "900px" }}>
+                The PDF also makes it clear that some responsibilities sit with the client or the site context rather than the package rate itself.
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.8rem 1rem" }}>
+                {clientScopeRows.map((item) => (
+                  <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                    <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                    <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="additional-works" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
+          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+                <div className="accent-bar" style={{ margin: 0 }} />
+                <span className="label-sm">Separately Priced / Additional Works</span>
+              </div>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
+                Additional Works, Statutory Costs, And Site-Condition Add-Ons — With Rate Logic Visible.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
+                This section brings in the PDF’s outside-the-rate schedules so visitors can see where separate costs commonly appear: water and sanitation, approvals, utility connections, compound walls, excavation complications, access constraints, demolition, and adjoining-property protection.
+              </p>
+            </div>
+            <ScopeCostTable
+              title="Water, sanitation, statutory and utility works"
+              description="Indicative planning bands and outside-package items extracted from the PDF’s separately priced schedule."
+              rows={separatelyPricedWaterRows}
+            />
+            <ScopeCostTable
+              title="Boundary, infrastructure and adverse-site-condition add-ons"
+              description="These are typical items that shift the true project cost outside the package rate when the site or design demands them."
+              rows={separatelyPricedSiteRows}
+            />
+            <ScopeCostTable
+              title="Access, demolition and adjoining-property works"
+              description="These conditions are often invisible in a headline package rate, but they materially change execution cost and risk."
+              rows={separatelyPricedAccessRows}
+            />
+          </div>
+        </section>
+
+        <section id="delivery-compare" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
+          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+                <div className="accent-bar" style={{ margin: 0 }} />
+                <span className="label-sm">Documentation, Hold Points & Handover</span>
+              </div>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
+                The Audit Trail Behind The Package — Not Just The Build Stages.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "920px" }}>
+                The PDF doesn’t just describe materials. It also defines checkpoints, records, and handover quality. That detail belongs on the website because it shows how the package is managed, verified, and closed out.
+              </p>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
+              <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+                <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Every package documentation trail</h3>
+                <div style={{ display: "grid", gap: "0.7rem" }}>
+                  {documentationRows.map((item) => (
+                    <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                      <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                      <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+                <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Added at higher levels</h3>
+                <div style={{ display: "grid", gap: "0.7rem" }}>
+                  {higherLevelDocRows.map((item) => (
+                    <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                      <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                      <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.25rem" }}>
+              {holdPointGroups.map((group) => (
+                <div key={group.title} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>{group.title}</h3>
+                  <div style={{ display: "grid", gap: "0.7rem" }}>
+                    {group.items.map((item) => (
+                      <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                        <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                        <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Tested, snagged, cleaned, documented — handover flow</h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.8rem 1rem" }}>
+                {handoverRows.map((item) => (
+                  <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                    <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                    <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
                   </div>
                 ))}
               </div>
