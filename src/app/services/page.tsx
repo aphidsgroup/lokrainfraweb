@@ -61,6 +61,41 @@ const SERVICES = [
   },
 ];
 
+const SERVICES_OFFERED = [
+  {
+    title: "Building Contract",
+    items: [
+      "Civil Work - Sq.Ft. (upto Plastering Work)",
+      "Total Work - Sq.Ft. (incl. Finishing Works)",
+      "Bill of Quantity (B.O.Q. - Item Wise)",
+    ],
+  },
+  {
+    title: "Project Management Consulting",
+    items: [
+      "Design (Drawings Only)",
+      "Design & Execution (Drawings & Site Supervision)",
+      "Execution (Site Supervision Only)",
+    ],
+  },
+  {
+    title: "Structural Detailing",
+    items: [
+      "Design (Drawings Only)",
+      "Design & Execution (Drawings & Site Supervision)",
+      "Execution (Site Supervision Only)",
+    ],
+  },
+  {
+    title: "Interiors",
+    items: [
+      "Design (Drawings Only)",
+      "Design & Execution (Drawings & Site Supervision)",
+      "Total Contract (B.O.Q. - Item Wise)",
+    ],
+  },
+];
+
 export default function ServicesPage() {
   return (
     <>
@@ -89,6 +124,43 @@ export default function ServicesPage() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "560px" }}>
               Lokra Infra operates across residential, commercial, turnkey, renovation, civil, and development partnership segments — with the same engineering-led execution standard applied to every project type.
             </p>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--charcoal)", borderTop: "1px solid var(--border-warm)", borderBottom: "1px solid var(--border-warm)" }}>
+          <div className="container-lokra">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm">Services Offered</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--warm-white)", maxWidth: "900px", marginBottom: "1rem" }}>
+              Clear Service Formats For Different Project Needs.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "760px", marginBottom: "2rem" }}>
+              This section shows the service formats Lokra Infra can take up, from building contracts and consulting support to structural detailing and interiors.
+            </p>
+
+            <div className="services-offered-grid" style={{ display: "grid", gap: "1.25rem" }}>
+              {SERVICES_OFFERED.map((group) => (
+                <div key={group.title} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.35rem" }}>
+                  <div style={{ display: "inline-flex", padding: "0.7rem 1rem", marginBottom: "1rem", border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)" }}>
+                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem, 1.6vw, 1.25rem)", fontWeight: 700, textTransform: "uppercase", color: "var(--warm-white)" }}>
+                      {group.title}
+                    </h3>
+                  </div>
+
+                  <div className="services-offered-items" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
+                    {group.items.map((item) => (
+                      <div key={item} style={{ border: "1px solid var(--border-warm)", backgroundColor: "rgba(245,241,234,0.03)", padding: "1rem", minHeight: "100%" }}>
+                        <p style={{ fontFamily: "var(--font-display)", fontSize: "0.92rem", lineHeight: 1.5, color: "var(--warm-white)", textTransform: "none" }}>
+                          {item}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

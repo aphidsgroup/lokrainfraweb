@@ -57,8 +57,39 @@
   }
 
   /* Hide desktop nav on mobile explicitly */
-  #site-header nav.hidden {
+  #site-header .desktop-nav {
     display: none !important;
+  }
+
+  #site-header .mobile-menu-toggle {
+    display: inline-flex !important;
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-drawer {
+    overflow: hidden;
+  }
+
+  .mobile-nav-scroll {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 0.15rem;
+  }
+
+  .mobile-nav-links {
+    min-height: 0;
+  }
+
+  .mobile-nav-links a {
+    font-size: clamp(1.15rem, 6.4vw, 1.55rem) !important;
+    line-height: 1.1 !important;
+    padding: 0.8rem 0 !important;
+  }
+
+  .mobile-nav-cta {
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(11, 11, 10, 0.98), rgba(11, 11, 10, 0.92));
   }
 
   /* Hero adjustments */
@@ -162,6 +193,10 @@
 
   /* Svc header grid */
   .svc-header {
+    grid-template-columns: 1fr !important;
+  }
+
+  .services-offered-items {
     grid-template-columns: 1fr !important;
   }
 
@@ -336,6 +371,10 @@
     gap: 0.75rem !important;
   }
 
+  .services-offered-grid > div {
+    padding: 1rem !important;
+  }
+
   /* CTA buttons wrap */
   .hero-ctas {
     flex-direction: column !important;
@@ -381,6 +420,17 @@
 }
 
 /* ── HOVER: disable on touch ── */
+@media (min-width: 769px) {
+  #site-header .desktop-nav {
+    display: flex !important;
+  }
+
+  #site-header .mobile-menu-toggle,
+  #mobile-nav.mobile-nav-drawer {
+    display: none !important;
+  }
+}
+
 @media (hover: none) {
   .project-card:hover .card-img {
     transform: none !important;
