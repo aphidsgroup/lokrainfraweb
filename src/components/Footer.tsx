@@ -69,9 +69,8 @@ export default function Footer() {
                 marginBottom: "2rem",
               }}
             >
-              Founded in 2026 by a team with 10+ years of site experience, 50+
-              project completions, and a 50-year family material supplier background
-              across Chennai and Tamil Nadu.
+              Expert PhD-led Engineering team making Smart Homes & Infra truely
+              Future-Ready.
             </p>
 
             <div

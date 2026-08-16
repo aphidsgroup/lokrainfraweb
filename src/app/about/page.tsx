@@ -7,14 +7,14 @@ import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Lokra Infra — Engineering-Led Construction, Chennai",
   description:
-    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company founded in 2026 by a team with 10+ years of site experience, 50+ completed projects, and 50 years of family material supplier background.",
+    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company founded in 2026 by a team with around 10 years of site experience built across 50+ previous projects, plus 50 years of family material supplier background.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "About Lokra Infra — Engineering-Led Construction, Chennai",
     description:
-      "Learn about Lokra Infra — founded in 2026 by a team with 10+ years of site experience, 50+ completed projects, and 50 years of family material supplier background.",
+      "Learn about Lokra Infra — founded in 2026 by a team with around 10 years of site experience built across 50+ previous projects, plus 50 years of family material supplier background.",
     url: "https://www.lokrainfra.in/about",
     type: "website",
     siteName: "Lokra Infra",
@@ -65,8 +65,9 @@ export default function AboutPage() {
               }}
             >
               Lokra Infra is a Chennai-based construction and infrastructure company
-              founded in 2026 by builders with around 10 years of site experience,
-              50+ project completions, and deep material-grounded execution roots.
+              founded in 2026 by builders with around 10 years of site experience
+              built across 50+ previous projects, and deep material-grounded
+              execution roots.
             </p>
             <Link href="/contact" className="btn-primary">
               <span>Work With Us</span>
@@ -119,8 +120,8 @@ export default function AboutPage() {
                     color: "var(--concrete)",
                   }}
                 >
-                  The founders bring around 10 years of site experience and 50+
-                  project completions into Lokra Infra, while the family business
+                  The founders bring around 10 years of site experience built
+                  across 50+ previous projects into Lokra Infra, while the family business
                   brings 50 years of material supplier knowledge that sharpens cost,
                   quality, and procurement judgment on every project.
                 </p>

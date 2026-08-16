@@ -226,8 +226,8 @@ export default function HeroSection() {
             }}
           >
             Lokra Infra was started in 2026 by founders with around 10 years of
-            site experience, 50+ project completions, and a 50-year family material
-            supplier background. We bring engineering discipline to serious
+            site experience built across 50+ previous projects, along with a
+            50-year family material supplier background. We bring engineering discipline to serious
             residential and commercial projects across Chennai.
           </p>
 
