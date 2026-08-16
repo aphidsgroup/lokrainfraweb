@@ -103,7 +103,7 @@ export default function ValueProposition() {
             >
               Lokra Infra is built on practical site experience, structured scope
               control, and material-grounded execution. With around 10 years of
-              site experience, 50+ completed projects, and a 50-year family
+              site experience built across 50+ previous projects, and a 50-year family
               material supplier legacy behind the founders, every project is treated
               as a long-term asset.
             </p>
@@ -122,7 +122,7 @@ export default function ValueProposition() {
                 "10+ Years Site Experience",
                 "Transparent Scope",
                 "Site Discipline",
-                "50+ Projects Completed",
+                "50+ Project Track Record",
               ].map((p) => (
                 <div key={p} className="vp-pillar">
                   <div

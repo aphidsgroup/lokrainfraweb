@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
   description:
-    "Lokra Infra is a Chennai construction company founded in 2026 by a team with 10+ years of site experience, 50+ completed projects, and 50 years of family material supplier background.",
+    "Lokra Infra is a Chennai construction company founded in 2026 by a team with around 10 years of site experience built across 50+ previous projects, plus 50 years of family material supplier background.",
   keywords: [
     "construction company Chennai",
     "residential construction Chennai",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Engineering-led residential and commercial construction in Chennai, backed by 10+ years of site experience and 50+ project completions.",
+      "Engineering-led residential and commercial construction in Chennai, backed by around 10 years of site experience built across 50+ previous projects.",
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
