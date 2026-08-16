@@ -102,10 +102,10 @@ export default function ValueProposition() {
               }}
             >
               Lokra Infra is built on practical site experience, structured scope
-              control, and material-grounded execution. With around 10 years of
-              site experience built across 50+ previous projects, and a 50-year family
-              material supplier legacy behind the founders, every project is treated
-              as a long-term asset.
+              control, and material-grounded execution. With 10+ years of site
+              experience with 50+ completed projects in previous company works,
+              and a 50-year family material supplier legacy behind the founders,
+              every project is treated as a long-term asset.
             </p>
 
             {/* Pillars */}
