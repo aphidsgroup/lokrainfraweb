@@ -78,6 +78,17 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable}`}
     >
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q27S7KRVZ" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3Q27S7KRVZ');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
