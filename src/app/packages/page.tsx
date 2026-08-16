@@ -714,6 +714,59 @@ const handoverRows = [
   "Handover of keys, drawings, test records, warranties, and the full project file",
 ];
 
+const buildStageRows = [
+  "Project initiation — agreement, brief confirmation, and engineering kick-off",
+  "Survey and engineering — total-station or setting-out survey, soil assessment, and structural design",
+  "Excavation and foundation preparation — marking, excavation, PCC, and founding-level check",
+  "Foundation RCC — footing reinforcement, pre-concrete check point, footing concrete, and columns",
+  "Sump and plinth — below-ground damp protection, backfilling in layers, and plinth beam",
+  "Ground floor structure — columns, masonry, lintels, sunshades, and staircase",
+  "Intermediate floor structure — slab shuttering, reinforcement, slab pour, and curing",
+  "Upper floor and roof structure — repeat of approved drawings, headroom, and parapet",
+  "Concealed electrical and plumbing works — electrical chasing, conduit, plumbing pipework, and pressure test",
+  "Masonry and plastering — pre-plaster inspection, internal plaster, and external plaster",
+  "Waterproofing and flooring — wet areas, terrace, water-hold tests, flooring, and tiling",
+  "Doors, windows, and metal works — frames, shutters, uPVC windows, grills, and railings",
+  "Painting and finishes — putty, primer, interior coat, and elevation finish",
+  "Fixtures, testing, and final checks — CP fittings, electrical fixtures, system tests, and final inspection",
+  "Inspection and handover — pending-fix list, correction, cleaning, walkthrough, keys, and file handover",
+];
+
+const siteFitExclusionRows = [
+  "LS-1 and LS-2 are not for waterlogged or weak-soil plots where the foundation demand is higher.",
+  "LS-1 should not be used for coastal severe-exposure sites or harsh salt-air conditions.",
+  "Very narrow access plots, complex villas, large spans, cantilevers, double-height designs, and heavy façade/glazing needs should move to a higher package or a custom engineering quote.",
+  "If a premium brand requirement already starts above the package band, it should be treated as an upgrade, not assumed inside the lower package price.",
+  "Lokra’s v8 note is clear: declining the wrong project protects both the client’s build and Lokra’s delivery record.",
+];
+
+const foundationPolicyRows = [
+  "Firm inland strata with safe bearing capacity around 180 kN/m² or above — conventional isolated footing is included in the package rate.",
+  "Medium-firm sites with moderate water table — deeper or combined footing may be needed, with about 8% to 14% adjustment depending on design.",
+  "Loose sand or high water-table sites — design-specific foundation and groundwater pumping are extra, commonly about ₹100 to ₹175 per sq.ft. plus pumping if required.",
+  "Filled or reclaimed ground — raft, ground improvement, or piling is priced after the soil report and structural design.",
+  "Rock strata or abnormal excavation — controlled excavation is measured and quoted separately.",
+  "No fixed rate is issued for reclaimed land or high-exposure sites without a soil report.",
+];
+
+const brandCommitmentRows = [
+  "The agreement records the grade and the named product band, not just a company name.",
+  "If more than one approved brand is listed, Lokra chooses from that signed approved list during procurement.",
+  "The PDF is clear that a brand list is not a brand commitment to a single item before procurement starts.",
+  "If a named brand becomes genuinely unavailable, Lokra proposes an equivalent substitute only in writing and proceeds only after approval.",
+  "Tiles, granite, uPVC profiles, and glazing stay within the stated allowance and approved vendor list at material-selection stage.",
+  "Material invoices remain available for inspection during the project.",
+];
+
+const allowanceRows = [
+  "Tile and stone allowances are material basic rates per sq.ft.; GST, transport, loading, wastage, adhesive, grout, and skirting already sit inside the package and are not deducted from the allowance.",
+  "Sanitaryware and CP allowances are quoted per bathroom and scale with the house; for example, a three-bathroom home at LS-4 carries ₹84,000 total allowance.",
+  "Kitchen counter allowances carry both a rate and a running-foot limit. Length beyond that limit is charged at the same rate.",
+  "Tile allowance covers material within the stated rate and the standard laying format for that package. Oversized slab tiles, book-matched patterns, specialty cuts, levelling systems, epoxy, or non-standard laying methods can add installation charges.",
+  "Choosing material above the allowance means only the difference is billed. Choosing below the allowance is credited.",
+  "All allowances are confirmed against the approved vendor list during selection.",
+];
+
 const faqs = [
   {
     q: "How should I choose the right Lokra package?",
@@ -1117,7 +1170,7 @@ export default function PackagesPage() {
                 What Is Included, What Depends On The Site, And What The Owner Must Handle.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                The package price does not include everything. This section clearly shows what is included, what depends on the site, and what will cost extra.
+                The v8 PDF adds more clarity here. This section now shows what is inside the package, what is site-dependent, what is an upgrade, and where lower packages should not be used without stronger engineering.
               </p>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
@@ -1166,6 +1219,33 @@ export default function PackagesPage() {
                 ))}
               </div>
             </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
+              {[
+                {
+                  title: "Where lower packages should not be used",
+                  copy: "Taken from the new v8 exclusion-criteria pages.",
+                  items: siteFitExclusionRows,
+                },
+                {
+                  title: "Foundation and soil basis before quoting",
+                  copy: "The v8 PDF now explains how site condition changes the footing and extra-cost logic.",
+                  items: foundationPolicyRows,
+                },
+              ].map((group) => (
+                <div key={group.title} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>{group.title}</h3>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--accent)", marginBottom: "0.9rem" }}>{group.copy}</p>
+                  <div style={{ display: "grid", gap: "0.7rem" }}>
+                    {group.items.map((item) => (
+                      <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                        <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                        <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -1180,8 +1260,35 @@ export default function PackagesPage() {
                 Extra Works And Extra Costs You Should Know About.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                This section shows the common extra costs outside the package price, like water and drainage works, approvals, EB connection, compound wall, difficult excavation, demolition, and neighbour protection.
+                This section shows the common extra costs outside the package price, like water and drainage works, approvals, EB connection, compound wall, difficult excavation, demolition, neighbour protection, and foundation changes that depend on the soil report.
               </p>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
+              {[
+                {
+                  title: "How the brand list works",
+                  copy: "New v8 clarification — a brand list is not the same as a brand promise to one specific item before procurement starts.",
+                  items: brandCommitmentRows,
+                },
+                {
+                  title: "How to read an allowance",
+                  copy: "New v8 clarification — allowances are not vague placeholders. They follow a clear rate, format, and difference-billing logic.",
+                  items: allowanceRows,
+                },
+              ].map((group) => (
+                <div key={group.title} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", padding: "1.25rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>{group.title}</h3>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--accent)", marginBottom: "0.9rem" }}>{group.copy}</p>
+                  <div style={{ display: "grid", gap: "0.7rem" }}>
+                    {group.items.map((item) => (
+                      <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                        <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                        <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
             <ScopeCostTable
               title="Water, drainage, approval, and utility works"
@@ -1212,8 +1319,22 @@ export default function PackagesPage() {
                 The Audit Trail Behind The Package — Not Just The Build Stages.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "920px" }}>
-                The PDF doesn’t just describe materials. It also defines checkpoints, records, and handover quality. That detail belongs on the website because it shows how the package is managed, verified, and closed out.
+                The PDF doesn’t just describe materials. It also defines the build sequence, checkpoints, records, testing, and handover quality. That detail belongs on the website because it shows how the package is managed, verified, and closed out.
               </p>
+            </div>
+            <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Fifteen stages from agreement to keys</h3>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--accent)", marginBottom: "0.9rem", maxWidth: "920px" }}>
+                This new v8 section explains Lokra’s full delivery path, not just the material list. It now sits on the website so homeowners can see what the engineering-and-execution flow looks like before handover.
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.8rem 1rem" }}>
+                {buildStageRows.map((item) => (
+                  <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
+                    <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
+                    <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
               <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
