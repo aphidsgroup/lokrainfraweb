@@ -1023,28 +1023,6 @@ export default function PackagesPage() {
           </div>
         </section>
 
-        <section id="brand-progress" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
-          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
-                <div className="accent-bar" style={{ margin: 0 }} />
-                <span className="label-sm">Full 9-Package Comparison</span>
-              </div>
-              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                Compare All 9 Packages In One Easy Table.
-              </h2>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                This main table lets you compare all 9 packages side by side by price, warranty, materials, finishes, and important features.
-              </p>
-            </div>
-            <MasterComparisonTable
-              title="Main package comparison table"
-              description="Each column starts with the package price, so it is easier to scan. The rows below show what changes from one package to the next."
-              sections={masterComparisonSections}
-            />
-          </div>
-        </section>
-
         <section id="package-ladder" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
           <div className="container-lokra packages-page-body">
             <div style={{ marginBottom: "2.5rem" }}>
@@ -1056,7 +1034,7 @@ export default function PackagesPage() {
                 All 9 Packages Shown As Simple Cards.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "860px" }}>
-                After the main table, these cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions.
+                These cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions before you move into the full comparison table.
               </p>
             </div>
 
@@ -1107,6 +1085,28 @@ export default function PackagesPage() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="brand-progress" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+                <div className="accent-bar" style={{ margin: 0 }} />
+                <span className="label-sm">Full 9-Package Comparison</span>
+              </div>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
+                Compare All 9 Packages In One Easy Table.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
+                After the package cards, this full table lets you compare all 9 packages side by side by price, warranty, materials, finishes, and important features.
+              </p>
+            </div>
+            <MasterComparisonTable
+              title="Main package comparison table"
+              description="Each column starts with the package price, so it is easier to scan. The rows below show what changes from one package to the next."
+              sections={masterComparisonSections}
+            />
           </div>
         </section>
 
