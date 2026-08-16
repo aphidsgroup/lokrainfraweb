@@ -898,7 +898,7 @@ export default function PackagesPage() {
             borderBottom: "1px solid var(--border-warm)",
           }}
         >
-          <div className="container-lokra">
+          <div className="container-lokra packages-page-body">
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
               <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
               <span className="label-sm">Packages</span>
@@ -945,7 +945,7 @@ export default function PackagesPage() {
         </section>
 
         <section style={{ position: "sticky", top: "76px", zIndex: 10, backgroundColor: "rgba(11,11,10,0.95)", backdropFilter: "blur(10px)", borderBottom: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra" style={{ paddingTop: "0.9rem", paddingBottom: "0.9rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+          <div className="container-lokra packages-page-body" style={{ paddingTop: "0.9rem", paddingBottom: "0.9rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
             {jumpLinks.map((link) => (
               <a
                 key={link.id}
@@ -971,7 +971,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="brand-progress" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -993,7 +993,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="package-ladder" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra">
+          <div className="container-lokra packages-page-body">
             <div style={{ marginBottom: "2.5rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1058,7 +1058,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="quick-compare" className="section-py" style={{ backgroundColor: "var(--charcoal)", borderTop: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1080,7 +1080,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="technical-compare" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1107,7 +1107,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="scope-boundary" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1170,7 +1170,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="additional-works" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1202,7 +1202,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="delivery-compare" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1269,7 +1269,7 @@ export default function PackagesPage() {
         </section>
 
         <section id="faq" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
-          <div className="container-lokra" style={{ display: "grid", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1.05fr)", gap: "clamp(2rem, 5vw, 4rem)" }}>
+          <div className="container-lokra packages-page-body" style={{ display: "grid", gridTemplateColumns: "minmax(0,0.95fr) minmax(0,1.05fr)", gap: "clamp(2rem, 5vw, 4rem)" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
@@ -1298,7 +1298,7 @@ export default function PackagesPage() {
         </section>
 
         <section style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)", paddingTop: "4rem", paddingBottom: "4rem" }}>
-          <div className="container-lokra" style={{ textAlign: "center" }}>
+          <div className="container-lokra packages-page-body" style={{ textAlign: "center" }}>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem,4vw,3.2rem)", lineHeight: 1.02, letterSpacing: "-0.03em", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "1rem" }}>
               Want Help Selecting The Right Package For Your Site?
             </h2>
