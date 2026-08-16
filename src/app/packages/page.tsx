@@ -75,8 +75,8 @@ const packageHeaders = [
 ];
 
 const jumpLinks = [
-  { id: "brand-progress", label: "Full Comparison" },
   { id: "package-ladder", label: "Package Ladder" },
+  { id: "brand-progress", label: "Full Comparison" },
   { id: "quick-compare", label: "Quick Compare" },
   { id: "technical-compare", label: "Technical Details" },
   { id: "scope-boundary", label: "Scope Boundary" },
@@ -801,17 +801,20 @@ const faqSchema = {
 
 function ComparisonTable({ title, description, rows }: { title: string; description: string; rows: MatrixRow[] }) {
   return (
-    <section style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
-      <div style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
+    <section className="packages-data-table" style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
+      <div className="packages-data-table-head" style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
         <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.5rem" }}>
           {title}
         </h3>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "900px" }}>
           {description}
         </p>
+        <p className="packages-mobile-table-note" style={{ marginTop: "0.75rem", fontFamily: "var(--font-body)", fontSize: "0.84rem", lineHeight: 1.6, color: "var(--muted-sand)" }}>
+          On mobile, swipe this table sideways to compare all packages.
+        </p>
       </div>
-      <div style={{ overflowX: "auto" }}>
-        <table style={{ width: "100%", minWidth: "1200px", borderCollapse: "collapse" }}>
+      <div className="packages-table-wrap" style={{ overflowX: "auto" }}>
+        <table className="packages-compare-table packages-compare-table-compact" style={{ width: "100%", minWidth: "1200px", borderCollapse: "collapse" }}>
           <thead>
             <tr style={{ backgroundColor: "var(--charcoal)" }}>
               <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase" }}>
@@ -846,17 +849,20 @@ function ComparisonTable({ title, description, rows }: { title: string; descript
 
 function MasterComparisonTable({ title, description, sections }: { title: string; description: string; sections: ComparisonSection[] }) {
   return (
-    <section style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
-      <div style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
+    <section className="packages-data-table packages-data-table-master" style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
+      <div className="packages-data-table-head" style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
         <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.5rem" }}>
           {title}
         </h3>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "900px" }}>
           {description}
         </p>
+        <p className="packages-mobile-table-note" style={{ marginTop: "0.75rem", fontFamily: "var(--font-body)", fontSize: "0.84rem", lineHeight: 1.6, color: "var(--muted-sand)" }}>
+          On mobile, swipe this table sideways. The first column stays visible so you can track each row more easily.
+        </p>
       </div>
-      <div style={{ overflowX: "auto" }}>
-        <table style={{ width: "100%", minWidth: "1320px", borderCollapse: "collapse" }}>
+      <div className="packages-table-wrap packages-table-wrap-master" style={{ overflowX: "auto" }}>
+        <table className="packages-compare-table packages-compare-table-master" style={{ width: "100%", minWidth: "1320px", borderCollapse: "collapse" }}>
           <thead>
             <tr style={{ backgroundColor: "var(--charcoal)" }}>
               <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase", minWidth: "240px" }}>
@@ -903,17 +909,20 @@ function MasterComparisonTable({ title, description, sections }: { title: string
 
 function ScopeCostTable({ title, description, rows }: { title: string; description: string; rows: ScopeCostRow[] }) {
   return (
-    <section style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
-      <div style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
+    <section className="packages-data-table packages-scope-table" style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
+      <div className="packages-data-table-head" style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
         <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>
           {title}
         </h3>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "900px" }}>
           {description}
         </p>
+        <p className="packages-mobile-table-note" style={{ marginTop: "0.75rem", fontFamily: "var(--font-body)", fontSize: "0.84rem", lineHeight: 1.6, color: "var(--muted-sand)" }}>
+          On mobile, swipe sideways if you want to see the full rate and specification together.
+        </p>
       </div>
-      <div style={{ overflowX: "auto" }}>
-        <table style={{ width: "100%", minWidth: "960px", borderCollapse: "collapse" }}>
+      <div className="packages-table-wrap packages-table-wrap-scope" style={{ overflowX: "auto" }}>
+        <table className="packages-compare-table packages-compare-table-scope" style={{ width: "100%", minWidth: "960px", borderCollapse: "collapse" }}>
           <thead>
             <tr style={{ backgroundColor: "var(--charcoal)" }}>
               <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase" }}>Item</th>
@@ -940,10 +949,11 @@ export default function PackagesPage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="packages-page">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
         <section
+          className="packages-hero"
           style={{
             paddingTop: "9rem",
             paddingBottom: "3.5rem",
@@ -956,7 +966,7 @@ export default function PackagesPage() {
               <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
               <span className="label-sm">Packages</span>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1.15fr) minmax(280px,0.85fr)", gap: "clamp(2rem, 5vw, 4rem)", alignItems: "end" }}>
+            <div className="packages-hero-grid" style={{ display: "grid", gridTemplateColumns: "minmax(0,1.15fr) minmax(280px,0.85fr)", gap: "clamp(2rem, 5vw, 4rem)", alignItems: "end" }}>
               <div>
                 <h1 className="display-lg" style={{ color: "var(--warm-white)", maxWidth: "920px", marginBottom: "1.25rem" }}>
                   Simple Construction Package Comparison For Easy Decision-Making.
@@ -964,7 +974,7 @@ export default function PackagesPage() {
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.95rem,1.15vw,1.05rem)", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "760px", marginBottom: "1.75rem" }}>
                   This page helps you compare all 9 packages in simple English. You can quickly see the price, key materials, warranty, and what is included in each package.
                 </p>
-                <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                <div className="hero-ctas packages-hero-ctas" style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                   <Link href="#brand-progress" className="btn-primary">
                     <span>Compare Packages</span>
                     <ArrowUpRight size={14} strokeWidth={2.5} style={{ position: "relative", zIndex: 1 }} />
@@ -974,7 +984,7 @@ export default function PackagesPage() {
                   </Link>
                 </div>
               </div>
-              <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", padding: "1.5rem" }}>
+              <div className="packages-hero-summary" style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", padding: "1.5rem" }}>
                 <div style={{ display: "grid", gap: "1rem" }}>
                   {[
                     { icon: Layers3, label: "Levels", value: "9 package levels" },
@@ -997,8 +1007,8 @@ export default function PackagesPage() {
           </div>
         </section>
 
-        <section style={{ position: "sticky", top: "76px", zIndex: 10, backgroundColor: "rgba(11,11,10,0.95)", backdropFilter: "blur(10px)", borderBottom: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra packages-page-body" style={{ paddingTop: "0.9rem", paddingBottom: "0.9rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+        <section className="packages-jump-shell" style={{ position: "sticky", top: "76px", zIndex: 10, backgroundColor: "rgba(11,11,10,0.95)", backdropFilter: "blur(10px)", borderBottom: "1px solid var(--border-warm)" }}>
+          <div className="container-lokra packages-page-body packages-jump-links" style={{ paddingTop: "0.9rem", paddingBottom: "0.9rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
             {jumpLinks.map((link) => (
               <a
                 key={link.id}
@@ -1038,11 +1048,11 @@ export default function PackagesPage() {
               </p>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: "1.25rem" }}>
+            <div className="packages-card-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: "1.25rem" }}>
               {packageLevels.map((pkg) => (
-                <article key={pkg.id} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", display: "flex", flexDirection: "column" }}>
-                  <div style={{ padding: "1.35rem 1.35rem 1rem", borderBottom: "1px solid var(--border-warm)" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", gap: "1rem", alignItems: "flex-start" }}>
+                <article className="package-card" key={pkg.id} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", display: "flex", flexDirection: "column" }}>
+                  <div className="package-card-head" style={{ padding: "1.35rem 1.35rem 1rem", borderBottom: "1px solid var(--border-warm)" }}>
+                    <div className="package-card-top" style={{ display: "flex", justifyContent: "space-between", gap: "1rem", alignItems: "flex-start" }}>
                       <div>
                         <div style={{ fontFamily: "var(--font-display)", fontSize: "0.625rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.35rem" }}>
                           {pkg.level}
@@ -1060,7 +1070,7 @@ export default function PackagesPage() {
                     </p>
                   </div>
 
-                  <div style={{ padding: "1.1rem 1.35rem", display: "grid", gap: "0.85rem", borderBottom: "1px solid var(--border-warm)" }}>
+                  <div className="package-card-meta" style={{ padding: "1.1rem 1.35rem", display: "grid", gap: "0.85rem", borderBottom: "1px solid var(--border-warm)" }}>
                     {[
                       ["Structural warranty", pkg.warranty],
                       ["Reporting", pkg.reporting],
@@ -1074,7 +1084,7 @@ export default function PackagesPage() {
                     ))}
                   </div>
 
-                  <div style={{ padding: "1.1rem 1.35rem 1.3rem", display: "grid", gap: "0.8rem" }}>
+                  <div className="package-card-highlights" style={{ padding: "1.1rem 1.35rem 1.3rem", display: "grid", gap: "0.8rem" }}>
                     {pkg.highlights.map((item) => (
                       <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
                         <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
