@@ -51,11 +51,11 @@ export default function ProjectsPage() {
               Our Project Portfolio
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "520px", marginBottom: "2.5rem" }}>
-              Lokra Infra delivers residential, commercial, and infrastructure projects across Chennai with engineering discipline and structured execution.
+            Lokra Infra delivers residential, commercial, and infrastructure projects across Chennai with engineering discipline and structured execution. The public projects section is being refreshed to present work-in-progress and completed work more clearly.
             </p>
             <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)" }}>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)" }}>
-                📸 Active project gallery in development. Contact us to review project references and site documentation.
+                🚧 Projects section update in progress. Contact us to review current work-in-progress details, references, and execution discussions.
               </p>
             </div>
           </div>
@@ -112,8 +112,8 @@ export default function ProjectsPage() {
             {/* CTA to contact */}
             <div style={{ textAlign: "center" }}>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", color: "var(--concrete)", marginBottom: "2rem", lineHeight: 1.7 }}>
-                Looking for project references or want to discuss a project similar to these categories?<br />
-                Our team will walk you through relevant site documentation and execution examples.
+                Looking for project references or want to discuss a similar project?<br />
+                Our team can walk you through relevant work-in-progress context, delivery approach, and execution examples.
               </p>
               <Link href="/contact" className="btn-primary">
                 <span>Request Project References</span>

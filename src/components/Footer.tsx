@@ -8,6 +8,7 @@ const FOOTER_NAV = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Packages", href: "/packages" },
   { label: "Projects", href: "/projects" },
   { label: "Process", href: "/process" },
   { label: "JV Partnerships", href: "/jv-partnerships" },
@@ -17,6 +18,7 @@ const FOOTER_NAV = [
 const SERVICES = [
   { label: "Residential Construction", href: "/services" },
   { label: "Commercial Construction", href: "/services" },
+  { label: "Package Comparison", href: "/packages" },
   { label: "Turnkey Execution", href: "/services" },
   { label: "Renovation & Upgrades", href: "/services" },
   { label: "Infrastructure & Civil", href: "/services" },
@@ -67,8 +69,9 @@ export default function Footer() {
                 marginBottom: "2rem",
               }}
             >
-              Expert PhD-led engineering team making smart homes & infrastructure
-              truly future-ready across Chennai and Tamil Nadu.
+              Founded in 2026 by a team with 10+ years of site experience, 50+
+              project completions, and a 50-year family material supplier background
+              across Chennai and Tamil Nadu.
             </p>
 
             <div

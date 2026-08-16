@@ -225,10 +225,10 @@ export default function HeroSection() {
               marginBottom: "2.75rem",
             }}
           >
-            An expert PhD-led engineering team making smart homes and
-            infrastructure truly future-ready across Chennai. We combine
-            structural discipline with advanced execution for serious residential
-            and commercial projects.
+            Lokra Infra was started in 2026 by founders with around 10 years of
+            site experience, 50+ project completions, and a 50-year family material
+            supplier background. We bring engineering discipline to serious
+            residential and commercial projects across Chennai.
           </p>
 
           {/* CTAs */}

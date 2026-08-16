@@ -248,8 +248,9 @@ export default function ProjectCategories() {
             opacity: 0.6,
           }}
         >
-          Project imagery will be updated with completed projects. Contact us to
-          discuss your requirement.
+          Project visuals and case snapshots are currently being refreshed. For now,
+          this section should be treated as work in progress while Lokra Infra
+          prepares a stronger public projects presentation.
         </p>
       </div>
     </section>
