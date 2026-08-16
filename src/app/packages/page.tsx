@@ -737,7 +737,7 @@ const siteFitExclusionRows = [
   "LS-1 should not be used for coastal severe-exposure sites or harsh salt-air conditions.",
   "Very narrow access plots, complex villas, large spans, cantilevers, double-height designs, and heavy façade/glazing needs should move to a higher package or a custom engineering quote.",
   "If a premium brand requirement already starts above the package band, it should be treated as an upgrade, not assumed inside the lower package price.",
-  "Lokra’s v8 note is clear: declining the wrong project protects both the client’s build and Lokra’s delivery record.",
+  "Declining the wrong project protects both the client’s build and Lokra’s delivery record.",
 ];
 
 const foundationPolicyRows = [
@@ -752,7 +752,7 @@ const foundationPolicyRows = [
 const brandCommitmentRows = [
   "The agreement records the grade and the named product band, not just a company name.",
   "If more than one approved brand is listed, Lokra chooses from that signed approved list during procurement.",
-  "The PDF is clear that a brand list is not a brand commitment to a single item before procurement starts.",
+  "A brand list is not a brand commitment to a single item before procurement starts.",
   "If a named brand becomes genuinely unavailable, Lokra proposes an equivalent substitute only in writing and proceeds only after approval.",
   "Tiles, granite, uPVC profiles, and glazing stay within the stated allowance and approved vendor list at material-selection stage.",
   "Material invoices remain available for inspection during the project.",
@@ -773,8 +773,8 @@ const faqs = [
     a: "First check the package price range. Then compare warranty, reports, waterproofing, bathroom budget, flooring budget, and quality checks to choose the right package.",
   },
   {
-    q: "Are these package details taken from the PDF?",
-    a: "Yes. The package details from the PDF have been converted into readable website text and comparison tables.",
+    q: "Are these package details shown in website format?",
+    a: "Yes. The package details are shown here in a simpler website format so you can compare them more easily.",
   },
   {
     q: "Which package is better for a normal site and which is better for a coastal or difficult site?",
@@ -1187,7 +1187,7 @@ export default function PackagesPage() {
                 What Is Included, What Depends On The Site, And What The Owner Must Handle.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                The v8 PDF adds more clarity here. This section now shows what is inside the package, what is site-dependent, what is an upgrade, and where lower packages should not be used without stronger engineering.
+                This section shows what is inside the package, what is site-dependent, what is an upgrade, and where lower packages should not be used without stronger engineering.
               </p>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
@@ -1240,12 +1240,12 @@ export default function PackagesPage() {
               {[
                 {
                   title: "Where lower packages should not be used",
-                  copy: "Taken from the new v8 exclusion-criteria pages.",
+                  copy: "This helps you see where lower packages may not suit the site or the design requirement.",
                   items: siteFitExclusionRows,
                 },
                 {
                   title: "Foundation and soil basis before quoting",
-                  copy: "The v8 PDF now explains how site condition changes the footing and extra-cost logic.",
+                  copy: "This explains how site condition changes the footing choice and extra-cost logic.",
                   items: foundationPolicyRows,
                 },
               ].map((group) => (
@@ -1284,12 +1284,12 @@ export default function PackagesPage() {
               {[
                 {
                   title: "How the brand list works",
-                  copy: "New v8 clarification — a brand list is not the same as a brand promise to one specific item before procurement starts.",
+                  copy: "A brand list is not the same as a brand promise to one specific item before procurement starts.",
                   items: brandCommitmentRows,
                 },
                 {
                   title: "How to read an allowance",
-                  copy: "New v8 clarification — allowances are not vague placeholders. They follow a clear rate, format, and difference-billing logic.",
+                  copy: "Allowances are not vague placeholders. They follow a clear rate, format, and difference-billing logic.",
                   items: allowanceRows,
                 },
               ].map((group) => (
@@ -1309,7 +1309,7 @@ export default function PackagesPage() {
             </div>
             <ScopeCostTable
               title="Water, drainage, approval, and utility works"
-              description="These are common extra-cost items taken from the separately priced list in the PDF."
+              description="These are common extra-cost items that are usually priced separately from the main package rate."
               rows={separatelyPricedWaterRows}
             />
             <ScopeCostTable
@@ -1336,13 +1336,13 @@ export default function PackagesPage() {
                 The Audit Trail Behind The Package — Not Just The Build Stages.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "920px" }}>
-                The PDF doesn’t just describe materials. It also defines the build sequence, checkpoints, records, testing, and handover quality. That detail belongs on the website because it shows how the package is managed, verified, and closed out.
+                This section doesn’t just describe materials. It also shows the build sequence, checkpoints, records, testing, and handover quality, so you can understand how the package is managed and closed out.
               </p>
             </div>
             <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
               <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Fifteen stages from agreement to keys</h3>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--accent)", marginBottom: "0.9rem", maxWidth: "920px" }}>
-                This new v8 section explains Lokra’s full delivery path, not just the material list. It now sits on the website so homeowners can see what the engineering-and-execution flow looks like before handover.
+                This section explains Lokra’s full delivery path, not just the material list, so homeowners can see what the engineering-and-execution flow looks like before handover.
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.8rem 1rem" }}>
                 {buildStageRows.map((item) => (
