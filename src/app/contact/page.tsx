@@ -50,11 +50,12 @@ export default function ContactPage() {
 
                 <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
                   {[
-                    { icon: MapPin, label: "Office Location", value: "55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107", sub: "Serving Chennai & surrounding districts" },
+                    { icon: MapPin, label: "Office Location", value: "343, First Floor, Kundrathur Main Rd, Subam Nagar, KK Nagar, Mangadu, Chennai, Mangadu, Tamil Nadu 600122", sub: "Current office location for client meetings and project discussions" },
+                    { icon: MapPin, label: "Registered Address", value: "55, Poonamallee High Rd, Nerkundram, Chennai, Greater Chennai, Tamil Nadu 600107", sub: "Official registered address" },
                     { icon: Phone, label: "Phone", value: "93446 43324", sub: "Call directly for project discussions and site requirements" },
                     { icon: Mail, label: "Email", value: "lokrainfra@gmail.com", sub: "We respond within 1 business day" },
                   ].map((item, idx) => (
-                    <div key={item.label} style={{ paddingBottom: "1.75rem", marginBottom: "1.75rem", borderBottom: idx < 2 ? "1px solid var(--border-light)" : "none" }}>
+                    <div key={item.label} style={{ paddingBottom: "1.75rem", marginBottom: "1.75rem", borderBottom: idx < 3 ? "1px solid var(--border-light)" : "none" }}>
                       <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
                         <div style={{ width: "36px", height: "36px", backgroundColor: "var(--charcoal)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                           <item.icon size={16} style={{ color: "var(--accent)" }} />
