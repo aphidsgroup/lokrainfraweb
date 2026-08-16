@@ -98,7 +98,7 @@ const packageLevels: PackageLevel[] = [
     handover: "Drawings, certificate, warranties",
     retention: "— / 6 months",
     highlights: [
-      "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit reinforcement grade to approved structural design and MTC",
+      "ARS / iSTEEL / Viki / Suryadev / Tirumala / Pulkit reinforcement grade to approved structural design and MTC",
       "Design-mix structural RCC to approved structural design",
       "Foundation type and depth from site conditions and structural design",
       "Flooring allowance ₹55 / sq.ft.; sanitaryware ₹16,000 per bathroom",
@@ -452,8 +452,8 @@ const brandRows: MatrixRow[] = [
   {
     label: "Steel brand level",
     values: [
-      "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit",
-      "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit",
+      "ARS / iSTEEL / Viki / Suryadev / Tirumala / Pulkit",
+      "ARS / iSTEEL / Viki / Suryadev / Tirumala / Pulkit",
       "ARS / iSTEEL branded set",
       "ARS / iSTEEL / SAIL / Suryadev",
       "ARS / iSTEEL / SAIL / Vizag",
@@ -1044,7 +1044,7 @@ export default function PackagesPage() {
                 All 9 Packages Shown As Simple Cards.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "860px" }}>
-                These cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions before you move into the full comparison table.
+                These cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions before you move into the full comparison table. If you want the exact brand-sheet details behind each package, open the Brand Schedule page from the matching card.
               </p>
             </div>
 
@@ -1053,7 +1053,7 @@ export default function PackagesPage() {
                 <article className="package-card" key={pkg.id} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", display: "flex", flexDirection: "column" }}>
                   <div className="package-card-head" style={{ padding: "1.35rem 1.35rem 1rem", borderBottom: "1px solid var(--border-warm)" }}>
                     <div className="package-card-top" style={{ display: "flex", justifyContent: "space-between", gap: "1rem", alignItems: "flex-start" }}>
-                      <div>
+                      <div className="package-card-title-block" style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontFamily: "var(--font-display)", fontSize: "0.625rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.35rem" }}>
                           {pkg.level}
                         </div>
@@ -1061,7 +1061,7 @@ export default function PackagesPage() {
                           {pkg.name}
                         </h3>
                       </div>
-                      <div style={{ fontFamily: "var(--font-display)", fontSize: "1rem", color: "var(--accent)", textAlign: "right", whiteSpace: "nowrap" }}>
+                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1rem", lineHeight: 1, color: "var(--accent)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0 }}>
                         {pkg.rate}
                       </div>
                     </div>
@@ -1091,6 +1091,13 @@ export default function PackagesPage() {
                         <span style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
                       </div>
                     ))}
+
+                    <div style={{ paddingTop: "0.25rem" }}>
+                      <Link href={`/brand-schedule#${pkg.id}`} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
+                        <span>View Exact Brand Schedule</span>
+                        <ArrowUpRight size={13} strokeWidth={2.4} style={{ position: "relative", zIndex: 1 }} />
+                      </Link>
+                    </div>
                   </div>
                 </article>
               ))}

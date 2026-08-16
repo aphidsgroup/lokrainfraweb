@@ -245,6 +245,11 @@
     line-height: 1.12 !important;
   }
 
+  .packages-page .package-card-rate {
+    align-self: flex-start;
+    text-align: left !important;
+  }
+
   .packages-page .package-card-meta > div {
     grid-template-columns: 96px 1fr !important;
   }
@@ -354,6 +359,10 @@
   .packages-page .package-card-meta > div {
     grid-template-columns: 1fr !important;
     gap: 0.28rem !important;
+  }
+
+  .packages-page .package-card-rate {
+    font-size: 0.95rem !important;
   }
 
   .packages-page .packages-compare-table th,
