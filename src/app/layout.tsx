@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
   description:
-    "Lokra Infra is a Chennai construction company founded in 2026 by a team with around 10 years of site experience built across 50+ previous projects, plus 50 years of family material supplier background.",
+    "Lokra Infra is a Chennai construction company founded in 2026 by a team with 10+ years of site experience with 50+ completed projects in previous company works, plus 50 years of family material supplier background.",
   keywords: [
     "construction company Chennai",
     "residential construction Chennai",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Engineering-led residential and commercial construction in Chennai, backed by around 10 years of site experience built across 50+ previous projects.",
+      "Engineering-led residential and commercial construction in Chennai, backed by 10+ years of site experience with 50+ completed projects in previous company works.",
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Engineering-led construction in Chennai with 10+ years of site experience and 50+ completed projects.",
+      "Engineering-led construction in Chennai with 10+ years of site experience with 50+ completed projects in previous company works.",
   },
   robots: {
     index: true,
@@ -86,7 +86,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Lokra Infra",
               description:
-                "Premium construction and infrastructure company in Chennai founded in 2026, backed by 10+ years of site experience, 50+ completed projects, and a 50-year family material supplier background.",
+                "Premium construction and infrastructure company in Chennai founded in 2026, backed by 10+ years of site experience with 50+ completed projects in previous company works and a 50-year family material supplier background.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Chennai",
