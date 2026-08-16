@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
   description:
-    "Expert PhD-led engineering team making smart homes & infrastructure truly future-ready across Chennai. Delivering premium residential and commercial projects with rigorous structural clarity.",
+    "Lokra Infra is a Chennai construction company founded in 2026 by a team with 10+ years of site experience, 50+ completed projects, and 50 years of family material supplier background.",
   keywords: [
     "construction company Chennai",
     "residential construction Chennai",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Expert PhD-led engineering team making smart homes & infrastructure truly future-ready in Chennai.",
+      "Engineering-led residential and commercial construction in Chennai, backed by 10+ years of site experience and 50+ project completions.",
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Expert PhD-led engineering team making smart homes & infrastructure truly future-ready.",
+      "Engineering-led construction in Chennai with 10+ years of site experience and 50+ completed projects.",
   },
   robots: {
     index: true,
@@ -86,7 +86,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Lokra Infra",
               description:
-                "Premium construction and infrastructure company in Chennai specializing in residential and commercial projects.",
+                "Premium construction and infrastructure company in Chennai founded in 2026, backed by 10+ years of site experience, 50+ completed projects, and a 50-year family material supplier background.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Chennai",

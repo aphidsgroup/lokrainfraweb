@@ -7,14 +7,14 @@ import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Lokra Infra — Engineering-Led Construction, Chennai",
   description:
-    "Learn about Lokra Infra — a Chennai-based premium construction and infrastructure company with an engineering-first approach to residential and commercial projects.",
+    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company founded in 2026 by a team with 10+ years of site experience, 50+ completed projects, and 50 years of family material supplier background.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "About Lokra Infra — Engineering-Led Construction, Chennai",
     description:
-      "Learn about Lokra Infra — a Chennai-based premium construction and infrastructure company with an engineering-first approach to residential and commercial projects.",
+      "Learn about Lokra Infra — founded in 2026 by a team with 10+ years of site experience, 50+ completed projects, and 50 years of family material supplier background.",
     url: "https://www.lokrainfra.in/about",
     type: "website",
     siteName: "Lokra Infra",
@@ -64,10 +64,9 @@ export default function AboutPage() {
                 marginBottom: "2.5rem",
               }}
             >
-              Lokra Infra is a Chennai-based construction and infrastructure
-              company focused on residential and commercial project delivery with
-              engineering discipline, transparent scope management, and
-              structured site coordination.
+              Lokra Infra is a Chennai-based construction and infrastructure company
+              founded in 2026 by builders with around 10 years of site experience,
+              50+ project completions, and deep material-grounded execution roots.
             </p>
             <Link href="/contact" className="btn-primary">
               <span>Work With Us</span>
@@ -106,10 +105,11 @@ export default function AboutPage() {
                     marginBottom: "1.5rem",
                   }}
                 >
-                  Lokra Infra was established with a clear conviction: that
-                  serious construction clients in Chennai deserve more than
-                  verbal promises and reactive site management. They deserve
-                  engineering clarity from day one.
+                  Lokra Infra was established with a clear conviction: serious
+                  construction clients in Chennai deserve more than verbal promises
+                  and reactive site management. They deserve planning clarity,
+                  accountable site execution, and a team that understands what it
+                  takes to build properly from the ground up.
                 </p>
                 <p
                   style={{
@@ -119,9 +119,10 @@ export default function AboutPage() {
                     color: "var(--concrete)",
                   }}
                 >
-                  Our expert PhD-led engineering team combines advanced academic rigor,
-                  structural discipline, and smart home technology to make every
-                  residential and commercial project truly future-ready.
+                  The founders bring around 10 years of site experience and 50+
+                  project completions into Lokra Infra, while the family business
+                  brings 50 years of material supplier knowledge that sharpens cost,
+                  quality, and procurement judgment on every project.
                 </p>
               </div>
               <div>
@@ -153,9 +154,10 @@ export default function AboutPage() {
                     color: "var(--concrete)",
                   }}
                 >
-                  From independent homes in Velachery to commercial structures
-                  in OMR, our experience is rooted in the Chennai built
-                  environment.
+                  From independent homes to commercial structures, our experience is
+                  rooted in Chennai&rsquo;s built environment and strengthened by practical
+                  material knowledge passed through a long-standing family supply
+                  business.
                 </p>
               </div>
             </div>

@@ -8,6 +8,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Packages", href: "/packages" },
   { label: "Projects", href: "/projects" },
   { label: "Process", href: "/process" },
   { label: "JV Partnerships", href: "/jv-partnerships" },

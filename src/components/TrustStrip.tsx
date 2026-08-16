@@ -7,10 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: "15+", label: "Years of Site Experience" },
-  { value: "80+", label: "Projects Completed" },
-  { value: "4", label: "Project Types Delivered" },
-  { value: "100%", label: "Engineering-Led Approach" },
+  { value: "10+", label: "Years of Site Experience" },
+  { value: "50+", label: "Projects Completed" },
+  { value: "2026", label: "Lokra Infra Started" },
+  { value: "50+", label: "Years in Family Material Supply" },
 ];
 
 const CAPABILITIES = [

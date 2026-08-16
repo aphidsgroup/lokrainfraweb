@@ -101,11 +101,11 @@ export default function ValueProposition() {
                 color: "var(--concrete)",
               }}
             >
-              Lokra Infra is built by an expert PhD-led engineering team
-              dedicated to making smart homes and infrastructure truly
-              future-ready. We combine rigorous structural discipline, clear
-              scope management, and advanced technical oversight so every project
-              holds enduring value long after handover.
+              Lokra Infra is built on practical site experience, structured scope
+              control, and material-grounded execution. With around 10 years of
+              site experience, 50+ completed projects, and a 50-year family
+              material supplier legacy behind the founders, every project is treated
+              as a long-term asset.
             </p>
 
             {/* Pillars */}
@@ -119,10 +119,10 @@ export default function ValueProposition() {
               }}
             >
               {[
-                "PhD-Led Engineering Team",
+                "10+ Years Site Experience",
                 "Transparent Scope",
                 "Site Discipline",
-                "Structural Quality",
+                "50+ Projects Completed",
               ].map((p) => (
                 <div key={p} className="vp-pillar">
                   <div
