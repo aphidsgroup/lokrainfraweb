@@ -7,14 +7,14 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Brand Schedule — Lokra Infra Construction Packages, Chennai",
   description:
-    "See the v8 brand schedule details for all 9 Lokra Infra construction packages in Chennai, with package-wise material, electrical, plumbing, waterproofing, and finish details.",
+    "See the brand schedule details for all 9 Lokra Infra construction packages in Chennai, with package-wise material, electrical, plumbing, waterproofing, and finish details.",
   alternates: {
     canonical: "/brand-schedule",
   },
   openGraph: {
     title: "Lokra Infra Brand Schedule — All 9 Packages",
     description:
-      "Package-wise brand schedule details from Lokra Infra v8 package sheets, rewritten into a customer-friendly web page.",
+      "Package-wise brand schedule details from Lokra Infra, shown in a customer-friendly web page format.",
     url: "https://www.lokrainfra.in/brand-schedule",
     type: "website",
     siteName: "Lokra Infra",
@@ -33,7 +33,6 @@ type BrandSchedulePackage = {
   name: string;
   rate: string;
   summary: string;
-  sourceNote: string;
   rows: ScheduleRow[];
 };
 
@@ -44,7 +43,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Basic Build Package",
     rate: "₹1,899 / sq.ft.",
     summary: "Budget-friendly branded-material package with proper structural design and practical standard finishes.",
-    sourceNote: "Taken from the LS-1 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "PPC to IS 1489 — Chettinad / Zuari / Dalmia band" },
       { label: "Steel", value: "ARS / iSTEEL / Viki / Suryadev / Tirumala / Pulkit" },
@@ -64,7 +62,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Better Waterproofing Package",
     rate: "₹1,999 / sq.ft.",
     summary: "LS-1 base upgraded mainly for stronger waterproofing and slightly better basic service layouts.",
-    sourceNote: "Taken from the LS-2 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "PPC to IS 1489 — Chettinad / Zuari / Dalmia band" },
       { label: "Steel", value: "ARS / iSTEEL / Suryadev / Tirumala / Pulkit" },
@@ -84,7 +81,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Quality-Checked Structure Package",
     rate: "₹2,099 / sq.ft.",
     summary: "Adds stronger structure-checking discipline with test-certificate-backed material selection and better records.",
-    sourceNote: "Taken from the LS-3 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "PPC to IS 1489 — Dalmia / Chettinad / Zuari / Ramco band" },
       { label: "Steel", value: "ARS / iSTEEL / Suryadev / Tirumala / Pulkit with material test certificates as selected" },
@@ -104,7 +100,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Long Warranty Structure Package",
     rate: "₹2,249 / sq.ft.",
     summary: "Moves into longer structural assurance with ready-mix concrete, stronger records, and better finish-grade hardware choices.",
-    sourceNote: "Taken from the LS-4 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "PPC to IS 1489 — Ramco / Dalmia / UltraTech / Chettinad band" },
       { label: "Binder selection", value: "Selected per element and approved mix design; no substitution where approved binder and additive are nominated" },
@@ -125,7 +120,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Ready-Mix Quality Package",
     rate: "₹2,399 / sq.ft.",
     summary: "Brings in ready-mix quality discipline, stronger approved-binder control, and better finish-level brands and records.",
-    sourceNote: "Taken from the LS-5 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "Approved PPC / structural binder — Ramco / Dalmia / UltraTech" },
       { label: "Binder selection", value: "Binder per element to approved mix design" },
@@ -146,7 +140,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Full Engineering Package",
     rate: "₹2,549 / sq.ft.",
     summary: "Adds the full engineering-file level, stronger exposure-based material selection, and more premium finish infrastructure.",
-    sourceNote: "Taken from the LS-6 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "Application-specific PPC or OPC — UltraTech / Ramco / Dalmia" },
       { label: "Binder selection", value: "Binder selected to approved mix design and exposure requirements" },
@@ -167,7 +160,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Premium Strength Package",
     rate: "₹2,799 / sq.ft.",
     summary: "Higher-strength design logic with better exposed-site protection, stronger waterproofing, and richer finish brands.",
-    sourceNote: "Taken from the LS-7 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "Performance-selected binder — UltraTech / Ramco / Dalmia" },
       { label: "Steel", value: "ARS / iSTEEL / SAIL / JSW / Tata; CRS on design-and-exposure basis where needed" },
@@ -187,7 +179,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Coastal Protection Package",
     rate: "₹3,099 / sq.ft.",
     summary: "Specially tuned for coastal or harsh exposure sites with stronger durability-focused material selection and protection systems.",
-    sourceNote: "Taken from the LS-8 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "Exposure-designed blended cement / binder with mineral additions — UltraTech / Ramco / Dalmia" },
       { label: "Steel", value: "ARS CRS / Suryadev CRS primary with approved alternative corrosion-resistant steel where permitted" },
@@ -207,7 +198,6 @@ const brandSchedulePackages: BrandSchedulePackage[] = [
     name: "Top Premium Life Package",
     rate: "₹3,449 / sq.ft.",
     summary: "Top-end long-life package with modular protection planning, premium hardware, and the strongest durability-oriented schedule.",
-    sourceNote: "Taken from the LS-9 v8 Brand Schedule sheet.",
     rows: [
       { label: "Cement", value: "Durability-designed binder system — UltraTech / Dalmia / Ramco" },
       { label: "Steel", value: "ARS CRS primary / Suryadev CRS approved alternative" },
@@ -237,10 +227,10 @@ export default function BrandSchedulePage() {
                   <span className="label-sm">Brand Schedule</span>
                 </div>
                 <h1 className="display-lg" style={{ color: "var(--warm-white)", marginBottom: "1rem" }}>
-                  Exact Package Brand Details From The v8 Sheets.
+                  Exact Package Brand Details For All 9 Levels.
                 </h1>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.85, color: "var(--concrete)", maxWidth: "820px" }}>
-                  This page turns the v8 PDF brand schedule pages into simple website cards so you can understand what each package is really made of — steel, cement, waterproofing, electricals, plumbing, windows, hardware, and finish-grade choices.
+                  This page turns the brand schedule into simple website cards so you can understand what each package is really made of — steel, cement, waterproofing, electricals, plumbing, windows, hardware, and finish-grade choices.
                 </p>
                 <div className="packages-hero-ctas" style={{ display: "flex", gap: "0.9rem", flexWrap: "wrap", marginTop: "1.4rem" }}>
                   <Link href="/packages#package-ladder" className="btn-primary">
@@ -257,7 +247,7 @@ export default function BrandSchedulePage() {
               <div className="packages-hero-summary" style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.35rem" }}>
                 <div style={{ display: "grid", gap: "0.8rem" }}>
                   {[
-                    "Built from the v8 package brand-schedule sheets.",
+                    "Shows package-wise brand and material details in one place.",
                     "Shown package-by-package instead of hiding details inside one big table.",
                     "Useful when customers want to understand what each package really means.",
                     "Best read after the Package Ladder if you want deeper material detail.",
@@ -302,7 +292,6 @@ export default function BrandSchedulePage() {
                       </div>
                     </div>
                     <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.7, color: "var(--concrete)", marginBottom: "0.75rem" }}>{pkg.summary}</p>
-                    <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", lineHeight: 1.6, color: "var(--accent)" }}>{pkg.sourceNote}</p>
                   </div>
 
                   <div className="package-card-meta" style={{ padding: "1.1rem 1.35rem 1.35rem", display: "grid", gap: "0.85rem" }}>
