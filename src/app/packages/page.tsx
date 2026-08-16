@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 import { ArrowUpRight, Check, Layers3, ShieldCheck } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -50,6 +51,11 @@ type MatrixRow = {
   values: string[];
 };
 
+type ComparisonSection = {
+  title: string;
+  rows: MatrixRow[];
+};
+
 type ScopeCostRow = {
   item: string;
   specification: string;
@@ -57,19 +63,19 @@ type ScopeCostRow = {
 };
 
 const packageHeaders = [
-  "LS-1 ₹1,899",
-  "LS-2 ₹1,999",
-  "LS-3 ₹2,099",
-  "LS-4 ₹2,249",
-  "LS-5 ₹2,399",
-  "LS-6 ₹2,549",
-  "LS-7 ₹2,799",
-  "LS-8 ₹3,099",
-  "LS-9 ₹3,449",
+  "₹1,899 / sq.ft.",
+  "₹1,999 / sq.ft.",
+  "₹2,099 / sq.ft.",
+  "₹2,249 / sq.ft.",
+  "₹2,399 / sq.ft.",
+  "₹2,549 / sq.ft.",
+  "₹2,799 / sq.ft.",
+  "₹3,099 / sq.ft.",
+  "₹3,449 / sq.ft.",
 ];
 
 const jumpLinks = [
-  { id: "brand-progress", label: "Brands & Specs" },
+  { id: "brand-progress", label: "Full Comparison" },
   { id: "package-ladder", label: "Package Ladder" },
   { id: "quick-compare", label: "Quick Compare" },
   { id: "technical-compare", label: "Technical Details" },
@@ -501,6 +507,64 @@ const brandRows: MatrixRow[] = [
   },
 ];
 
+const packageOverviewRows: MatrixRow[] = [
+  {
+    label: "Package name",
+    values: packageLevels.map((pkg) => pkg.name),
+  },
+  {
+    label: "Core package promise",
+    values: packageLevels.map((pkg) => pkg.subtitle),
+  },
+  ...quickCompareRows,
+];
+
+const packageHighlightRows: MatrixRow[] = [
+  {
+    label: "Key inclusion 1",
+    values: packageLevels.map((pkg) => pkg.highlights[0] ?? "—"),
+  },
+  {
+    label: "Key inclusion 2",
+    values: packageLevels.map((pkg) => pkg.highlights[1] ?? "—"),
+  },
+  {
+    label: "Key inclusion 3",
+    values: packageLevels.map((pkg) => pkg.highlights[2] ?? "—"),
+  },
+  {
+    label: "Key inclusion 4",
+    values: packageLevels.map((pkg) => pkg.highlights[3] ?? "—"),
+  },
+  {
+    label: "Key inclusion 5",
+    values: packageLevels.map((pkg) => pkg.highlights[4] ?? "—"),
+  },
+];
+
+const masterComparisonSections: ComparisonSection[] = [
+  {
+    title: "Package overview",
+    rows: packageOverviewRows,
+  },
+  {
+    title: "Brands, services, and allowance progression",
+    rows: brandRows,
+  },
+  {
+    title: "Execution quality, allowances, and service stack",
+    rows: technicalRows,
+  },
+  {
+    title: "Engineering, durability, and waterproofing progression",
+    rows: engineeringRows,
+  },
+  {
+    title: "Key inclusions from each package sheet",
+    rows: packageHighlightRows,
+  },
+];
+
 const scopeBaseRows = [
   "Architectural and structural design",
   "Excavation, foundation and RCC structure",
@@ -727,6 +791,63 @@ function ComparisonTable({ title, description, rows }: { title: string; descript
   );
 }
 
+function MasterComparisonTable({ title, description, sections }: { title: string; description: string; sections: ComparisonSection[] }) {
+  return (
+    <section style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
+      <div style={{ padding: "1.5rem", borderBottom: "1px solid var(--border-warm)" }}>
+        <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.5rem" }}>
+          {title}
+        </h3>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "900px" }}>
+          {description}
+        </p>
+      </div>
+      <div style={{ overflowX: "auto" }}>
+        <table style={{ width: "100%", minWidth: "1320px", borderCollapse: "collapse" }}>
+          <thead>
+            <tr style={{ backgroundColor: "var(--charcoal)" }}>
+              <th style={{ textAlign: "left", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.75rem", letterSpacing: "0.16em", textTransform: "uppercase", minWidth: "240px" }}>
+                Specification
+              </th>
+              {packageHeaders.map((header) => (
+                <th key={header} style={{ textAlign: "left", verticalAlign: "top", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--warm-white)", fontFamily: "var(--font-display)", fontSize: "0.78rem", lineHeight: 1.35, minWidth: "170px" }}>
+                  <span style={{ display: "block", color: "var(--accent)", fontSize: "0.62rem", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "0.25rem" }}>
+                    Price
+                  </span>
+                  <span>{header}</span>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {sections.map((section, sectionIndex) => (
+              <Fragment key={section.title}>
+                <tr style={{ backgroundColor: "rgba(193,154,107,0.12)" }}>
+                  <td colSpan={packageHeaders.length + 1} style={{ padding: "0.9rem 1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.76rem", letterSpacing: "0.18em", textTransform: "uppercase" }}>
+                    {section.title}
+                  </td>
+                </tr>
+                {section.rows.map((row, rowIndex) => (
+                  <tr key={`${section.title}-${row.label}`} style={{ backgroundColor: (sectionIndex + rowIndex) % 2 === 0 ? "transparent" : "rgba(245,241,234,0.02)" }}>
+                    <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--warm-white)", fontFamily: "var(--font-display)", fontSize: "0.78rem", letterSpacing: "0.04em", textTransform: "uppercase", minWidth: "240px" }}>
+                      {row.label}
+                    </td>
+                    {row.values.map((value, index) => (
+                      <td key={`${section.title}-${row.label}-${index}`} style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--concrete)", fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.6, verticalAlign: "top", minWidth: "170px" }}>
+                        {value}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </Fragment>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 function ScopeCostTable({ title, description, rows }: { title: string; description: string; rows: ScopeCostRow[] }) {
   return (
     <section style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)" }}>
@@ -791,7 +912,7 @@ export default function PackagesPage() {
                   This packages page is rebuilt as a true comparison surface: nine package levels, readable inclusions, row-by-row technical differences, and structured text that makes the package details easy to compare directly on the website.
                 </p>
                 <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-                  <Link href="#package-ladder" className="btn-primary">
+                  <Link href="#brand-progress" className="btn-primary">
                     <span>Compare Packages</span>
                     <ArrowUpRight size={14} strokeWidth={2.5} style={{ position: "relative", zIndex: 1 }} />
                   </Link>
@@ -854,19 +975,19 @@ export default function PackagesPage() {
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
                 <div className="accent-bar" style={{ margin: 0 }} />
-                <span className="label-sm">Brands & Specification Progression</span>
+                <span className="label-sm">Full 9-Package Comparison</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                What Each Package Gives For The Price — First, In One Detailed Table.
+                All 9 Packages Compared In One Table — With Price-Led Columns.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                This top comparison table is based on the package-detail summary pages so a customer can immediately compare what changes across the package ladder before reading the rest of the page. Brand progression, system stack, and allowance progression are all visible here first.
+                This is now the main decision surface for the page: one large comparison table where customers can read all nine packages side by side by price, package promise, warranty, reporting, brands, systems, allowances, engineering progression, and the key inclusions from each package sheet.
               </p>
             </div>
-            <ComparisonTable
-              title="Package details summary — brand and system progression"
-              description="This is the first decision surface on the page: compare the last-page package details across all nine package levels before moving into individual cards, technical scope, or additional works."
-              rows={brandRows}
+            <MasterComparisonTable
+              title="Master package comparison — all 9 packages"
+              description="Each package column is price-led for faster scanning. The rows group the package story from top to bottom so a visitor can compare what changes across all nine packages without jumping between multiple separate package tables first."
+              sections={masterComparisonSections}
             />
           </div>
         </section>
