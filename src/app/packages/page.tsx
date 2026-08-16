@@ -69,10 +69,10 @@ const packageHeaders = [
 ];
 
 const jumpLinks = [
+  { id: "brand-progress", label: "Brands & Specs" },
   { id: "package-ladder", label: "Package Ladder" },
   { id: "quick-compare", label: "Quick Compare" },
   { id: "technical-compare", label: "Technical Details" },
-  { id: "brand-progress", label: "Brands & Specs" },
   { id: "scope-boundary", label: "Scope Boundary" },
   { id: "additional-works", label: "Additional Works" },
   { id: "delivery-compare", label: "Docs & Handover" },
@@ -849,7 +849,29 @@ export default function PackagesPage() {
           </div>
         </section>
 
-        <section id="package-ladder" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
+        <section id="brand-progress" className="section-py" style={{ backgroundColor: "var(--charcoal)" }}>
+          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+                <div className="accent-bar" style={{ margin: 0 }} />
+                <span className="label-sm">Brands & Specification Progression</span>
+              </div>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
+                What Each Package Gives For The Price — First, In One Detailed Table.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
+                This top comparison table is based on the package-detail summary pages so a customer can immediately compare what changes across the package ladder before reading the rest of the page. Brand progression, system stack, and allowance progression are all visible here first.
+              </p>
+            </div>
+            <ComparisonTable
+              title="Package details summary — brand and system progression"
+              description="This is the first decision surface on the page: compare the last-page package details across all nine package levels before moving into individual cards, technical scope, or additional works."
+              rows={brandRows}
+            />
+          </div>
+        </section>
+
+        <section id="package-ladder" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
           <div className="container-lokra">
             <div style={{ marginBottom: "2.5rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
@@ -860,13 +882,13 @@ export default function PackagesPage() {
                 Nine Package Levels, Laid Out As Real Comparison Cards.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "860px" }}>
-                Instead of forcing visitors to read slide images, each package below shows the level, rate, core promise, fit, warranty position, and major inclusions directly in text.
+                After the top comparison table, each package card below gives a cleaner package-by-package read of the level, rate, warranty, reporting, handover, and major inclusions directly in text.
               </p>
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: "1.25rem" }}>
               {packageLevels.map((pkg) => (
-                <article key={pkg.id} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", display: "flex", flexDirection: "column" }}>
+                <article key={pkg.id} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", display: "flex", flexDirection: "column" }}>
                   <div style={{ padding: "1.35rem 1.35rem 1rem", borderBottom: "1px solid var(--border-warm)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", gap: "1rem", alignItems: "flex-start" }}>
                       <div>
@@ -888,7 +910,6 @@ export default function PackagesPage() {
 
                   <div style={{ padding: "1.1rem 1.35rem", display: "grid", gap: "0.85rem", borderBottom: "1px solid var(--border-warm)" }}>
                     {[
-                      ["Best for", pkg.bestFor],
                       ["Structural warranty", pkg.warranty],
                       ["Reporting", pkg.reporting],
                       ["Handover", pkg.handover],
@@ -915,7 +936,7 @@ export default function PackagesPage() {
           </div>
         </section>
 
-        <section id="quick-compare" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
+        <section id="quick-compare" className="section-py" style={{ backgroundColor: "var(--charcoal)", borderTop: "1px solid var(--border-warm)" }}>
           <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
             <div>
               <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
@@ -960,28 +981,6 @@ export default function PackagesPage() {
               title="Engineering progression"
               description="This table focuses on the structural and engineering progression across the package ladder: concrete control, documentation depth, below-ground strategy, and terrace waterproofing maturity."
               rows={engineeringRows}
-            />
-          </div>
-        </section>
-
-        <section id="brand-progress" className="section-py" style={{ backgroundColor: "var(--carbon)", borderTop: "1px solid var(--border-warm)" }}>
-          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
-                <div className="accent-bar" style={{ margin: 0 }} />
-                <span className="label-sm">Brands & Specification Progression</span>
-              </div>
-              <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                Brand Progression, Service Progression, And Allowance Progression — In One View.
-              </h2>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "920px" }}>
-                This is the missing density layer: how the package ladder changes by reinforcement set, electrical stack, plumbing quality, sanitaryware band, and finish allowance. It makes the upgrade logic much more explicit instead of hiding it inside short bullets.
-              </p>
-            </div>
-            <ComparisonTable
-              title="Brand and system progression"
-              description="Use this table to compare how the package ladder changes by material family, service stack, and allowance band — especially if you want a clearer view of where premium package pricing starts to show up in real specifications."
-              rows={brandRows}
             />
           </div>
         </section>
