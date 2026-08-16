@@ -8,14 +8,14 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Construction Packages — Lokra Infra | Detailed Package Comparison Chennai",
   description:
-    "Compare Lokra Infra construction packages in text-first detail — Material-Contract Entry, Enhanced Envelope, Verified Structural, Assured Structural, Engineered Essential, Engineered Standard, High-Performance, Coastal Durability, and Extended-Life Signature.",
+    "Compare Lokra Infra construction packages in simple, easy-to-understand English for Chennai and Tamil Nadu homeowners.",
   alternates: {
     canonical: "/packages",
   },
   openGraph: {
     title: "Lokra Infra Construction Packages — Detailed Comparison",
     description:
-      "A text-first Lokra Infra packages comparison page with package ladder, detailed inclusions, and row-by-row package comparison tables.",
+      "An easy-to-understand Lokra Infra packages page with simple package details and side-by-side comparison tables.",
     url: "https://www.lokrainfra.in/packages",
     type: "website",
     siteName: "Lokra Infra",
@@ -89,9 +89,9 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-1",
     level: "LS-1",
-    name: "Material-Contract Entry",
+    name: "Basic Build Package",
     rate: "₹1,899 / sq.ft.",
-    subtitle: "Full structural engineering at an economical named-brand specification.",
+    subtitle: "A budget-friendly package with branded materials and proper structural design.",
     bestFor: "Firm inland plots and first-time builders who want full engineering discipline at the most economical package level.",
     warranty: "2 years",
     reporting: "On request",
@@ -108,9 +108,9 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-2",
     level: "LS-2",
-    name: "Enhanced Envelope",
+    name: "Better Waterproofing Package",
     rate: "₹1,999 / sq.ft.",
-    subtitle: "Moisture protection below ground, on the terrace and through the external walls.",
+    subtitle: "Adds better protection against water problems in the foundation, terrace, and outer walls.",
     bestFor: "Inland plots where terrace, external wall, and below-ground moisture control are key upgrade priorities.",
     warranty: "5 years",
     reporting: "On request",
@@ -127,16 +127,16 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-3",
     level: "LS-3",
-    name: "Verified Structural",
+    name: "Quality-Checked Structure Package",
     rate: "₹2,099 / sq.ft.",
-    subtitle: "Documented laboratory concrete testing under an approved QA plan.",
+    subtitle: "Includes lab-tested concrete quality checks and proper records.",
     bestFor: "Owners who want documented concrete quality control and laboratory certificates before moving higher into long-warranty packages.",
     warranty: "10 years",
     reporting: "Fortnightly with photos",
     handover: "Same + stage records",
     retention: "— / 6 months",
     highlights: [
-      "Laboratory cube testing at scheduled structural pours under the approved QA plan, with certificates issued",
+      "Concrete cube testing at important stages, with lab certificates",
       "Continuous lintel band to all walls; pre-construction anti-termite treatment",
       "Two-coat below-ground bituminous protection before backfilling",
       "Teak main door allowance ₹38,000; AC point in bedrooms",
@@ -146,9 +146,9 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-4",
     level: "LS-4",
-    name: "Assured Structural",
+    name: "Long Warranty Structure Package",
     rate: "₹2,249 / sq.ft.",
-    subtitle: "Fifteen years of structural warranty, backed by retention and traceability.",
+    subtitle: "Gives a 15-year structural warranty with stronger tracking and retention support.",
     bestFor: "Owners seeking long structural warranty backed by retention and traceability without stepping into full engineering dossier territory.",
     warranty: "15 years",
     reporting: "Fortnightly with photos",
@@ -157,7 +157,7 @@ const packageLevels: PackageLevel[] = [
     highlights: [
       "15-year structural warranty on footing, column, beams and roof slab",
       "₹25 / sq.ft. of chargeable built-up area retained for 12 months from handover",
-      "Documented reinforcement traceability and stronger masonry/spec progression",
+      "Better tracking of steel materials and stronger wall specifications",
       "Monolithic RCC staircase with granite ₹130 / sq.ft.",
       "Flooring ₹80 / sq.ft.; sanitaryware ₹28,000 per bathroom",
     ],
@@ -165,9 +165,9 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-5",
     level: "LS-5",
-    name: "Engineered Essential",
+    name: "Ready-Mix Quality Package",
     rate: "₹2,399 / sq.ft.",
-    subtitle: "Controlled ready-mix structural concrete with documented concrete QA.",
+    subtitle: "Uses ready-mix concrete with better quality control and records.",
     bestFor: "Projects wanting batch-plant concrete control and a stronger QA backbone with more formal monthly reporting.",
     warranty: "15 years",
     reporting: "Monthly written report",
@@ -184,9 +184,9 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-6",
     level: "LS-6",
-    name: "Engineered Standard",
+    name: "Full Engineering Package",
     rate: "₹2,549 / sq.ft.",
-    subtitle: "The full engineering dossier — calculations, geotechnical report and QA records.",
+    subtitle: "Includes the full engineering file with calculations, soil report, and quality records.",
     bestFor: "Owners who want the full engineering dossier in hand: geotechnical investigation, calculations, and more complete QA reporting.",
     warranty: "15 years",
     reporting: "Monthly written report",
@@ -194,18 +194,18 @@ const packageLevels: PackageLevel[] = [
     retention: "₹25 / 12 months",
     highlights: [
       "Signed structural calculation report issued to you",
-      "Formal geotechnical investigation with bore log, SPT, laboratory results and SBC",
+      "Proper soil test report with bore log, lab results, and safe bearing capacity",
       "Membrane terrace waterproofing with 10-year system warranty",
-      "Glass-fibre mesh crack control; EV charging point; RCCB on all power circuits",
+      "Crack-control mesh, EV charging point, and safety trip protection on all power circuits",
       "Flooring ₹110 / sq.ft.; sanitaryware ₹40,000 per bathroom",
     ],
   },
   {
     id: "ls-7",
     level: "LS-7",
-    name: "High-Performance",
+    name: "Premium Strength Package",
     rate: "₹2,799 / sq.ft.",
-    subtitle: "Low-permeability durability design with the analysis model handed to you.",
+    subtitle: "Built for better long-term strength, with advanced design records handed over to you.",
     bestFor: "Larger homes wanting durability-designed concrete, stronger systems integration, and the structural analysis model in hand.",
     warranty: "15 years",
     reporting: "Monthly report and review",
@@ -215,16 +215,16 @@ const packageLevels: PackageLevel[] = [
       "Low-permeability concrete with controlled water-cement ratio and ready-mix throughout",
       "Structural analysis model file issued to you",
       "Performance-based below-grade protection with joint and penetration detailing",
-      "FR-LSH wiring, RCBO protection, CCTV conduit, LAN and video door phone",
+      "Safer wiring, advanced circuit protection, CCTV conduit, LAN points, and video door phone",
       "Flooring ₹135 / sq.ft.; sanitaryware ₹50,000 per bathroom",
     ],
   },
   {
     id: "ls-8",
     level: "LS-8",
-    name: "Coastal Durability",
+    name: "Coastal Protection Package",
     rate: "₹3,099 / sq.ft.",
-    subtitle: "Exposure-designed durability where chloride, groundwater, or coastal conditions warrant it.",
+    subtitle: "Made for coastal or difficult sites where salt, groundwater, or exposure is a concern.",
     bestFor: "Chloride-exposed or groundwater-risk sites where durability design and exposure-specific protection become essential, not optional.",
     warranty: "15 years",
     reporting: "Fortnightly report and review",
@@ -241,9 +241,9 @@ const packageLevels: PackageLevel[] = [
   {
     id: "ls-9",
     level: "LS-9",
-    name: "Extended-Life Signature",
+    name: "Top Premium Life Package",
     rate: "₹3,449 / sq.ft.",
-    subtitle: "An integrated extended-life durability system with a dedicated site engineer.",
+    subtitle: "Our top package with advanced durability planning and a dedicated site engineer.",
     bestFor: "Maximum design-life intent on high-exposure sites where durability, traceability, and execution oversight all need to be elevated together.",
     warranty: "20 years",
     reporting: "Dedicated site engineer",
@@ -360,24 +360,24 @@ const technicalRows: MatrixRow[] = [
     ],
   },
   {
-    label: "Testing and QA",
+    label: "Testing and quality checks",
     values: [
-      "Standard site QA + engineer-directed concrete testing",
-      "Standard QA + enhanced waterproofing inspection",
-      "Laboratory concrete testing programme + certificates",
-      "Laboratory testing + stronger traceability",
-      "RMC batch records + documented QA",
-      "Engineering dossier + formal testing programme",
-      "Performance concrete QA; NDT where indicated",
-      "Durability and exposure QA; permeability focus",
-      "Durability + exposure QA; permeability and chloride focus",
+      "Regular site checks + engineer-led concrete testing",
+      "Regular checks + better waterproofing inspection",
+      "Concrete testing plan + lab certificates",
+      "Lab testing + stronger material tracking",
+      "Ready-mix batch records + quality records",
+      "Engineering file + planned testing records",
+      "Performance concrete checks; extra tests if needed",
+      "Durability checks with focus on water resistance",
+      "Durability checks with focus on water and salt resistance",
     ],
   },
 ];
 
 const engineeringRows: MatrixRow[] = [
   {
-    label: "Concrete control progression",
+    label: "Concrete quality level",
     values: [
       "Site design mix, weigh-batched",
       "Site design mix, weigh-batched",
@@ -450,7 +450,7 @@ const engineeringRows: MatrixRow[] = [
 
 const brandRows: MatrixRow[] = [
   {
-    label: "Reinforcement brand progression",
+    label: "Steel brand level",
     values: [
       "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit",
       "ARS / iSTEEL / Vikil / Suryadev / Tirumala / Pulkit",
@@ -464,7 +464,7 @@ const brandRows: MatrixRow[] = [
     ],
   },
   {
-    label: "Electrical stack progression",
+    label: "Electrical level",
     values: [
       "ISI copper, MCB",
       "FR modular",
@@ -478,7 +478,7 @@ const brandRows: MatrixRow[] = [
     ],
   },
   {
-    label: "Plumbing / sanitary progression",
+    label: "Plumbing and bathroom level",
     values: [
       "CPVC SDR11 / SWR inspection caps / ₹16k sanitaryware",
       "Approved brand / ₹19k sanitaryware",
@@ -492,7 +492,7 @@ const brandRows: MatrixRow[] = [
     ],
   },
   {
-    label: "Finish allowance progression",
+    label: "Flooring budget level",
     values: [
       "₹55 flooring",
       "₹60 flooring",
@@ -544,23 +544,23 @@ const packageHighlightRows: MatrixRow[] = [
 
 const masterComparisonSections: ComparisonSection[] = [
   {
-    title: "Package overview",
+    title: "Basic package details",
     rows: packageOverviewRows,
   },
   {
-    title: "Brands, services, and allowance progression",
+    title: "Material brands and finish levels",
     rows: brandRows,
   },
   {
-    title: "Execution quality, allowances, and service stack",
+    title: "Work quality and finish allowances",
     rows: technicalRows,
   },
   {
-    title: "Engineering, durability, and waterproofing progression",
+    title: "Engineering and waterproofing level",
     rows: engineeringRows,
   },
   {
-    title: "Key inclusions from each package sheet",
+    title: "Main things included in each package",
     rows: packageHighlightRows,
   },
 ];
@@ -628,7 +628,7 @@ const separatelyPricedSiteRows: ScopeCostRow[] = [
   { item: "SS or designer gate, 15 ft", specification: "—", rate: "₹60,000–₹99,000" },
   { item: "External paving and driveway", specification: "Per sq.ft", rate: "₹120–₹280" },
   { item: "Lift shaft and site infrastructure where a lift is part of the design", specification: "Quoted on the lift specification", rate: "Quoted on the lift specification" },
-  { item: "Piling / raft / ground improvement", specification: "Assessed against geotechnical report", rate: "Quoted after investigation" },
+  { item: "Piling / raft / ground improvement", specification: "Assessed after checking the soil report", rate: "Quoted after investigation" },
   { item: "Rock excavation, soil replacement, dewatering", specification: "Beyond normal excavation", rate: "Measured and quoted" },
   { item: "Excess excavation and imported filling soil", specification: "Beyond standard excavation and filling assumption", rate: "Measured and quoted" },
   { item: "Road cutting and restoration", specification: "Authority permission and reinstatement", rate: "At authority rates plus works" },
@@ -648,7 +648,7 @@ const separatelyPricedAccessRows: ScopeCostRow[] = [
 const documentationRows = [
   "Approved architectural and structural drawings",
   "Material and brand approvals against the agreement",
-  "Stage photographs at hold points",
+  "Stage photographs at important check points",
   "Concrete pour and curing records",
   "Cube test results",
   "Plumbing pressure and electrical test records",
@@ -661,10 +661,10 @@ const higherLevelDocRows = [
   "Laboratory test certificates issued — LS-3 upward",
   "Digital project file — LS-5 upward",
   "Signed structural calculation report — LS-6 upward",
-  "Geotechnical investigation report — LS-6 upward",
+  "Soil test report — LS-6 upward",
   "Structural analysis model file — LS-7 upward",
   "Durability records and exposure design basis — LS-8 upward",
-  "Comprehensive dossier and maintenance schedule — LS-9",
+  "Full final file and maintenance schedule — LS-9",
 ];
 
 const holdPointGroups = [
@@ -706,30 +706,30 @@ const holdPointGroups = [
 
 const handoverRows = [
   "Joint pre-handover inspection covering cracks, tile hollowness, alignment, doors, windows and locks, plumbing leakage and drainage, sanitary fixtures, electrical points and DB, paint, railings, façade and external drainage",
-  "Written snag list issued to you, with an agreed rectification programme",
+  "A written list of pending fixes given to you, with an agreed correction plan",
   "Rectification and joint re-inspection until the list is closed",
   "System testing and commissioning — electrical circuits, water supply, drainage and fixtures",
   "Full final cleaning of the house and the site",
   "Client walkthrough with demonstration of services, valves, DB and maintenance points",
-  "Handover of keys, drawings, test records, warranties and the project dossier",
+  "Handover of keys, drawings, test records, warranties, and the full project file",
 ];
 
 const faqs = [
   {
-    q: "How should I compare Lokra Infra packages?",
-    a: "Start with the package ladder to narrow the right budget band, then use the quick-compare and technical tables to compare warranty, reporting, sanitary allowances, waterproofing, QA depth, and best-fit use case.",
+    q: "How should I choose the right Lokra package?",
+    a: "First check the package price range. Then compare warranty, reports, waterproofing, bathroom budget, flooring budget, and quality checks to choose the right package.",
   },
   {
-    q: "Does this page use the package details from the PDF in text form?",
-    a: "Yes. This page is rebuilt as a text-first comparison surface so the package details are readable directly on the website instead of being shown mainly as slide images.",
+    q: "Are these package details taken from the PDF?",
+    a: "Yes. The package details from the PDF have been converted into readable website text and comparison tables.",
   },
   {
-    q: "Which packages are better for inland sites versus groundwater or coastal exposure?",
-    a: "The earlier levels suit standard inland plots, while the higher durability levels are designed for stronger groundwater, chloride, coastal, or long-life design requirements. The technical compare tables above make that progression easier to read.",
+    q: "Which package is better for a normal site and which is better for a coastal or difficult site?",
+    a: "The lower and middle packages suit normal inland plots. The higher packages are better for coastal areas, groundwater issues, or long-life durability needs.",
   },
   {
-    q: "Can I talk to Lokra Infra before selecting a package?",
-    a: "Yes. Share your plot location, site context, and target budget through the contact form, and Lokra Infra can help shortlist the right package level before finalizing scope.",
+    q: "Can I speak to Lokra Infra before choosing a package?",
+    a: "Yes. Share your plot location and budget through the contact form, and Lokra Infra can help you choose the right package before finalising the work.",
   },
 ];
 
@@ -906,10 +906,10 @@ export default function PackagesPage() {
             <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1.15fr) minmax(280px,0.85fr)", gap: "clamp(2rem, 5vw, 4rem)", alignItems: "end" }}>
               <div>
                 <h1 className="display-lg" style={{ color: "var(--warm-white)", maxWidth: "920px", marginBottom: "1.25rem" }}>
-                  Text-First Construction Package Comparison, Built For Clear Decision-Making.
+                  Simple Construction Package Comparison For Easy Decision-Making.
                 </h1>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.95rem,1.15vw,1.05rem)", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "760px", marginBottom: "1.75rem" }}>
-                  This packages page is rebuilt as a true comparison surface: nine package levels, readable inclusions, row-by-row technical differences, and structured text that makes the package details easy to compare directly on the website.
+                  This page helps you compare all 9 packages in simple English. You can quickly see the price, key materials, warranty, and what is included in each package.
                 </p>
                 <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                   <Link href="#brand-progress" className="btn-primary">
@@ -926,7 +926,7 @@ export default function PackagesPage() {
                   {[
                     { icon: Layers3, label: "Levels", value: "9 package levels" },
                     { icon: ShieldCheck, label: "Rate Range", value: "₹1,899 to ₹3,449 / sq.ft." },
-                    { icon: Check, label: "Format", value: "Cards + tables + FAQ, optimized for easier comparison" },
+                    { icon: Check, label: "Format", value: "Easy comparison tables, cards, and FAQs" },
                   ].map((item) => (
                     <div key={item.label} style={{ display: "grid", gridTemplateColumns: "42px 1fr", gap: "0.9rem", alignItems: "start" }}>
                       <div style={{ width: 42, height: 42, border: "1px solid var(--border-warm)", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -978,15 +978,15 @@ export default function PackagesPage() {
                 <span className="label-sm">Full 9-Package Comparison</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                All 9 Packages Compared In One Table — With Price-Led Columns.
+                Compare All 9 Packages In One Easy Table.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                This is now the main decision surface for the page: one large comparison table where customers can read all nine packages side by side by price, package promise, warranty, reporting, brands, systems, allowances, engineering progression, and the key inclusions from each package sheet.
+                This main table lets you compare all 9 packages side by side by price, warranty, materials, finishes, and important features.
               </p>
             </div>
             <MasterComparisonTable
-              title="Master package comparison — all 9 packages"
-              description="Each package column is price-led for faster scanning. The rows group the package story from top to bottom so a visitor can compare what changes across all nine packages without jumping between multiple separate package tables first."
+              title="Main package comparison table"
+              description="Each column starts with the package price, so it is easier to scan. The rows below show what changes from one package to the next."
               sections={masterComparisonSections}
             />
           </div>
@@ -1000,10 +1000,10 @@ export default function PackagesPage() {
                 <span className="label-sm">Package Ladder</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                Nine Package Levels, Laid Out As Real Comparison Cards.
+                All 9 Packages Shown As Simple Cards.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "860px" }}>
-                After the top comparison table, each package card below gives a cleaner package-by-package read of the level, rate, warranty, reporting, handover, and major inclusions directly in text.
+                After the main table, these cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions.
               </p>
             </div>
 
@@ -1065,15 +1065,15 @@ export default function PackagesPage() {
                 <span className="label-sm">Quick Compare</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                Start With Warranty, Reporting, And Handover Differences.
+                Start With The Main Differences.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "900px" }}>
-                If a visitor needs a faster decision path, these rows usually separate the package levels first: warranty depth, reporting discipline, handover documentation, and retention / defect liability structure.
+                If you want a quick summary first, check these points: warranty, reporting, handover documents, and defect period.
               </p>
             </div>
             <ComparisonTable
-              title="Package decision basics"
-              description="This first table makes the most decision-critical differences scannable without digging through every package detail card individually."
+              title="Quick package summary"
+              description="This table shows the main differences without making you read every package card first."
               rows={quickCompareRows}
             />
           </div>
@@ -1087,20 +1087,20 @@ export default function PackagesPage() {
                 <span className="label-sm">Technical Compare</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                Waterproofing, Allowances, Systems, And QA — In Table Form.
+                Waterproofing, Finish Budget, Systems, And Quality Checks.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "920px" }}>
-                This section turns the key technical differences into readable rows so site owners can compare package progression directly: wet-area protection, flooring and sanitary budgets, electrical stack, plumbing quality, and QA depth.
+                This section shows the practical differences between packages, like waterproofing, flooring budget, bathroom budget, electrical work, plumbing, and quality checks.
               </p>
             </div>
             <ComparisonTable
-              title="Interior systems, allowances, and QA progression"
-              description="Use this table when the comparison is less about headline marketing and more about what changes materially in execution quality, allowances, and validation." 
+              title="Finishes, systems, and quality checks"
+              description="Use this table to see what really changes in the work quality, finish budget, and checking process." 
               rows={technicalRows}
             />
             <ComparisonTable
-              title="Engineering progression"
-              description="This table focuses on the structural and engineering progression across the package ladder: concrete control, documentation depth, below-ground strategy, and terrace waterproofing maturity."
+              title="Engineering level"
+              description="This table shows how the engineering side improves from one package to the next, including concrete quality, documents, foundation protection, and terrace waterproofing."
               rows={engineeringRows}
             />
           </div>
@@ -1114,27 +1114,27 @@ export default function PackagesPage() {
                 <span className="label-sm">Scope Boundary</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                What The Rate Covers, What Is Site-Specific, And What The Client Still Controls.
+                What Is Included, What Depends On The Site, And What The Owner Must Handle.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                The PDF separates base building package scope from statutory or site-specific works and optional client upgrades. This section makes that boundary visible so the package price is not read as an unlimited all-inclusive number.
+                The package price does not include everything. This section clearly shows what is included, what depends on the site, and what will cost extra.
               </p>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
               {[
                 {
-                  title: "A — Base building package",
-                  copy: "Everything priced inside the ₹ / sq.ft. rate.",
+                  title: "A — Included in package price",
+                  copy: "These works are included in the package rate.",
                   items: scopeBaseRows,
                 },
                 {
-                  title: "B — Statutory and site-specific",
-                  copy: "Mandatory or site-driven works typically priced separately.",
+                  title: "B — Site and approval related works",
+                  copy: "These items usually depend on the site or approvals and are usually charged separately.",
                   items: scopeStatutoryRows,
                 },
                 {
-                  title: "C — Optional client upgrades",
-                  copy: "Chosen by you and priced separately when required.",
+                  title: "C — Optional upgrades",
+                  copy: "These are optional upgrades you can add if needed.",
                   items: scopeUpgradeRows,
                 },
               ].map((group) => (
@@ -1153,9 +1153,9 @@ export default function PackagesPage() {
               ))}
             </div>
             <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
-              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>Client scope and approvals</h3>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.45rem" }}>Owner responsibilities and approvals</h3>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--concrete)", marginBottom: "0.9rem", maxWidth: "900px" }}>
-                The PDF also makes it clear that some responsibilities sit with the client or the site context rather than the package rate itself.
+                Some things must be arranged by the owner or depend on the site, not on the package price alone.
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.8rem 1rem" }}>
                 {clientScopeRows.map((item) => (
@@ -1177,25 +1177,25 @@ export default function PackagesPage() {
                 <span className="label-sm">Separately Priced / Additional Works</span>
               </div>
               <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "0.9rem" }}>
-                Additional Works, Statutory Costs, And Site-Condition Add-Ons — With Rate Logic Visible.
+                Extra Works And Extra Costs You Should Know About.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "940px" }}>
-                This section brings in the PDF’s outside-the-rate schedules so visitors can see where separate costs commonly appear: water and sanitation, approvals, utility connections, compound walls, excavation complications, access constraints, demolition, and adjoining-property protection.
+                This section shows the common extra costs outside the package price, like water and drainage works, approvals, EB connection, compound wall, difficult excavation, demolition, and neighbour protection.
               </p>
             </div>
             <ScopeCostTable
-              title="Water, sanitation, statutory and utility works"
-              description="Indicative planning bands and outside-package items extracted from the PDF’s separately priced schedule."
+              title="Water, drainage, approval, and utility works"
+              description="These are common extra-cost items taken from the separately priced list in the PDF."
               rows={separatelyPricedWaterRows}
             />
             <ScopeCostTable
-              title="Boundary, infrastructure and adverse-site-condition add-ons"
-              description="These are typical items that shift the true project cost outside the package rate when the site or design demands them."
+              title="Compound wall, site works, and difficult-site extra costs"
+              description="These are common extra costs when the site or design needs more work than the standard package."
               rows={separatelyPricedSiteRows}
             />
             <ScopeCostTable
-              title="Access, demolition and adjoining-property works"
-              description="These conditions are often invisible in a headline package rate, but they materially change execution cost and risk."
+              title="Access, demolition, and neighbour protection works"
+              description="These items are often not visible in the main package rate, but they can increase cost and site difficulty."
               rows={separatelyPricedAccessRows}
             />
           </div>
@@ -1255,7 +1255,7 @@ export default function PackagesPage() {
               ))}
             </div>
             <div style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.25rem" }}>
-              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Tested, snagged, cleaned, documented — handover flow</h3>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1rem", textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.9rem" }}>Final checks, cleaning, and handover</h3>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.8rem 1rem" }}>
                 {handoverRows.map((item) => (
                   <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
