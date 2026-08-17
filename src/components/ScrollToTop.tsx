@@ -54,7 +54,7 @@ export default function ScrollToTop() {
         padding: 0,
         flexShrink: 0,
         position: "fixed",
-        right: "1.5rem",
+        right: "calc(1.25rem + 2px)",
         bottom: "5.75rem",
         zIndex: 210,
         borderRadius: "50%",
