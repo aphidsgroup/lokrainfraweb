@@ -128,7 +128,7 @@ const packageLevels: PackageLevel[] = [
     subtitle: "A budget-friendly package with branded materials and proper structural design.",
     bestFor: "Firm inland plots and first-time builders who want full engineering discipline at the most economical package level.",
     warranty: "2 years",
-    reporting: "On request",
+    reporting: "Available on request",
     handover: "Drawings, certificate, warranties",
     retention: "— / 6 months",
     highlights: [
@@ -147,8 +147,8 @@ const packageLevels: PackageLevel[] = [
     subtitle: "Adds better protection against water problems in the foundation, terrace, and outer walls.",
     bestFor: "Inland plots where terrace, external wall, and below-ground moisture control are key upgrade priorities.",
     warranty: "5 years",
-    reporting: "On request",
-    handover: "Same",
+    reporting: "Available on request",
+    handover: "Same as LS-1",
     retention: "— / 6 months",
     highlights: [
       "Two-coat below-ground bituminous protection applied before backfilling",
@@ -167,7 +167,7 @@ const packageLevels: PackageLevel[] = [
     bestFor: "Good for owners who want stronger concrete checking before moving to higher packages.",
     warranty: "10 years",
     reporting: "Fortnightly with photos",
-    handover: "Same + stage records",
+    handover: "Same as LS-2 + stage records",
     retention: "— / 6 months",
     highlights: [
       "Concrete cube testing at important stages, with lab certificates",
@@ -186,7 +186,7 @@ const packageLevels: PackageLevel[] = [
     bestFor: "Good for owners who want a longer structural warranty without moving to the full engineering-record package.",
     warranty: "15 years",
     reporting: "Fortnightly with photos",
-    handover: "Same + warranty file",
+    handover: "Same as LS-3 + warranty file",
     retention: "₹25 / sq.ft. / 12 months",
     highlights: [
       "15-year structural warranty on footing, column, beams and roof slab",
@@ -204,8 +204,8 @@ const packageLevels: PackageLevel[] = [
     subtitle: "Uses ready-mix concrete with better quality checking and records.",
     bestFor: "Good for projects that want ready-mix concrete control and proper monthly reporting.",
     warranty: "15 years",
-    reporting: "Monthly written report",
-    handover: "Same + test reports",
+    reporting: "Monthly written update",
+    handover: "Same as LS-4 + test reports",
     retention: "₹25 / 12 months",
     highlights: [
       "ARS / iSTEEL / SAIL / Vizag with steel records",
@@ -223,8 +223,8 @@ const packageLevels: PackageLevel[] = [
     subtitle: "Includes the full engineering file with calculations, soil report, and quality records.",
     bestFor: "Good for owners who want the full engineering file, soil report, calculations, and stronger quality records.",
     warranty: "15 years",
-    reporting: "Monthly written report",
-    handover: "Same + calculation report",
+    reporting: "Monthly written update",
+    handover: "Same as LS-5 + calculation report",
     retention: "₹25 / 12 months",
     highlights: [
       "Signed structural calculation report given to you",
@@ -243,7 +243,7 @@ const packageLevels: PackageLevel[] = [
     bestFor: "Good for larger homes that need better long-term strength and more complete engineering records.",
     warranty: "15 years",
     reporting: "Monthly report and review",
-    handover: "Same + design model file",
+    handover: "Same as LS-6 + design model file",
     retention: "₹25 / 12 months",
     highlights: [
       "High-density concrete with controlled water-cement ratio and ready-mix throughout",
@@ -261,8 +261,8 @@ const packageLevels: PackageLevel[] = [
     subtitle: "Made for coastal or difficult sites where salt air, groundwater, or harsh site conditions are a concern.",
     bestFor: "Good for coastal or groundwater-risk sites where extra durability protection is important.",
     warranty: "15 years",
-    reporting: "Twice-a-month report and review",
-    handover: "Same + durability records",
+    reporting: "Twice-monthly update and review",
+    handover: "Same as LS-7 + durability records",
     retention: "₹25 / 12 months",
     highlights: [
       "CRS / premium steel plan where site exposure needs extra protection",
@@ -301,14 +301,14 @@ const quickCompareRows: MatrixRow[] = [
   {
     label: "Client reporting",
     values: [
-      "On request",
-      "On request",
+      "Available on request",
+      "Available on request",
       "Every 2 weeks with photos",
       "Every 2 weeks with photos",
-      "Monthly written report",
-      "Monthly written report",
+      "Monthly written update",
+      "Monthly written update",
       "Monthly report and review",
-      "Twice-a-month report and review",
+      "Twice-monthly update and review",
       "Dedicated site engineer",
     ],
   },
@@ -316,13 +316,13 @@ const quickCompareRows: MatrixRow[] = [
     label: "Handover documentation",
     values: [
       "Drawings, certificate, warranties",
-      "Same",
-      "Same + stage records",
-      "Same + warranty file",
-      "Same + test reports",
-      "Same + calculation report",
-      "Same + design model file",
-      "Same + durability records",
+      "Same as LS-1",
+      "Same as LS-2 + stage records",
+      "Same as LS-3 + warranty file",
+      "Same as LS-4 + test reports",
+      "Same as LS-5 + calculation report",
+      "Same as LS-6 + design model file",
+      "Same as LS-7 + durability records",
       "Full final file + maintenance schedule",
     ],
   },
@@ -1080,7 +1080,7 @@ export default function PackagesPage() {
                 All 9 Packages Shown As Simple Cards.
               </h2>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "1rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "860px" }}>
-                These cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions before you move into the full comparison table. If you want the exact brand-sheet details behind each package, open the Brand Schedule page from the matching card.
+                These cards give a simple package-by-package summary with price, warranty, reports, handover, and major inclusions before you move into the full comparison table. If you want the exact brand details for each package, open the Brand Schedule page from the matching card.
               </p>
             </div>
 
@@ -1130,7 +1130,7 @@ export default function PackagesPage() {
 
                     <div style={{ paddingTop: "0.25rem" }}>
                       <Link href={`/brand-schedule#${pkg.id}`} className="btn-secondary" style={{ width: "100%", justifyContent: "center" }}>
-                        <span>View Exact Brand Schedule</span>
+                        <span>View Full Brand Details</span>
                         <ArrowUpRight size={13} strokeWidth={2.4} style={{ position: "relative", zIndex: 1 }} />
                       </Link>
                     </div>
