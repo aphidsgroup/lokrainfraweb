@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, DM_Sans } from "next/font/google";
 import ScrollToTop from "@/components/ScrollToTop";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import "./globals.css";
 import "./responsive.css";
 
@@ -118,6 +119,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased overflow-x-hidden">
         {children}
+        <FloatingWhatsAppButton />
         <ScrollToTop />
       </body>
     </html>
