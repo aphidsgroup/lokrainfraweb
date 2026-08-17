@@ -1097,7 +1097,7 @@ export default function PackagesPage() {
                           {pkg.name}
                         </h3>
                       </div>
-                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1.38rem", lineHeight: 1, color: "var(--warm-white)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0, fontWeight: 800, backgroundColor: "rgba(182, 90, 42, 0.2)", border: "1px solid rgba(182, 90, 42, 0.35)", padding: "0.55rem 0.8rem", borderRadius: "999px", boxShadow: "0 10px 24px rgba(0,0,0,0.18)" }}>
+                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", lineHeight: 1, color: "var(--warm-white)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0, fontWeight: 700, backgroundColor: "rgba(182, 90, 42, 0.12)", border: "1px solid rgba(182, 90, 42, 0.24)", padding: "0.36rem 0.58rem", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.12)", marginTop: "0.1rem" }}>
                         {renderPriceText(pkg.rate)}
                       </div>
                     </div>
