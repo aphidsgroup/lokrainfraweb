@@ -62,6 +62,40 @@ type ScopeCostRow = {
   rate: string;
 };
 
+const pricePattern = /(₹\s?[\d,]+(?:–[\d,]+)?(?:\s*\/\s*sq\.ft\.)?)/g;
+
+function renderPriceText(text: string) {
+  const parts = text.split(pricePattern);
+
+  return parts.map((part, index) => {
+    if (!part) return null;
+    if (pricePattern.test(part)) {
+      pricePattern.lastIndex = 0;
+      return (
+        <span
+          key={`${part}-${index}`}
+          className="price-emphasis-inline"
+          style={{
+            color: "var(--warm-white)",
+            backgroundColor: "rgba(182, 90, 42, 0.18)",
+            border: "1px solid rgba(182, 90, 42, 0.32)",
+            padding: "0.08rem 0.38rem",
+            fontFamily: "var(--font-display)",
+            fontWeight: 700,
+            letterSpacing: "0.01em",
+            borderRadius: "999px",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {part}
+        </span>
+      );
+    }
+
+    return <Fragment key={`${part}-${index}`}>{part}</Fragment>;
+  });
+}
+
 const packageHeaders = [
   "₹1,899 / sq.ft.",
   "₹1,999 / sq.ft.",
@@ -822,7 +856,7 @@ function ComparisonTable({ title, description, rows }: { title: string; descript
               </th>
               {packageHeaders.map((header) => (
                 <th key={header} style={{ textAlign: "left", verticalAlign: "top", padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--warm-white)", fontFamily: "var(--font-display)", fontSize: "0.8rem", lineHeight: 1.4 }}>
-                  {header}
+                  {renderPriceText(header)}
                 </th>
               ))}
             </tr>
@@ -835,7 +869,7 @@ function ComparisonTable({ title, description, rows }: { title: string; descript
                 </td>
                 {row.values.map((value, index) => (
                   <td key={`${row.label}-${index}`} style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--concrete)", fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.6, verticalAlign: "top" }}>
-                    {value}
+                    {renderPriceText(value)}
                   </td>
                 ))}
               </tr>
@@ -873,7 +907,7 @@ function MasterComparisonTable({ title, description, sections }: { title: string
                   <span style={{ display: "block", color: "var(--accent)", fontSize: "0.62rem", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "0.25rem" }}>
                     Price
                   </span>
-                  <span>{header}</span>
+                  <span>{renderPriceText(header)}</span>
                 </th>
               ))}
             </tr>
@@ -893,7 +927,7 @@ function MasterComparisonTable({ title, description, sections }: { title: string
                     </td>
                     {row.values.map((value, index) => (
                       <td key={`${section.title}-${row.label}-${index}`} style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--concrete)", fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.6, verticalAlign: "top", minWidth: "170px" }}>
-                        {value}
+                        {renderPriceText(value)}
                       </td>
                     ))}
                   </tr>
@@ -935,7 +969,7 @@ function ScopeCostTable({ title, description, rows }: { title: string; descripti
               <tr key={row.item} style={{ backgroundColor: rowIndex % 2 === 0 ? "transparent" : "rgba(245,241,234,0.02)" }}>
                 <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--warm-white)", fontFamily: "var(--font-display)", fontSize: "0.83rem", lineHeight: 1.5, textTransform: "uppercase", minWidth: "220px" }}>{row.item}</td>
                 <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--concrete)", fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.65, minWidth: "360px" }}>{row.specification}</td>
-                <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.9rem", lineHeight: 1.6, minWidth: "220px" }}>{row.rate}</td>
+                <td style={{ padding: "1rem", borderBottom: "1px solid var(--border-warm)", color: "var(--accent)", fontFamily: "var(--font-display)", fontSize: "0.9rem", lineHeight: 1.6, minWidth: "220px" }}>{renderPriceText(row.rate)}</td>
               </tr>
             ))}
           </tbody>
@@ -997,7 +1031,9 @@ export default function PackagesPage() {
                       </div>
                       <div>
                         <div style={{ fontFamily: "var(--font-display)", fontSize: "0.625rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.3rem" }}>{item.label}</div>
-                        <div style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.55, color: "var(--warm-white)" }}>{item.value}</div>
+                        <div style={{ fontFamily: "var(--font-body)", fontSize: "1.02rem", lineHeight: 1.55, color: "var(--warm-white)", fontWeight: item.label === "Rate Range" ? 700 : 500 }}>
+                          {renderPriceText(item.value)}
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -1061,8 +1097,8 @@ export default function PackagesPage() {
                           {pkg.name}
                         </h3>
                       </div>
-                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1rem", lineHeight: 1, color: "var(--accent)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0 }}>
-                        {pkg.rate}
+                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1.38rem", lineHeight: 1, color: "var(--warm-white)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0, fontWeight: 800, backgroundColor: "rgba(182, 90, 42, 0.2)", border: "1px solid rgba(182, 90, 42, 0.35)", padding: "0.55rem 0.8rem", borderRadius: "999px", boxShadow: "0 10px 24px rgba(0,0,0,0.18)" }}>
+                        {renderPriceText(pkg.rate)}
                       </div>
                     </div>
                     <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.7, color: "var(--concrete)" }}>
@@ -1079,7 +1115,7 @@ export default function PackagesPage() {
                     ].map(([label, value]) => (
                       <div key={label} style={{ display: "grid", gridTemplateColumns: "110px 1fr", gap: "0.75rem", alignItems: "start" }}>
                         <div style={{ fontFamily: "var(--font-display)", fontSize: "0.62rem", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent)" }}>{label}</div>
-                        <div style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.65, color: "var(--warm-white)" }}>{value}</div>
+                        <div style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.65, color: "var(--warm-white)", fontWeight: String(value).includes("₹") ? 700 : 500 }}>{renderPriceText(String(value))}</div>
                       </div>
                     ))}
                   </div>
@@ -1088,7 +1124,7 @@ export default function PackagesPage() {
                     {pkg.highlights.map((item) => (
                       <div key={item} style={{ display: "grid", gridTemplateColumns: "18px 1fr", gap: "0.65rem", alignItems: "start" }}>
                         <Check size={14} style={{ color: "var(--accent)", marginTop: "0.2rem" }} />
-                        <span style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", lineHeight: 1.65, color: "var(--concrete)" }}>{item}</span>
+                        <span style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", lineHeight: 1.7, color: "var(--concrete)" }}>{renderPriceText(item)}</span>
                       </div>
                     ))}
 

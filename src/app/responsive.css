@@ -283,6 +283,8 @@
   .packages-page .package-card-rate {
     align-self: flex-start;
     text-align: left !important;
+    font-size: 1.2rem !important;
+    padding: 0.48rem 0.72rem !important;
   }
 
   .packages-page .package-card-meta > div {
@@ -401,7 +403,8 @@
   }
 
   .packages-page .package-card-rate {
-    font-size: 0.95rem !important;
+    font-size: 1.05rem !important;
+    padding: 0.42rem 0.66rem !important;
   }
 
   .packages-page .packages-compare-table th,
