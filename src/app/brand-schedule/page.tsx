@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -35,6 +36,40 @@ type BrandSchedulePackage = {
   summary: string;
   rows: ScheduleRow[];
 };
+
+const pricePattern = /(₹\s?[\d,]+(?:–[\d,]+)?(?:\s*\/\s*sq\.ft\.)?)/g;
+
+function renderPriceText(text: string) {
+  const parts = text.split(pricePattern);
+
+  return parts.map((part, index) => {
+    if (!part) return null;
+    if (pricePattern.test(part)) {
+      pricePattern.lastIndex = 0;
+      return (
+        <span
+          key={`${part}-${index}`}
+          className="price-emphasis-inline"
+          style={{
+            color: "var(--warm-white)",
+            backgroundColor: "rgba(182, 90, 42, 0.18)",
+            border: "1px solid rgba(182, 90, 42, 0.32)",
+            padding: "0.08rem 0.38rem",
+            fontFamily: "var(--font-display)",
+            fontWeight: 700,
+            letterSpacing: "0.01em",
+            borderRadius: "999px",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {part}
+        </span>
+      );
+    }
+
+    return <Fragment key={`${part}-${index}`}>{part}</Fragment>;
+  });
+}
 
 const brandSchedulePackages: BrandSchedulePackage[] = [
   {
@@ -287,8 +322,8 @@ export default function BrandSchedulePage() {
                         <div style={{ fontFamily: "var(--font-display)", fontSize: "0.625rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.35rem" }}>{pkg.level}</div>
                         <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", lineHeight: 1.08, textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.55rem" }}>{pkg.name}</h3>
                       </div>
-                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1rem", lineHeight: 1, color: "var(--accent)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0 }}>
-                        {pkg.rate}
+                      <div className="package-card-rate" style={{ fontFamily: "var(--font-display)", fontSize: "1.1rem", lineHeight: 1, color: "var(--warm-white)", textAlign: "right", whiteSpace: "nowrap", flexShrink: 0, fontWeight: 700, backgroundColor: "rgba(182, 90, 42, 0.12)", border: "1px solid rgba(182, 90, 42, 0.24)", padding: "0.36rem 0.58rem", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.12)", marginTop: "0.1rem" }}>
+                        {renderPriceText(pkg.rate)}
                       </div>
                     </div>
                     <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.7, color: "var(--concrete)", marginBottom: "0.75rem" }}>{pkg.summary}</p>
@@ -298,7 +333,7 @@ export default function BrandSchedulePage() {
                     {pkg.rows.map((row) => (
                       <div key={`${pkg.id}-${row.label}`} style={{ display: "grid", gridTemplateColumns: "120px 1fr", gap: "0.75rem", alignItems: "start" }}>
                         <div style={{ fontFamily: "var(--font-display)", fontSize: "0.62rem", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent)" }}>{row.label}</div>
-                        <div style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.68, color: "var(--warm-white)" }}>{row.value}</div>
+                        <div style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.68, color: "var(--warm-white)" }}>{renderPriceText(row.value)}</div>
                       </div>
                     ))}
                   </div>
