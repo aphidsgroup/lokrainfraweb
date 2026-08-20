@@ -9,6 +9,9 @@ const PUBLIC_ROUTES = [
   "/packages",
   "/projects",
   "/process",
+  "/home-construction-chennai",
+  "/building-contractors-chennai",
+  "/civil-contractors-chennai",
   "/jv-partnerships",
   "/contact",
 ] as const;
