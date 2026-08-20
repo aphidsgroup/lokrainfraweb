@@ -245,12 +245,12 @@ export default function ProjectCategories() {
             color: "var(--concrete)",
             marginTop: "2.5rem",
             textAlign: "center",
-            opacity: 0.6,
+            opacity: 0.78,
+            maxWidth: "820px",
+            marginInline: "auto",
           }}
         >
-          Project visuals and case snapshots are currently being refreshed. For now,
-          this section should be treated as work in progress while Lokra Infra
-          prepares a stronger public projects presentation.
+          Detailed project sheets, execution discussions, and relevant reference context are shared during direct project conversations so each discussion stays aligned to scope, stage, and client requirements.
         </p>
       </div>
     </section>

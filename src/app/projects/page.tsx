@@ -50,12 +50,12 @@ export default function ProjectsPage() {
             <h1 className="display-lg" style={{ color: "var(--warm-white)", maxWidth: "720px", marginBottom: "1.5rem" }}>
               Our Project Portfolio
             </h1>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "520px", marginBottom: "2.5rem" }}>
-            Lokra Infra delivers residential, commercial, and infrastructure projects across Chennai with engineering discipline and structured execution. The public projects section is being refreshed to present work-in-progress and completed work more clearly.
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "620px", marginBottom: "2.5rem" }}>
+            Lokra Infra works across residential, commercial, civil, and partnership-led projects in Chennai with a structured execution approach. This page shows the project categories we operate in, while deeper project references are discussed directly based on scope, stage, and fit.
             </p>
-            <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)" }}>
-                🚧 Projects section update in progress. Contact us to review current work-in-progress details, references, and execution discussions.
+            <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)", maxWidth: "760px" }}>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)", lineHeight: 1.7 }}>
+                We share project-specific reference context, execution discussions, and relevant work examples during direct conversations so each discussion stays aligned to the actual requirement.
               </p>
             </div>
           </div>
@@ -112,8 +112,8 @@ export default function ProjectsPage() {
             {/* CTA to contact */}
             <div style={{ textAlign: "center" }}>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", color: "var(--concrete)", marginBottom: "2rem", lineHeight: 1.7 }}>
-                Looking for project references or want to discuss a similar project?<br />
-                Our team can walk you through relevant work-in-progress context, delivery approach, and execution examples.
+                Looking for relevant reference context or want to discuss a similar project?<br />
+                Our team can walk you through the right project category, execution approach, and discussion points for your requirement.
               </p>
               <Link href="/contact" className="btn-primary">
                 <span>Request Project References</span>
