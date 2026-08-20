@@ -129,6 +129,24 @@ const CHENNAI_SERVICE_ROUTES = [
   },
 ];
 
+const PRIORITY_AREA_ROUTES = [
+  {
+    href: "/builders-in-omr-chennai",
+    title: "Builders in OMR, Chennai",
+    desc: "Corridor-first route for mixed residential, villa, commercial, civil, and renovation intent around OMR.",
+  },
+  {
+    href: "/builders-in-porur-chennai",
+    title: "Builders in Porur, Chennai",
+    desc: "Locality-first route for Porur-area home, commercial, renovation, and civil-linked project planning.",
+  },
+  {
+    href: "/builders-in-tambaram-chennai",
+    title: "Builders in Tambaram, Chennai",
+    desc: "Locality-first route for Tambaram-area project routing across residential, commercial, renovation, and civil scope.",
+  },
+];
+
 const servicesPageSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -306,6 +324,38 @@ export default function ServicesPage() {
                   </div>
                   <span className="btn-text" style={{ color: "var(--accent)" }}>
                     Explore This Page <ArrowUpRight size={14} strokeWidth={2.2} />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--border-light)" }}>
+          <div className="container-lokra">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">Priority Chennai Areas</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--text-dark)", maxWidth: "820px", marginBottom: "1rem" }}>
+              Start With The Strongest First Area Clusters.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
+              These are the first area pages Lokra is using to expand beyond city-level service pages without falling into thin locality spam. They work best when the project is clearly tied to one of these high-fit zones.
+            </p>
+            <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
+              {PRIORITY_AREA_ROUTES.map((route) => (
+                <Link key={route.href} href={route.href} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--stone-white)", padding: "1.35rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "1rem" }}>
+                  <div>
+                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem,1.5vw,1.2rem)", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "0.75rem" }}>
+                      {route.title}
+                    </h3>
+                    <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--text-dark-2)" }}>
+                      {route.desc}
+                    </p>
+                  </div>
+                  <span className="btn-text" style={{ color: "var(--accent)" }}>
+                    Explore This Area <ArrowUpRight size={14} strokeWidth={2.2} />
                   </span>
                 </Link>
               ))}
