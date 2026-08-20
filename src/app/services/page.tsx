@@ -145,6 +145,21 @@ const PRIORITY_AREA_ROUTES = [
     title: "Builders in Tambaram, Chennai",
     desc: "Locality-first route for Tambaram-area project routing across residential, commercial, renovation, and civil scope.",
   },
+  {
+    href: "/builders-in-velachery-chennai",
+    title: "Affordable Builders in Velachery, Chennai",
+    desc: "Area-first route for Velachery buyers comparing affordable home, villa, and package-led construction options from ₹1,899 / sq.ft.",
+  },
+  {
+    href: "/builders-in-sholinganallur-chennai",
+    title: "Affordable Builders in Sholinganallur, Chennai",
+    desc: "Area-first route for Sholinganallur home and commercial intent with budget-conscious package comparisons and branded scope clarity.",
+  },
+  {
+    href: "/builders-along-gst-road-chennai",
+    title: "Affordable Builders Along GST Road, Chennai",
+    desc: "Corridor-first route for GST Road residential, commercial, renovation, and package-led low-cost planning intent starting from ₹1,899 / sq.ft.",
+  },
 ];
 
 const servicesPageSchema = {
@@ -338,10 +353,10 @@ export default function ServicesPage() {
               <span className="label-sm light">Priority Chennai Areas</span>
             </div>
             <h2 className="display-md" style={{ color: "var(--text-dark)", maxWidth: "820px", marginBottom: "1rem" }}>
-              Start With The Strongest First Area Clusters.
+              Start With The Strongest Chennai Area Clusters.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
-              These are the first area pages Lokra is using to expand beyond city-level service pages without falling into thin locality spam. They work best when the project is clearly tied to one of these high-fit zones.
+              These area pages help Lokra expand beyond city-level service routes without thin locality spam. The newest batch also targets affordable, budget-conscious, and low-cost builder searches using the real package ladder starting from ₹1,899 / sq.ft. — not fake cheapest claims.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {PRIORITY_AREA_ROUTES.map((route) => (
