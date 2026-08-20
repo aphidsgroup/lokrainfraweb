@@ -112,6 +112,21 @@ const CHENNAI_SERVICE_ROUTES = [
     title: "Civil Contractors in Chennai",
     desc: "For site development, drainage, compound works, foundation-linked infrastructure, and broader civil execution planning.",
   },
+  {
+    href: "/commercial-construction-chennai",
+    title: "Commercial Construction in Chennai",
+    desc: "For offices, retail outlets, showrooms, and broader commercial builds where execution sequencing and scope clarity matter.",
+  },
+  {
+    href: "/villa-construction-chennai",
+    title: "Villa Construction in Chennai",
+    desc: "For premium residential and villa-style builds where package depth, detailing, and process visibility matter more.",
+  },
+  {
+    href: "/renovation-contractors-chennai",
+    title: "Renovation Contractors in Chennai",
+    desc: "For residential and commercial renovation work where existing-condition review and clearer scope definition matter before execution.",
+  },
 ];
 
 const servicesPageSchema = {
