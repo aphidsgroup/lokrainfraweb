@@ -96,6 +96,24 @@ const SERVICES_OFFERED = [
   },
 ];
 
+const CHENNAI_SERVICE_ROUTES = [
+  {
+    href: "/home-construction-chennai",
+    title: "Home Construction Company in Chennai",
+    desc: "For independent homes, villas, and residential builds where package fit and process visibility matter before execution starts.",
+  },
+  {
+    href: "/building-contractors-chennai",
+    title: "Building Contractors in Chennai",
+    desc: "For clients comparing contractor execution across residential, commercial, and turnkey work with clearer scope and milestone expectations.",
+  },
+  {
+    href: "/civil-contractors-chennai",
+    title: "Civil Contractors in Chennai",
+    desc: "For site development, drainage, compound works, foundation-linked infrastructure, and broader civil execution planning.",
+  },
+];
+
 const servicesPageSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -245,6 +263,38 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--stone-white)", borderTop: "1px solid var(--border-light)" }}>
+          <div className="container-lokra">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">Popular Chennai Searches</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--text-dark)", maxWidth: "820px", marginBottom: "1rem" }}>
+              Start With The Route That Matches Your Requirement.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
+              If you are comparing builders, contractors, or civil-execution partners in Chennai, these focused pages help you start from the right requirement instead of reading one generic services page only.
+            </p>
+            <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
+              {CHENNAI_SERVICE_ROUTES.map((route) => (
+                <Link key={route.href} href={route.href} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "1.35rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "1rem" }}>
+                  <div>
+                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem,1.5vw,1.2rem)", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "0.75rem" }}>
+                      {route.title}
+                    </h3>
+                    <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--text-dark-2)" }}>
+                      {route.desc}
+                    </p>
+                  </div>
+                  <span className="btn-text" style={{ color: "var(--accent)" }}>
+                    Explore This Page <ArrowUpRight size={14} strokeWidth={2.2} />
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
