@@ -18,6 +18,9 @@ const PUBLIC_ROUTES = [
   "/builders-in-omr-chennai",
   "/builders-in-porur-chennai",
   "/builders-in-tambaram-chennai",
+  "/builders-in-velachery-chennai",
+  "/builders-in-sholinganallur-chennai",
+  "/builders-along-gst-road-chennai",
   "/jv-partnerships",
   "/contact",
 ] as const;
