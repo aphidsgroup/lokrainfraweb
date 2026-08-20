@@ -61,6 +61,38 @@ const STEPS = [
   },
 ];
 
+const processFaqs = [
+  {
+    q: "How early should I speak to Lokra Infra before starting construction?",
+    a: "Ideally, before finalising the execution model or locking the build budget. Early discussion helps align site reality, scope, timing, and cost direction before decisions become expensive to change.",
+  },
+  {
+    q: "At what stage do I get cost clarity?",
+    a: "Cost direction is shaped during the planning phase after site and scope assessment. That is when the project moves from broad expectation to a clearer execution path with better visibility on what is included and how the work will be phased.",
+  },
+  {
+    q: "Will I receive updates during construction?",
+    a: "Yes. The process is built around visible milestones, site coordination, and regular progress communication so you are not left guessing what is happening on site.",
+  },
+  {
+    q: "What happens before handover?",
+    a: "Before handover, the project goes through final quality review, finishing checks, correction of pending items, and a client walkthrough. The goal is to close the project in a controlled way, not rush to the keys stage.",
+  },
+];
+
+const processFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: processFaqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
 const processPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -94,6 +126,7 @@ export default function ProcessPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processBreadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processFaqSchema) }} />
       <Header />
       <main>
         {/* Hero */}
@@ -163,6 +196,30 @@ export default function ProcessPage() {
                     </p>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--border-light)" }}>
+          <div className="container-lokra" style={{ maxWidth: "900px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">FAQ</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--text-dark)", marginBottom: "1.5rem" }}>
+              Common Questions About How Lokra Works
+            </h2>
+            <div style={{ display: "grid", gap: "1rem" }}>
+              {processFaqs.map((faq) => (
+                <details key={faq.q} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--stone-white)", padding: "1rem 1.1rem" }}>
+                  <summary style={{ cursor: "pointer", listStyle: "none", fontFamily: "var(--font-display)", fontSize: "0.92rem", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", lineHeight: 1.5 }}>
+                    {faq.q}
+                  </summary>
+                  <p style={{ marginTop: "0.85rem", fontFamily: "var(--font-body)", fontSize: "0.93rem", lineHeight: 1.75, color: "var(--text-dark-2)" }}>
+                    {faq.a}
+                  </p>
+                </details>
               ))}
             </div>
           </div>

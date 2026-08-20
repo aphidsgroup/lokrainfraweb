@@ -15,6 +15,38 @@ const POINTS = [
   { title: "Structured Communication", desc: "From initial discussion through development completion, every stage of the partnership is managed with regular updates, documented decisions, and clear progress tracking." },
 ];
 
+const jvFaqs = [
+  {
+    q: "What should I share before the first JV discussion?",
+    a: "The most useful starting inputs are land location, approximate site size, ownership position, current development intent, and any known approval or access constraints. Even partial information is enough to begin a first-level discussion.",
+  },
+  {
+    q: "Does submitting the partnership form commit me to anything?",
+    a: "No. The initial discussion is for clarity and feasibility only. It helps both sides understand whether there is a practical fit before moving into any structured development conversation.",
+  },
+  {
+    q: "How soon will Lokra Infra respond to a partnership enquiry?",
+    a: "Lokra Infra aims to respond within 2 business days, with an initial feasibility discussion typically planned within about a week after receiving the key site details.",
+  },
+  {
+    q: "What happens after the first conversation?",
+    a: "If the opportunity looks relevant, the next step is usually a more structured feasibility review covering site reality, development direction, and whether a deeper discussion makes sense for both sides.",
+  },
+];
+
+const jvFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: jvFaqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
 export default function JVPage() {
   const [formData, setFormData] = useState({ name: "", phone: "", email: "", landLocation: "", landArea: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -26,6 +58,7 @@ export default function JVPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jvFaqSchema) }} />
       <Header />
       <main>
         {/* Hero */}
@@ -181,6 +214,30 @@ export default function JVPage() {
                   </form>
                 )}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--charcoal)", borderTop: "1px solid var(--border-warm)" }}>
+          <div className="container-lokra" style={{ maxWidth: "920px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm">FAQ</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--warm-white)", marginBottom: "1.5rem" }}>
+              Common Questions About JV & Partnership Discussions
+            </h2>
+            <div style={{ display: "grid", gap: "1rem" }}>
+              {jvFaqs.map((faq) => (
+                <details key={faq.q} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1rem 1.1rem" }}>
+                  <summary style={{ cursor: "pointer", listStyle: "none", fontFamily: "var(--font-display)", fontSize: "0.92rem", fontWeight: 700, textTransform: "uppercase", color: "var(--warm-white)", lineHeight: 1.5 }}>
+                    {faq.q}
+                  </summary>
+                  <p style={{ marginTop: "0.85rem", fontFamily: "var(--font-body)", fontSize: "0.93rem", lineHeight: 1.75, color: "var(--concrete)" }}>
+                    {faq.a}
+                  </p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

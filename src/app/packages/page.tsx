@@ -804,19 +804,23 @@ const allowanceRows = [
 const faqs = [
   {
     q: "How should I choose the right Lokra package?",
-    a: "First check the package price range. Then compare warranty, reports, waterproofing, bathroom budget, flooring budget, and quality checks to choose the right package.",
+    a: "Start with your plot condition, budget comfort, and how much reporting, waterproofing, and long-term protection you want. Then compare warranty, quality checks, flooring allowance, bathroom allowance, and site-fit notes. If your plot has weak soil, groundwater, coastal exposure, or a more complex design, do not choose on price alone.",
   },
   {
-    q: "Are these package details shown in website format?",
-    a: "Yes. The package details are shown here in a simpler website format so you can compare them more easily.",
+    q: "What is the easiest way to compare these packages?",
+    a: "Begin with the quick package ladder for the big picture, then check the full comparison table for the details that affect your actual build: structure, waterproofing, allowances, reporting, retention, and handover. The right package is the one that matches your site and delivery expectations, not just the lowest rate.",
   },
   {
-    q: "Which package is better for a normal site and which is better for a coastal or difficult site?",
-    a: "The lower and middle packages suit normal inland plots. The higher packages are better for coastal areas, groundwater issues, or projects that need stronger long-life protection.",
+    q: "Which packages suit a normal inland plot, and which are better for difficult sites?",
+    a: "Lower and mid-range packages are better suited to normal inland plots with more straightforward site conditions. Higher packages are better when the project needs stronger waterproofing, more quality controls, better reporting, longer warranty expectations, or added protection for coastal, groundwater, or more demanding site conditions. Final fit should still be checked against the actual site.",
+  },
+  {
+    q: "What happens if my material choices are above the allowance?",
+    a: "Only the difference above the allowance is billed. If you choose below the allowance, the difference is credited. This helps you upgrade selectively without losing clarity on where the extra cost comes from.",
   },
   {
     q: "Can I speak to Lokra Infra before choosing a package?",
-    a: "Yes. Share your plot location and budget through the contact form, and Lokra Infra can help you choose the right package before finalising the work.",
+    a: "Yes. Share your plot location, project type, and budget direction through the contact form. Lokra Infra can help you shortlist the most suitable package before you commit, especially if your site has soil, access, exposure, or specification complexities.",
   },
 ];
 
