@@ -96,9 +96,47 @@ const SERVICES_OFFERED = [
   },
 ];
 
+const servicesPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Lokra Infra Services",
+  url: "https://www.lokrainfra.in/services",
+  description:
+    "Full-spectrum construction services in Chennai including residential, commercial, turnkey, renovation, civil works, and JV development partnerships.",
+  mainEntity: {
+    "@type": "OfferCatalog",
+    name: "Lokra Infra Service Catalog",
+    itemListElement: SERVICES.map((svc) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: svc.title,
+        description: svc.desc,
+        areaServed: "Chennai, Tamil Nadu, India",
+        provider: {
+          "@type": "Organization",
+          name: "Lokra Infra",
+          url: "https://www.lokrainfra.in",
+        },
+      },
+    })),
+  },
+};
+
+const servicesBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.lokrainfra.in/" },
+    { "@type": "ListItem", position: 2, name: "Services", item: "https://www.lokrainfra.in/services" },
+  ],
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesBreadcrumbSchema) }} />
       <Header />
       <main>
         {/* Hero */}

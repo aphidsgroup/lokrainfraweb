@@ -22,9 +22,35 @@ export const metadata: Metadata = {
   },
 };
 
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Lokra Infra",
+  url: "https://www.lokrainfra.in/about",
+  description:
+    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company with engineering-led execution and deep material-grounded construction roots.",
+  about: {
+    "@type": "Organization",
+    name: "Lokra Infra",
+    url: "https://www.lokrainfra.in",
+    areaServed: "Chennai, Tamil Nadu, India",
+  },
+};
+
+const aboutBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.lokrainfra.in/" },
+    { "@type": "ListItem", position: 2, name: "About", item: "https://www.lokrainfra.in/about" },
+  ],
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutBreadcrumbSchema) }} />
       <Header />
       <main>
         {/* Hero */}

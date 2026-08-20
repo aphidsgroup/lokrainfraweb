@@ -61,9 +61,39 @@ const STEPS = [
   },
 ];
 
+const processPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Lokra Infra Process",
+  url: "https://www.lokrainfra.in/process",
+  description:
+    "Lokra Infra's structured six-phase construction delivery process from project understanding and site assessment through planning, execution, quality review, and handover.",
+  about: {
+    "@type": "Service",
+    name: "Engineering-led construction delivery process",
+    provider: {
+      "@type": "Organization",
+      name: "Lokra Infra",
+      url: "https://www.lokrainfra.in",
+    },
+    areaServed: "Chennai, Tamil Nadu, India",
+  },
+};
+
+const processBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.lokrainfra.in/" },
+    { "@type": "ListItem", position: 2, name: "Process", item: "https://www.lokrainfra.in/process" },
+  ],
+};
+
 export default function ProcessPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processBreadcrumbSchema) }} />
       <Header />
       <main>
         {/* Hero */}
