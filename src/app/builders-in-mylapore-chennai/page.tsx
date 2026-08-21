@@ -57,6 +57,11 @@ export default function BuildersInMylaporeChennaiPage() {
       intro="Mylapore is another strong competitor-proof locality because it supports home-construction, villa, and central premium-residential intent with more specific locality framing than generic Chennai pages. This page is designed for buyers who want stronger package-fit, execution discipline, and branded scope clarity while still being able to compare real starting packages from ₹1,899 / sq.ft. where relevant."
       serviceName="Builders in Mylapore, Chennai"
       serviceDescription="Construction planning in Mylapore for homes, villas, and central premium-residential projects with stronger package-fit and execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a builder in a heritage-dense locality like Mylapore." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Mylapore project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, villa, or redevelopment-style service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Central Premium-Residential Fit", desc: "Mylapore works best when the page leads with central residential quality and project-fit expectations rather than generic contractor wording." },
         { title: "Package Depth Still Matters", desc: "Useful for buyers who want to compare entry packages but still need clarity on finish quality, reporting, and long-term protection." },
