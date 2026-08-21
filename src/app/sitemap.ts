@@ -24,6 +24,8 @@ const PUBLIC_ROUTES = [
   "/builders-in-adyar-chennai",
   "/builders-in-besant-nagar-chennai",
   "/builders-in-kolathur-chennai",
+  "/builders-in-mylapore-chennai",
+  "/builders-in-guduvanchery-chennai",
   "/jv-partnerships",
   "/contact",
 ] as const;

@@ -175,6 +175,16 @@ const PRIORITY_AREA_ROUTES = [
     title: "Affordable Builders in Kolathur, Chennai",
     desc: "Direct-response locality route for Kolathur home, renovation, and budget-conscious builder searches tied to the real package ladder.",
   },
+  {
+    href: "/builders-in-mylapore-chennai",
+    title: "Builders in Mylapore, Chennai",
+    desc: "Central premium-residential route for Mylapore home and villa planning with stronger package-fit and finish-expectation framing.",
+  },
+  {
+    href: "/builders-in-guduvanchery-chennai",
+    title: "Builders in Guduvanchery, Chennai",
+    desc: "Practical outer-area route for Guduvanchery home, builder-comparison, and package-led planning without forcing premium-locality positioning.",
+  },
 ];
 
 const servicesPageSchema = {
@@ -371,7 +381,7 @@ export default function ServicesPage() {
               Start With The Strongest Chennai Area Clusters.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
-              These area pages help Lokra expand beyond city-level service routes without thin locality spam. The current rollout now includes corridor pages, affordable package-led areas, premium-locality routes, and direct competitor-response localities — all grounded in real service fit rather than fake rank claims.
+              These area pages help Lokra expand beyond city-level service routes without thin locality spam. The current rollout now includes corridor pages, affordable package-led areas, premium-core localities, direct competitor-response localities, and practical outer-area routes — all grounded in real service fit rather than fake rank claims.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {PRIORITY_AREA_ROUTES.map((route) => (
