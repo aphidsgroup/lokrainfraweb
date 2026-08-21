@@ -160,6 +160,21 @@ const PRIORITY_AREA_ROUTES = [
     title: "Affordable Builders Along GST Road, Chennai",
     desc: "Corridor-first route for GST Road residential, commercial, renovation, and package-led low-cost planning intent starting from ₹1,899 / sq.ft.",
   },
+  {
+    href: "/builders-in-adyar-chennai",
+    title: "Builders in Adyar, Chennai",
+    desc: "Premium-locality route for Adyar home, villa, and higher-expectation residential build planning with stronger package-fit framing.",
+  },
+  {
+    href: "/builders-in-besant-nagar-chennai",
+    title: "Builders in Besant Nagar, Chennai",
+    desc: "Premium-locality route for Besant Nagar home and villa planning where finish expectations and package depth matter more than generic price-only claims.",
+  },
+  {
+    href: "/builders-in-kolathur-chennai",
+    title: "Affordable Builders in Kolathur, Chennai",
+    desc: "Direct-response locality route for Kolathur home, renovation, and budget-conscious builder searches tied to the real package ladder.",
+  },
 ];
 
 const servicesPageSchema = {
@@ -356,7 +371,7 @@ export default function ServicesPage() {
               Start With The Strongest Chennai Area Clusters.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
-              These area pages help Lokra expand beyond city-level service routes without thin locality spam. The newest batch also targets affordable, budget-conscious, and low-cost builder searches using the real package ladder starting from ₹1,899 / sq.ft. — not fake cheapest claims.
+              These area pages help Lokra expand beyond city-level service routes without thin locality spam. The current rollout now includes corridor pages, affordable package-led areas, premium-locality routes, and direct competitor-response localities — all grounded in real service fit rather than fake rank claims.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {PRIORITY_AREA_ROUTES.map((route) => (
