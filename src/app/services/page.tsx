@@ -129,6 +129,19 @@ const CHENNAI_SERVICE_ROUTES = [
   },
 ];
 
+const AFFORDABILITY_ROUTES = [
+  {
+    href: "/affordable-construction-packages-chennai",
+    title: "Affordable Construction Packages in Chennai",
+    desc: "Package-led comparison for LS-1, LS-2, and LS-3 with the real ₹1,899, ₹1,999, and ₹2,099 structure, not fake cheapest claims.",
+  },
+  {
+    href: "/budget-home-construction-chennai",
+    title: "Budget Home Construction in Chennai",
+    desc: "Home-construction budgeting guide grounded in the actual package ladder, first-time-builder fit, waterproofing upgrades, and quality-check steps.",
+  },
+];
+
 const PRIORITY_AREA_ROUTES = [
   {
     href: "/builders-in-omr-chennai",
@@ -353,6 +366,38 @@ export default function ServicesPage() {
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {CHENNAI_SERVICE_ROUTES.map((route) => (
+                <Link key={route.href} href={route.href} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "1.35rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "1rem" }}>
+                  <div>
+                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem,1.5vw,1.2rem)", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "0.75rem" }}>
+                      {route.title}
+                    </h3>
+                    <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", lineHeight: 1.75, color: "var(--text-dark-2)" }}>
+                      {route.desc}
+                    </p>
+                  </div>
+                  <span className="btn-text" style={{ color: "var(--accent)" }}>
+                    Explore This Page <ArrowUpRight size={14} strokeWidth={2.2} />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--border-light)" }}>
+          <div className="container-lokra">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">Affordable Package Paths</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--text-dark)", maxWidth: "820px", marginBottom: "1rem" }}>
+              Start With The Right Budget And Package Comparison.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
+              These pages explain affordable and budget-focused construction choices using the actual public package ladder from ₹1,899 / sq.ft. upward, including when to stay at LS-1 and when to move into waterproofing or quality-check upgrades.
+            </p>
+            <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "1rem" }}>
+              {AFFORDABILITY_ROUTES.map((route) => (
                 <Link key={route.href} href={route.href} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "1.35rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "1rem" }}>
                   <div>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1rem,1.5vw,1.2rem)", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "0.75rem" }}>

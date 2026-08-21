@@ -9,6 +9,8 @@ const PUBLIC_ROUTES = [
   "/packages",
   "/projects",
   "/process",
+  "/affordable-construction-packages-chennai",
+  "/budget-home-construction-chennai",
   "/home-construction-chennai",
   "/building-contractors-chennai",
   "/civil-contractors-chennai",
