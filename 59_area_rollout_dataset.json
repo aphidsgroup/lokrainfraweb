@@ -1,0 +1,334 @@
+{
+  "zones": {
+    "Central Chennai": [
+      "Alwarpet",
+      "Anna Nagar",
+      "Mylapore",
+      "Nungambakkam",
+      "R.A. Puram",
+      "T. Nagar",
+      "Choolaimedu",
+      "Guindy"
+    ],
+    "South Chennai": [
+      "Adyar",
+      "Besant Nagar",
+      "Kandanchavadi",
+      "Kottivakkam",
+      "Madipakkam",
+      "Medavakkam",
+      "Nanganallur",
+      "OMR",
+      "Palavakkam",
+      "Pallikaranai",
+      "Perungudi",
+      "Sholinganallur",
+      "Thiruvanmiyur",
+      "Thoraipakkam",
+      "Velachery",
+      "Manapakkam"
+    ],
+    "West Chennai": [
+      "Ambattur",
+      "Avadi",
+      "Iyyappanthangal",
+      "Kattupakkam",
+      "Kizhalathur",
+      "Koyambedu",
+      "Maduravoyal",
+      "Mogappair",
+      "Porur",
+      "Poonamallee",
+      "Ramapuram",
+      "Valasaravakkam",
+      "Vanagaram"
+    ],
+    "North Chennai": [
+      "Ennore",
+      "Kolathur",
+      "Madhavaram",
+      "Manali",
+      "Perambur",
+      "Royapuram",
+      "Tondiarpet",
+      "Vyasarpadi"
+    ],
+    "Emerging Suburbs": [
+      "Chromepet",
+      "Guduvanchery",
+      "Kelambakkam",
+      "Kundrathur",
+      "Mangadu",
+      "Navallur",
+      "Omalur",
+      "Padur",
+      "Perungalathur",
+      "Singaperumal Koil",
+      "Sriperumbudur",
+      "Tambaram",
+      "Urapakkam",
+      "Vandalur"
+    ]
+  },
+  "existing_area_pages_before_run": [
+    "Adyar",
+    "Besant Nagar",
+    "Guduvanchery",
+    "Kolathur",
+    "Mylapore",
+    "OMR",
+    "Porur",
+    "Sholinganallur",
+    "Tambaram",
+    "Velachery"
+  ],
+  "missing_pages_generated": [
+    {
+      "zone": "Central Chennai",
+      "area": "Alwarpet",
+      "route": "/builders-in-alwarpet-chennai"
+    },
+    {
+      "zone": "Central Chennai",
+      "area": "Anna Nagar",
+      "route": "/builders-in-anna-nagar-chennai"
+    },
+    {
+      "zone": "Central Chennai",
+      "area": "Nungambakkam",
+      "route": "/builders-in-nungambakkam-chennai"
+    },
+    {
+      "zone": "Central Chennai",
+      "area": "R.A. Puram",
+      "route": "/builders-in-ra-puram-chennai"
+    },
+    {
+      "zone": "Central Chennai",
+      "area": "T. Nagar",
+      "route": "/builders-in-t-nagar-chennai"
+    },
+    {
+      "zone": "Central Chennai",
+      "area": "Choolaimedu",
+      "route": "/builders-in-choolaimedu-chennai"
+    },
+    {
+      "zone": "Central Chennai",
+      "area": "Guindy",
+      "route": "/builders-in-guindy-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Kandanchavadi",
+      "route": "/builders-in-kandanchavadi-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Kottivakkam",
+      "route": "/builders-in-kottivakkam-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Madipakkam",
+      "route": "/builders-in-madipakkam-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Medavakkam",
+      "route": "/builders-in-medavakkam-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Nanganallur",
+      "route": "/builders-in-nanganallur-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Palavakkam",
+      "route": "/builders-in-palavakkam-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Pallikaranai",
+      "route": "/builders-in-pallikaranai-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Perungudi",
+      "route": "/builders-in-perungudi-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Thiruvanmiyur",
+      "route": "/builders-in-thiruvanmiyur-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Thoraipakkam",
+      "route": "/builders-in-thoraipakkam-chennai"
+    },
+    {
+      "zone": "South Chennai",
+      "area": "Manapakkam",
+      "route": "/builders-in-manapakkam-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Ambattur",
+      "route": "/builders-in-ambattur-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Avadi",
+      "route": "/builders-in-avadi-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Iyyappanthangal",
+      "route": "/builders-in-iyyappanthangal-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Kattupakkam",
+      "route": "/builders-in-kattupakkam-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Kizhalathur",
+      "route": "/builders-in-kizhalathur-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Koyambedu",
+      "route": "/builders-in-koyambedu-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Maduravoyal",
+      "route": "/builders-in-maduravoyal-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Mogappair",
+      "route": "/builders-in-mogappair-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Poonamallee",
+      "route": "/builders-in-poonamallee-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Ramapuram",
+      "route": "/builders-in-ramapuram-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Valasaravakkam",
+      "route": "/builders-in-valasaravakkam-chennai"
+    },
+    {
+      "zone": "West Chennai",
+      "area": "Vanagaram",
+      "route": "/builders-in-vanagaram-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Ennore",
+      "route": "/builders-in-ennore-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Madhavaram",
+      "route": "/builders-in-madhavaram-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Manali",
+      "route": "/builders-in-manali-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Perambur",
+      "route": "/builders-in-perambur-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Royapuram",
+      "route": "/builders-in-royapuram-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Tondiarpet",
+      "route": "/builders-in-tondiarpet-chennai"
+    },
+    {
+      "zone": "North Chennai",
+      "area": "Vyasarpadi",
+      "route": "/builders-in-vyasarpadi-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Chromepet",
+      "route": "/builders-in-chromepet-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Kelambakkam",
+      "route": "/builders-in-kelambakkam-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Kundrathur",
+      "route": "/builders-in-kundrathur-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Mangadu",
+      "route": "/builders-in-mangadu-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Navallur",
+      "route": "/builders-in-navallur-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Omalur",
+      "route": "/builders-in-omalur-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Padur",
+      "route": "/builders-in-padur-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Perungalathur",
+      "route": "/builders-in-perungalathur-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Singaperumal Koil",
+      "route": "/builders-in-singaperumal-koil-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Sriperumbudur",
+      "route": "/builders-in-sriperumbudur-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Urapakkam",
+      "route": "/builders-in-urapakkam-chennai"
+    },
+    {
+      "zone": "Emerging Suburbs",
+      "area": "Vandalur",
+      "route": "/builders-in-vandalur-chennai"
+    }
+  ],
+  "total_areas": 59,
+  "generated_count": 49
+}
