@@ -54,12 +54,15 @@ export default function BuildersInTambaramChennaiPage() {
           { href: "/commercial-construction-chennai", label: "Commercial Construction Chennai" },
           { href: "/civil-contractors-chennai", label: "Civil Contractors Chennai" },
           { href: "/renovation-contractors-chennai", label: "Renovation Contractors Chennai" },
+          { href: "/builders-in-perungalathur-chennai", label: "Builders in Perungalathur, Chennai" },
+          { href: "/builders-in-vandalur-chennai", label: "Builders in Vandalur, Chennai" },
         ] },
         { title: "Why Tambaram Projects Still Need Better Scope Framing", body: "Even strong-fit localities should not skip the basics. Site condition, intended use, access, scale, and whether enabling works are needed all shape the project path and should be understood before any shallow builder comparison takes over.", bullets: ["Site truth first", "Use-case clarity", "Execution-path review", "Milestone visibility"] },
         { title: "Start The Tambaram Discussion With Better Inputs", body: "Bring the exact location, project type, current stage, and any scope notes or drawings you already have. The goal is to make the first discussion practical enough to choose the correct execution direction early.", links: [
           { href: "/services", label: "Review All Services" },
           { href: "/packages", label: "Compare Package Depth" },
           { href: "/process", label: "See The Delivery Process" },
+          { href: "/chennai-areas", label: "Explore All Chennai Areas" },
           { href: "/contact", label: "Discuss A Tambaram Requirement" },
         ] },
       ]}
