@@ -29,6 +29,11 @@ export default function Page() {
       intro="Choolaimedu is part of Lokra's Chennai area rollout for buyers comparing home-construction, builder, and price-led project decisions with clearer scope, price-fit, and execution framing."
       serviceName="Builders in Choolaimedu, Chennai"
       serviceDescription="Lokra Infra supports Choolaimedu construction planning for homes, builders, and pricing-led project decisions with clearer scope and execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Choolaimedu-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Choolaimedu project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home-construction or builder-comparison service pages if you already know the scope." },
+      ]}
       summaryCards={summaryCards}
       sections={sections}
       faqs={faqs}
