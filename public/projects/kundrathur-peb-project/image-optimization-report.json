@@ -1,0 +1,266 @@
+[
+  {
+    "name": "1.jpeg",
+    "orig_size": 236848,
+    "orig_dims": "1600x725",
+    "webp": "1.webp",
+    "webp_size": 179740,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "2.jpeg",
+    "orig_size": 86533,
+    "orig_dims": "580x435",
+    "webp": "2.webp",
+    "webp_size": 44992,
+    "webp_dims": "580x435"
+  },
+  {
+    "name": "3.jpeg",
+    "orig_size": 96611,
+    "orig_dims": "729x1600",
+    "webp": "3.webp",
+    "webp_size": 53232,
+    "webp_dims": "729x1600"
+  },
+  {
+    "name": "4.jpeg",
+    "orig_size": 219049,
+    "orig_dims": "1200x1600",
+    "webp": "4.webp",
+    "webp_size": 136606,
+    "webp_dims": "1200x1600"
+  },
+  {
+    "name": "5.jpeg",
+    "orig_size": 100922,
+    "orig_dims": "729x1600",
+    "webp": "5.webp",
+    "webp_size": 57894,
+    "webp_dims": "729x1600"
+  },
+  {
+    "name": "6.jpeg",
+    "orig_size": 148055,
+    "orig_dims": "1280x580",
+    "webp": "6.webp",
+    "webp_size": 117404,
+    "webp_dims": "1280x580"
+  },
+  {
+    "name": "7.jpeg",
+    "orig_size": 197536,
+    "orig_dims": "1280x960",
+    "webp": "7.webp",
+    "webp_size": 144374,
+    "webp_dims": "1280x960"
+  },
+  {
+    "name": "8.jpeg",
+    "orig_size": 162690,
+    "orig_dims": "1280x580",
+    "webp": "8.webp",
+    "webp_size": 133912,
+    "webp_dims": "1280x580"
+  },
+  {
+    "name": "9.jpeg",
+    "orig_size": 277759,
+    "orig_dims": "1280x960",
+    "webp": "9.webp",
+    "webp_size": 249534,
+    "webp_dims": "1280x960"
+  },
+  {
+    "name": "10.jpeg",
+    "orig_size": 220796,
+    "orig_dims": "1600x725",
+    "webp": "10.webp",
+    "webp_size": 167038,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "11.jpeg",
+    "orig_size": 154535,
+    "orig_dims": "1280x580",
+    "webp": "11.webp",
+    "webp_size": 117082,
+    "webp_dims": "1280x580"
+  },
+  {
+    "name": "12.jpeg",
+    "orig_size": 159727,
+    "orig_dims": "1280x580",
+    "webp": "12.webp",
+    "webp_size": 134458,
+    "webp_dims": "1280x580"
+  },
+  {
+    "name": "13.jpeg",
+    "orig_size": 152837,
+    "orig_dims": "1280x720",
+    "webp": "13.webp",
+    "webp_size": 113440,
+    "webp_dims": "1280x720"
+  },
+  {
+    "name": "14.jpeg",
+    "orig_size": 217909,
+    "orig_dims": "1599x899",
+    "webp": "14.webp",
+    "webp_size": 151462,
+    "webp_dims": "1599x899"
+  },
+  {
+    "name": "15.jpeg",
+    "orig_size": 301032,
+    "orig_dims": "1600x725",
+    "webp": "15.webp",
+    "webp_size": 268084,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "16.jpeg",
+    "orig_size": 218067,
+    "orig_dims": "1280x960",
+    "webp": "16.webp",
+    "webp_size": 177696,
+    "webp_dims": "1280x960"
+  },
+  {
+    "name": "17.jpeg",
+    "orig_size": 266724,
+    "orig_dims": "1600x725",
+    "webp": "17.webp",
+    "webp_size": 224522,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "18.jpeg",
+    "orig_size": 210621,
+    "orig_dims": "1280x960",
+    "webp": "18.webp",
+    "webp_size": 167338,
+    "webp_dims": "1280x960"
+  },
+  {
+    "name": "19.jpeg",
+    "orig_size": 258246,
+    "orig_dims": "1600x725",
+    "webp": "19.webp",
+    "webp_size": 204478,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "20.jpeg",
+    "orig_size": 119166,
+    "orig_dims": "1600x725",
+    "webp": "20.webp",
+    "webp_size": 69212,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "21.jpeg",
+    "orig_size": 104117,
+    "orig_dims": "1600x725",
+    "webp": "21.webp",
+    "webp_size": 55276,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "22.jpeg",
+    "orig_size": 174982,
+    "orig_dims": "1280x720",
+    "webp": "22.webp",
+    "webp_size": 131346,
+    "webp_dims": "1280x720"
+  },
+  {
+    "name": "23.jpeg",
+    "orig_size": 168724,
+    "orig_dims": "1599x899",
+    "webp": "23.webp",
+    "webp_size": 100040,
+    "webp_dims": "1599x899"
+  },
+  {
+    "name": "24.jpeg",
+    "orig_size": 134263,
+    "orig_dims": "1600x725",
+    "webp": "24.webp",
+    "webp_size": 79704,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "25.jpeg",
+    "orig_size": 168644,
+    "orig_dims": "1600x725",
+    "webp": "25.webp",
+    "webp_size": 108752,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "26.jpeg",
+    "orig_size": 173480,
+    "orig_dims": "1600x725",
+    "webp": "26.webp",
+    "webp_size": 111262,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "27.jpeg",
+    "orig_size": 181705,
+    "orig_dims": "1600x725",
+    "webp": "27.webp",
+    "webp_size": 123434,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "28.jpeg",
+    "orig_size": 142585,
+    "orig_dims": "1280x720",
+    "webp": "28.webp",
+    "webp_size": 95224,
+    "webp_dims": "1280x720"
+  },
+  {
+    "name": "29.jpeg",
+    "orig_size": 170606,
+    "orig_dims": "1599x899",
+    "webp": "29.webp",
+    "webp_size": 91928,
+    "webp_dims": "1599x899"
+  },
+  {
+    "name": "30.jpeg",
+    "orig_size": 213049,
+    "orig_dims": "1600x900",
+    "webp": "30.webp",
+    "webp_size": 136290,
+    "webp_dims": "1600x900"
+  },
+  {
+    "name": "31.jpeg",
+    "orig_size": 185201,
+    "orig_dims": "1600x725",
+    "webp": "31.webp",
+    "webp_size": 115870,
+    "webp_dims": "1600x725"
+  },
+  {
+    "name": "32.jpeg",
+    "orig_size": 221225,
+    "orig_dims": "720x1280",
+    "webp": "32.webp",
+    "webp_size": 197322,
+    "webp_dims": "720x1280"
+  },
+  {
+    "name": "33.jpeg",
+    "orig_size": 251697,
+    "orig_dims": "1600x1200",
+    "webp": "33.webp",
+    "webp_size": 145148,
+    "webp_dims": "1600x1200"
+  }
+]

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Header from "@/components/Header";
@@ -33,6 +34,32 @@ const CATEGORIES = [
 
 const BG_SHADES = ["#1A1816", "#1E1C19", "#201F1D", "#1C1B17", "#211F1C", "#191817"];
 
+const FEATURED_PROJECT = {
+  title: "Kundrathur PEB Project",
+  subtitle: "6,000 sq.ft. material warehouse by Lokra Infra",
+  location: "Kundrathur, Chennai",
+  category: "PEB / Industrial Storage",
+  scope: "Material warehouse",
+  overview:
+    "This featured project captures a 6,000 sq.ft. pre-engineered building warehouse delivered in Kundrathur for material-storage use. The image sequence shows the project from site rituals and early groundwork through steel-frame erection and completed exterior access, making it a stronger live reference than a generic category-only portfolio block.",
+  highlights: [
+    "6,000 sq.ft. material warehouse",
+    "PEB structural frame progression",
+    "Groundwork to completion coverage",
+    "Live project photos optimized for web delivery",
+  ],
+  gallery: [
+    { src: "/projects/kundrathur-peb-project/1.webp", alt: "Kundrathur PEB project pooja and early site start", caption: "Project start / pooja stage" },
+    { src: "/projects/kundrathur-peb-project/10.webp", alt: "Kundrathur PEB project site clearing and groundwork", caption: "Groundwork and site preparation" },
+    { src: "/projects/kundrathur-peb-project/22.webp", alt: "Kundrathur PEB project steel frame erection in progress", caption: "Steel frame erection stage" },
+    { src: "/projects/kundrathur-peb-project/24.webp", alt: "Kundrathur PEB project internal steel structure progress", caption: "Internal frame progress" },
+    { src: "/projects/kundrathur-peb-project/26.webp", alt: "Kundrathur PEB project front shed structure progress", caption: "Front elevation under progress" },
+    { src: "/projects/kundrathur-peb-project/29.webp", alt: "Kundrathur PEB project completed exterior warehouse front", caption: "Completed exterior view" },
+    { src: "/projects/kundrathur-peb-project/30.webp", alt: "Kundrathur PEB project finished warehouse entry and facade", caption: "Finished entry and facade" },
+    { src: "/projects/kundrathur-peb-project/33.webp", alt: "Kundrathur PEB project completed warehouse exterior with stair access", caption: "Final access-side exterior" },
+  ],
+};
+
 export default function ProjectsPage() {
   return (
     <>
@@ -57,6 +84,67 @@ export default function ProjectsPage() {
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)", lineHeight: 1.7 }}>
                 We share project-specific reference context, execution discussions, and relevant work examples during direct conversations so each discussion stays aligned to the actual requirement.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderBottom: "1px solid var(--border-light)" }}>
+          <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">Featured Project</span>
+            </div>
+
+            <div style={{ display: "grid", gap: "1.5rem", border: "1px solid var(--border-light)", backgroundColor: "var(--stone-white)", padding: "1.5rem" }}>
+              <div style={{ display: "grid", gap: "0.9rem" }}>
+                <h2 className="display-md" style={{ color: "var(--text-dark)", maxWidth: "900px", marginBottom: "0.25rem" }}>
+                  {FEATURED_PROJECT.title}
+                </h2>
+                <p style={{ fontFamily: "var(--font-display)", fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--accent)", margin: 0 }}>
+                  {FEATURED_PROJECT.subtitle}
+                </p>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "880px" }}>
+                  {FEATURED_PROJECT.overview}
+                </p>
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))", gap: "0.9rem" }}>
+                <div style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "1rem" }}>
+                  <div style={{ fontFamily: "var(--font-display)", fontSize: "0.62rem", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.45rem" }}>Location</div>
+                  <div style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--text-dark)" }}>{FEATURED_PROJECT.location}</div>
+                </div>
+                <div style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "1rem" }}>
+                  <div style={{ fontFamily: "var(--font-display)", fontSize: "0.62rem", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.45rem" }}>Type</div>
+                  <div style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--text-dark)" }}>{FEATURED_PROJECT.category}</div>
+                </div>
+                <div style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "1rem" }}>
+                  <div style={{ fontFamily: "var(--font-display)", fontSize: "0.62rem", letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.45rem" }}>Scope</div>
+                  <div style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--text-dark)" }}>{FEATURED_PROJECT.scope}</div>
+                </div>
+              </div>
+
+              <div style={{ display: "grid", gap: "0.9rem", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
+                {FEATURED_PROJECT.highlights.map((item) => (
+                  <div key={item} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", padding: "0.95rem 1rem" }}>
+                    <p style={{ fontFamily: "var(--font-display)", fontSize: "0.74rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--accent)", lineHeight: 1.6 }}>
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1rem" }}>
+                {FEATURED_PROJECT.gallery.map((image) => (
+                  <figure key={image.src} style={{ margin: 0, border: "1px solid var(--border-light)", backgroundColor: "var(--warm-white)", overflow: "hidden" }}>
+                    <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", backgroundColor: "#f4f1ec" }}>
+                      <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: "cover" }} />
+                    </div>
+                    <figcaption style={{ padding: "0.85rem 0.95rem", fontFamily: "var(--font-body)", fontSize: "0.88rem", lineHeight: 1.6, color: "var(--text-dark-2)" }}>
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
             </div>
           </div>
         </section>
