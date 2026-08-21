@@ -276,9 +276,23 @@ export default function ServicesPage() {
             >
               Full-Spectrum Construction Capability
             </h1>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "560px" }}>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "560px", marginBottom: "2rem" }}>
               Lokra Infra operates across residential, commercial, turnkey, renovation, civil, and development partnership segments — with the same engineering-led execution standard applied to every project type.
             </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
+              <a href="#affordable-paths" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Browse By Price
+              </a>
+              <a href="#priority-areas" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Browse By Area
+              </a>
+              <Link href="/chennai-areas" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                All Chennai Areas
+              </Link>
+              <Link href="/packages" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Full Price Ladder
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -397,7 +411,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--border-light)" }}>
+        <section id="affordable-paths" className="section-py" style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--border-light)", scrollMarginTop: "6rem" }}>
           <div className="container-lokra">
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
               <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
