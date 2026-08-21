@@ -133,7 +133,7 @@ const AFFORDABILITY_ROUTES = [
   {
     href: "/affordable-construction-packages-chennai",
     title: "Affordable Construction Packages in Chennai",
-    desc: "Package-led comparison for LS-1, LS-2, and LS-3 with the real ₹1,899, ₹1,999, and ₹2,099 structure, not fake cheapest claims.",
+    desc: "Package-led comparison for ₹1,899, ₹1,999, and ₹2,099 with real pricing structure, not fake cheapest claims.",
   },
   {
     href: "/budget-home-construction-chennai",
@@ -145,13 +145,13 @@ const AFFORDABILITY_ROUTES = [
 const PACKAGE_SUPPORT_ROUTES = [
   {
     href: "/waterproofing-construction-package-chennai",
-    title: "Waterproofing Construction Package in Chennai",
-    desc: "LS-2 package guide grounded in the real ₹1,999 waterproofing-focused step with below-ground, terrace, and wall moisture-control details.",
+    title: "₹1,999 Waterproofing-Focused Construction in Chennai",
+    desc: "Price-tier guide for the ₹1,999 waterproofing-focused step with below-ground, terrace, and wall moisture-control details.",
   },
   {
     href: "/quality-checked-structure-package-chennai",
-    title: "Quality Checked Structure Package in Chennai",
-    desc: "LS-3 package guide grounded in the real ₹2,099 step with concrete cube testing, stage records, fortnightly reporting, and a 10-year warranty.",
+    title: "₹2,099 Quality-Focused Construction in Chennai",
+    desc: "Price-tier guide for the ₹2,099 step with concrete cube testing, stage records, fortnightly reporting, and a 10-year warranty.",
   },
 ];
 
@@ -407,7 +407,7 @@ export default function ServicesPage() {
               Start With The Right Budget And Package Comparison.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
-              These pages explain affordable and budget-focused construction choices using the actual public package ladder from ₹1,899 / sq.ft. upward, including when to stay at LS-1 and when to move into waterproofing or quality-check upgrades.
+              These pages explain affordable and budget-focused construction choices using the actual public price ladder from ₹1,899 / sq.ft. upward, including when to stay at ₹1,899 and when to move into waterproofing or quality-check upgrades.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "1rem" }}>
               {AFFORDABILITY_ROUTES.map((route) => (
@@ -433,13 +433,13 @@ export default function ServicesPage() {
           <div className="container-lokra">
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
               <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
-              <span className="label-sm light">Package Support Guides</span>
+              <span className="label-sm light">Price-Step Support Guides</span>
             </div>
             <h2 className="display-md" style={{ color: "var(--text-dark)", maxWidth: "820px", marginBottom: "1rem" }}>
-              Understand The Key Upgrade Steps In The Package Ladder.
+              Understand The Key Upgrade Steps In The Price Ladder.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
-              These pages explain the two most important early upgrade steps after the budget entry package: when to choose the waterproofing-focused LS-2 path, and when to move into the quality-checked LS-3 path with stronger records and warranty coverage.
+              These pages explain the two most important early upgrade steps after the budget entry price point: when to choose the ₹1,999 waterproofing-focused path, and when to move into the ₹2,099 quality-focused path with stronger records and warranty coverage.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "1rem" }}>
               {PACKAGE_SUPPORT_ROUTES.map((route) => (
