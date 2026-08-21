@@ -41,6 +41,11 @@ export default function BuildersInPorurChennaiPage() {
       intro="Porur is one of the highest-fit localities for Lokra's next rollout because it supports residential, commercial, renovation, and civil-led project discussions without depending on weak locality fluff. This page helps route Porur-area requirements into the right execution path more clearly."
       serviceName="Builders in Porur, Chennai"
       serviceDescription="Construction planning in Porur for homes, commercial projects, renovation, and civil-linked scope with clearer site review and execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Porur-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Porur project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, commercial, renovation, or civil service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "High-Fit Locality", desc: "Porur is a strong rollout target because it supports several Lokra service angles at once." },
         { title: "Mixed Project Types", desc: "Useful for home, commercial, renovation, and civil-linked discussions rather than one narrow keyword only." },

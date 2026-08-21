@@ -58,6 +58,11 @@ export default function CivilContractorsChennaiPage() {
       intro="Civil work often gets treated as a generic add-on, even when it controls whether the rest of the project will move smoothly. Lokra Infra approaches civil scope through site assessment, engineering-led planning, and clearer execution framing for enabling works, infrastructure support, and broader project-linked civil activity."
       serviceName="Civil Contractors in Chennai"
       serviceDescription="Civil contractors in Chennai for foundations, drainage, roads, site development, compound works, and construction-linked civil execution with engineering-led planning and site discipline."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed civil and construction-linked work before you commit." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. where civil scope sits inside a larger build." },
+        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+      ]}
       summaryCards={[
         {
           title: "Site Development",

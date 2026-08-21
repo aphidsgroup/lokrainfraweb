@@ -58,6 +58,11 @@ export default function CommercialConstructionChennaiPage() {
       intro="Commercial construction decisions usually carry more coordination risk than the headline keyword suggests. Lokra Infra approaches commercial work through clearer scope definition, execution planning, and milestone visibility so office, retail, showroom, and broader commercial requirements are not managed like generic contractor jobs."
       serviceName="Commercial Construction in Chennai"
       serviceDescription="Commercial construction in Chennai for offices, retail outlets, showrooms, and broader business builds with engineering-led planning, scope clarity, and milestone visibility."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed commercial work before you commit to an execution partner." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to see how documentation and reporting scale by level." },
+        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+      ]}
       summaryCards={[
         {
           title: "Office + Retail",

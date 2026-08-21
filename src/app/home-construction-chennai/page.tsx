@@ -59,6 +59,11 @@ export default function HomeConstructionChennaiPage() {
       intro="Lokra Infra works with homeowners who want clearer scope, engineering-led planning, and disciplined execution before a residential build begins. From independent houses to villa-style homes, the focus is on site reality, package fit, and execution visibility — not vague promises."
       serviceName="Home Construction Company in Chennai"
       serviceDescription="Engineering-led home construction in Chennai for independent houses, villas, and residential builds with clear scope, process visibility, and disciplined execution."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed residential work before you commit to a construction partner." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your home build." },
+        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+      ]}
       summaryCards={[
         {
           title: "Independent Homes",

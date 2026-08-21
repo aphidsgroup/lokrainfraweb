@@ -58,6 +58,11 @@ export default function BuildingContractorsChennaiPage() {
       intro="Many buyers searching for building contractors in Chennai are really trying to avoid scope confusion, weak supervision, and fragmented delivery. Lokra Infra's contractor approach is built around engineering-led planning, accountable execution, and clearer visibility across residential, commercial, and turnkey work."
       serviceName="Building Contractors in Chennai"
       serviceDescription="Engineering-led building contractor services in Chennai across residential, commercial, and turnkey construction with clearer scope definition, site coordination, and milestone visibility."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a contractor." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to see what scope and reporting each level includes." },
+        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+      ]}
       summaryCards={[
         {
           title: "Residential + Commercial",

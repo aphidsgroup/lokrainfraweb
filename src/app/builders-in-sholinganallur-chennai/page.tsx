@@ -57,6 +57,11 @@ export default function BuildersInSholinganallurChennaiPage() {
       intro="Sholinganallur is a strong next locality because it supports mixed residential and commercial builder demand while still fitting Lokra's current service stack cleanly. This page is designed for buyers who want affordable but branded package options starting from ₹1,899 / sq.ft. without sacrificing scope clarity and execution discipline."
       serviceName="Affordable Builders in Sholinganallur, Chennai"
       serviceDescription="Construction planning in Sholinganallur for homes and commercial projects with package-led affordable options starting from ₹1,899 / sq.ft. and clearer execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Sholinganallur-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your budget." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home or commercial service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Corridor-Adjacent Fit", desc: "Useful because Sholinganallur benefits from broader corridor relevance while still being strong enough as its own locality page." },
         { title: "Affordable + Branded", desc: "Good for buyers searching for budget construction without dropping into fake cheapest-in-market claims." },

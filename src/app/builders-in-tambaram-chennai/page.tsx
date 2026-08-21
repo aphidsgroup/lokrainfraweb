@@ -41,6 +41,11 @@ export default function BuildersInTambaramChennaiPage() {
       intro="Tambaram is one of the best next localities for Lokra because it can support home, commercial, renovation, and civil-intent routing without forcing weak locality-only copy. This page helps turn Tambaram-area search into a clearer project conversation before execution decisions are made."
       serviceName="Builders in Tambaram, Chennai"
       serviceDescription="Construction planning in Tambaram for homes, commercial projects, renovation, and civil-linked scope with clearer buyer routing and execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Tambaram-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Tambaram project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, commercial, renovation, or civil service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Strong Early Locality", desc: "Tambaram is a high-fit expansion area because it works across several service angles already live on the site." },
         { title: "Better Buyer Routing", desc: "Useful for clarifying whether the real need is home, commercial, renovation, or civil-led rather than forcing one generic builder story." },
