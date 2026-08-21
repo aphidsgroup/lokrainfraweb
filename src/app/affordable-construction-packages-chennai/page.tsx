@@ -62,6 +62,11 @@ export default function AffordableConstructionPackagesChennaiPage() {
         { title: "₹1,999 Waterproofing Upgrade", desc: "Adds stronger moisture and waterproofing protection in below-ground areas, terrace, and external walls." },
         { title: "₹2,099 Quality-Check Upgrade", desc: "Adds concrete cube testing, stage records, fortnightly photos, and a 10-year structural warranty." },
       ]}
+      discoveryPaths={[
+        { href: "/packages", label: "Browse By Budget", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the exact tier that matches your budget." },
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a price tier." },
+        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+      ]}
       sections={[
         { title: "What ₹1,899 Actually Gets You", body: "₹1,899 is not presented as a stripped-down unsafe option. The live packages page describes this as a budget-friendly construction level with branded materials and proper structural design. It is best for firm inland plots and first-time builders who want full engineering discipline at the most economical public price point.", bullets: ["Branded materials", "Proper structural design", "2-year warranty", "Available-on-request reporting", "₹55 flooring allowance", "₹16,000 sanitaryware per bathroom"] },
         { title: "When ₹1,999 Is The Smarter Budget Choice", body: "₹1,999 is often the better affordable choice if your site needs stronger terrace, external-wall, and below-ground moisture control. It upgrades the waterproofing story without forcing a big jump into higher engineering-record tiers.", bullets: ["5-year warranty", "Below-ground bituminous protection", "Terrace waterproofing", "Waterproofing admixture in external plaster", "₹60 flooring allowance", "₹19,000 sanitaryware per bathroom"] },

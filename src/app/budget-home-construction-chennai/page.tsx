@@ -62,6 +62,11 @@ export default function BudgetHomeConstructionChennaiPage() {
         { title: "Best Moisture Upgrade", desc: "₹1,999 / sq.ft. is the better budget choice when waterproofing and moisture control need more attention." },
         { title: "Best Evidence Upgrade", desc: "₹2,099 / sq.ft. is the stronger option when you want quality checks, stage records, and better reporting discipline." },
       ]}
+      discoveryPaths={[
+        { href: "/packages", label: "Browse By Budget", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the exact tier that fits your home build." },
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a price tier." },
+        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+      ]}
       sections={[
         { title: "Why ₹1,899 Fits Many Budget Home Builds", body: "₹1,899 is explicitly described as the budget-friendly starting point with branded materials and proper structural design. It is best for firm inland plots and first-time builders who want a real structured starting point instead of vague low-cost promises.", bullets: ["₹1,899 / sq.ft.", "First-time builder fit", "Firm inland plots", "2-year warranty", "Available-on-request reporting"] },
         { title: "Why Some Budget Builds Should Start At ₹1,999", body: "₹1,999 is often the smarter affordable home-construction choice when water-related risk matters more. It adds below-ground bituminous protection, terrace waterproofing, and stronger moisture control layers that can justify the jump from ₹1,899.", bullets: ["₹1,999 / sq.ft.", "5-year warranty", "Below-ground protection", "Terrace waterproofing", "External wall moisture-control upgrade"] },
