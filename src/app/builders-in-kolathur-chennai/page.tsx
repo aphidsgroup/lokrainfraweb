@@ -57,6 +57,11 @@ export default function BuildersInKolathurChennaiPage() {
       intro="Kolathur is one of the most important direct-response localities in this rollout because competitor signals already show demand for locality-specific builder pages here. Lokra's version is built to answer that demand with home-construction, contractor-comparison, and renovation-linked routing — plus truthful package-led affordability starting from ₹1,899 / sq.ft. where it fits."
       serviceName="Affordable Builders in Kolathur, Chennai"
       serviceDescription="Construction planning in Kolathur for homes, contractor comparison, renovation-linked work, and budget-conscious package decisions starting from ₹1,899 / sq.ft."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Kolathur-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Kolathur project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, building-contractor, or renovation service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Direct Competitor Response", desc: "Kolathur is the clearest third-batch locality for directly answering a live locality-level competitor signal." },
         { title: "Affordable + Scope-Aware", desc: "Useful for buyers who want low-cost planning language grounded in the real package ladder, not fake cheapest claims." },

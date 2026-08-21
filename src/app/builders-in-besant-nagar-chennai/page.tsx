@@ -57,6 +57,11 @@ export default function BuildersInBesantNagarChennaiPage() {
       intro="Besant Nagar is another strong competitor-proof locality for Lokra because it supports premium residential, home-construction, and villa-intent searches with clearer locality framing than a generic city route. This page is built for buyers who want branded package comparisons, stronger execution discipline, and real package-fit guidance rather than thin locality filler."
       serviceName="Builders in Besant Nagar, Chennai"
       serviceDescription="Construction planning in Besant Nagar for homes, villas, and premium residential projects with branded package comparisons and better execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Besant Nagar-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Besant Nagar project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, villa, or building-contractor service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Premium Locality Fit", desc: "Besant Nagar works best when the page leads with residential quality and project-fit expectations rather than generic contractor wording." },
         { title: "Package Comparison Clarity", desc: "Useful for buyers who want to compare package levels from ₹1,899 / sq.ft. upward without pretending every project should use the lowest level." },
