@@ -34,6 +34,24 @@ const CATEGORIES = [
 
 const BG_SHADES = ["#1A1816", "#1E1C19", "#201F1D", "#1C1B17", "#211F1C", "#191817"];
 
+const BROWSE_PATHS = [
+  {
+    href: "#featured-project",
+    label: "Browse By Project Proof",
+    desc: "See real, in-progress and completed work — starting with the Kundrathur PEB warehouse project below.",
+  },
+  {
+    href: "/chennai-areas",
+    label: "Browse By Chennai Area",
+    desc: "Find builder and construction pages grouped by Central, South, West, North, and outer Chennai zones.",
+  },
+  {
+    href: "/packages",
+    label: "Browse By Budget",
+    desc: "Compare the real public price ladder from ₹1,899 / sq.ft. to find the package step that fits your project.",
+  },
+];
+
 const FEATURED_PROJECT = {
   title: "Kundrathur PEB Project",
   subtitle: "6,000 sq.ft. material warehouse by Lokra Infra",
@@ -80,15 +98,61 @@ export default function ProjectsPage() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "620px", marginBottom: "2.5rem" }}>
             Lokra Infra works across residential, commercial, civil, and partnership-led projects in Chennai with a structured execution approach. This page shows the project categories we operate in, while deeper project references are discussed directly based on scope, stage, and fit.
             </p>
-            <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)", maxWidth: "760px" }}>
+            <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)", maxWidth: "760px", marginBottom: "2rem" }}>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)", lineHeight: 1.7 }}>
                 We share project-specific reference context, execution discussions, and relevant work examples during direct conversations so each discussion stays aligned to the actual requirement.
               </p>
             </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
+              <a href="#featured-project" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Project Proof
+              </a>
+              <Link href="/chennai-areas" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Browse By Area
+              </Link>
+              <Link href="/packages" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Full Price Ladder
+              </Link>
+              <Link href="/services" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                All Services
+              </Link>
+            </div>
           </div>
         </section>
 
-        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderBottom: "1px solid var(--border-light)" }}>
+        <section className="section-py" style={{ backgroundColor: "var(--charcoal)", borderBottom: "1px solid var(--border-warm)", paddingTop: "2.5rem", paddingBottom: "2.5rem" }}>
+          <div className="container-lokra">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm">Choose How You Want To Start</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--warm-white)", maxWidth: "780px", marginBottom: "1rem" }}>
+              Browse By Project Proof, Area, Or Budget.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "720px", marginBottom: "1.75rem" }}>
+              Different buyers start from different questions. Use whichever path matches how you're evaluating Lokra Infra right now — you can always move between them.
+            </p>
+            <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
+              {BROWSE_PATHS.map((path) => (
+                <Link key={path.href} href={path.href} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.1rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "0.85rem" }}>
+                  <div>
+                    <div style={{ fontFamily: "var(--font-display)", fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.4rem" }}>
+                      {path.label}
+                    </div>
+                    <div style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem", lineHeight: 1.6, color: "var(--concrete)" }}>
+                      {path.desc}
+                    </div>
+                  </div>
+                  <span className="btn-text" style={{ color: "var(--accent)" }}>
+                    Explore This Path <ArrowUpRight size={14} strokeWidth={2.2} />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="featured-project" className="section-py" style={{ backgroundColor: "var(--warm-white)", borderBottom: "1px solid var(--border-light)", scrollMarginTop: "6rem" }}>
           <div className="container-lokra" style={{ display: "grid", gap: "2rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
               <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
