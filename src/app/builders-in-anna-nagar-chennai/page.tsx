@@ -29,6 +29,11 @@ export default function Page() {
       intro="Anna Nagar is one of the stronger premium and established Chennai localities in this rollout. This page is built for buyers comparing home-construction, villa, and higher-expectation residential work with price-led clarity, branded material scope, and stronger execution discipline — without turning the page into generic low-cost filler."
       serviceName="Builders in Anna Nagar, Chennai"
       serviceDescription="Lokra Infra supports Anna Nagar construction planning for homes, villas, and premium residential projects with clearer pricing, branded materials, and stronger execution discipline."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to an Anna Nagar-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Anna Nagar project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, villa, or building-contractor service pages if you already know the scope." },
+      ]}
       summaryCards={summaryCards}
       sections={sections}
       faqs={faqs}
