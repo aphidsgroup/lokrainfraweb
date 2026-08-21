@@ -473,6 +473,11 @@ export default function ServicesPage() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.98rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "760px", marginBottom: "2rem" }}>
               These area pages help Lokra expand beyond city-level service routes without thin locality spam. The current rollout now includes corridor pages, affordable package-led areas, premium-core localities, direct competitor-response localities, and practical outer-area routes — all grounded in real service fit rather than fake rank claims.
             </p>
+            <div style={{ marginBottom: "1.5rem" }}>
+              <Link href="/chennai-areas" className="btn-text" style={{ color: "var(--accent)" }}>
+                Explore All 59 Chennai Area Pages <ArrowUpRight size={14} strokeWidth={2.2} />
+              </Link>
+            </div>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {PRIORITY_AREA_ROUTES.map((route) => (
                 <Link key={route.href} href={route.href} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--stone-white)", padding: "1.35rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "1rem" }}>
