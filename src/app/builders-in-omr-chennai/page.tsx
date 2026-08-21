@@ -41,6 +41,11 @@ export default function BuildersInOmrChennaiPage() {
       intro="OMR is one of the strongest corridor-level expansion targets because it carries mixed residential, villa, commercial, and enabling civil demand. Lokra Infra uses this page to frame OMR projects more clearly than a generic city page can — especially where scope, package fit, and execution sequencing need to be understood early."
       serviceName="Builders in OMR, Chennai"
       serviceDescription="Construction planning in the OMR corridor across homes, villas, commercial builds, renovation, and civil-linked scope with clearer execution framing and milestone visibility."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to an OMR-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your OMR project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, villa, commercial, civil, or renovation service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Corridor-Level Fit", desc: "Useful because OMR behaves as a broader project corridor, not just one isolated locality keyword." },
         { title: "Mixed-Use Relevance", desc: "Supports home, villa, commercial, civil, and renovation conversations better than a narrow single-service angle." },

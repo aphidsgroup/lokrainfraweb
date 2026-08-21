@@ -57,6 +57,11 @@ export default function BuildersInVelacheryChennaiPage() {
       intro="Velachery is one of the best next-fit localities for Lokra because it supports home, villa, commercial, and budget-conscious construction intent without forcing thin locality copy. This page helps buyers who want affordable and branded package options starting from ₹1,899 / sq.ft. while still keeping execution discipline, package fit, and scope clarity in view."
       serviceName="Affordable Builders in Velachery, Chennai"
       serviceDescription="Construction planning in Velachery for homes, villas, and commercial projects with package-led affordable options starting from ₹1,899 / sq.ft. and clearer execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Velachery-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your budget." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, villa, or commercial service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Affordable Package Entry", desc: "Useful for buyers who want construction packages starting from ₹1,899 / sq.ft. without pretending that the lowest price alone decides the project." },
         { title: "Residential + Villa Fit", desc: "Velachery supports both practical home-construction intent and stronger premium/villa comparisons." },
