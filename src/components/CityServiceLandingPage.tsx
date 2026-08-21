@@ -48,6 +48,21 @@ export default function CityServiceLandingPage({
   ctaTitle,
 }: CityServiceLandingPageProps) {
   const url = `${SITE_URL}${route}`;
+  const isAreaRoute = route.startsWith("/builders-in-") || route === "/builders-along-gst-road-chennai";
+  const relatedLinks = isAreaRoute
+    ? [
+        { href: "/chennai-areas", label: "Explore All Chennai Areas" },
+        { href: "/home-construction-chennai", label: "Home Construction Chennai" },
+        { href: "/building-contractors-chennai", label: "Building Contractors Chennai" },
+        { href: "/affordable-construction-packages-chennai", label: "Affordable Construction Cost Chennai" },
+        { href: "/budget-home-construction-chennai", label: "Budget Home Construction Chennai" },
+      ]
+    : [
+        { href: "/packages", label: "Compare The Full Price Ladder" },
+        { href: "/home-construction-chennai", label: "Home Construction Chennai" },
+        { href: "/services", label: "Review All Services" },
+        { href: "/chennai-areas", label: "Explore All Chennai Areas" },
+      ];
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -173,6 +188,28 @@ export default function CityServiceLandingPage({
                 ) : null}
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderTop: "1px solid var(--border-light)" }}>
+          <div className="container-lokra" style={{ maxWidth: "980px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">Related Chennai Routes</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--text-dark)", marginBottom: "1rem" }}>
+              Compare The Next Best Route Before You Decide.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "860px", marginBottom: "1.5rem" }}>
+              Use these linked routes to compare nearby area coverage, broader Chennai builder paths, and price-led construction guidance before choosing only on one locality page.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.9rem", marginBottom: "2rem" }}>
+              {relatedLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="btn-text" style={{ color: "var(--accent)" }}>
+                  {link.label} <ArrowUpRight size={14} strokeWidth={2.2} />
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
