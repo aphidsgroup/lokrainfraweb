@@ -57,6 +57,11 @@ export default function BuildersInAdyarChennaiPage() {
       intro="Adyar is one of the strongest competitor-proof localities for Lokra's next rollout because it supports home-construction, villa, and higher-expectation residential intent without forcing generic city copy. This page is designed for buyers who want better package-fit, branded material clarity, and execution discipline — while still being able to compare entry packages starting from ₹1,899 / sq.ft. where suitable."
       serviceName="Builders in Adyar, Chennai"
       serviceDescription="Construction planning in Adyar for homes, villas, and premium residential builds with clearer package comparisons, branded scope, and stronger execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to an Adyar-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Adyar project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home, villa, or building-contractor service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Premium-Residential Fit", desc: "Adyar works best when the page leads with home and villa intent rather than generic contractor language alone." },
         { title: "Package Depth Matters", desc: "Useful for buyers who want to compare starting package levels, but also need clarity on finish quality, reporting, and long-term protection." },

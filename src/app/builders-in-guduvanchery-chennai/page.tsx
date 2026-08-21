@@ -57,6 +57,11 @@ export default function BuildersInGuduvancheryChennaiPage() {
       intro="Guduvanchery is the next evidence-backed outer-area locality in the rollout, but it needs more practical framing than the premium central localities. This page is designed for buyers comparing home-construction, builder, and budget-conscious package options with clearer scope, branded material logic, and execution discipline — while still grounding affordability in the real package ladder starting from ₹1,899 / sq.ft."
       serviceName="Builders in Guduvanchery, Chennai"
       serviceDescription="Construction planning in Guduvanchery for homes, builder comparison, and package-led project decisions with practical scope clarity and execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Guduvanchery-area builder." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Guduvanchery project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home or building-contractor service pages if you already know the scope." },
+      ]}
       summaryCards={[
         { title: "Practical Outer-Area Fit", desc: "Guduvanchery works better with practical home-construction and builder-comparison framing than with premium-locality copy." },
         { title: "Affordable Package Logic", desc: "Useful for buyers comparing budget direction and package fit without fake cheapest claims." },
