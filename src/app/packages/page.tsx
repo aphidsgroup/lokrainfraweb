@@ -119,6 +119,24 @@ const jumpLinks = [
   { id: "faq", label: "FAQ" },
 ];
 
+const discoveryPaths = [
+  {
+    href: "#package-ladder",
+    label: "Browse By Budget",
+    desc: "You're already on the price ladder — jump straight to all 9 packages from ₹1,899 / sq.ft.",
+  },
+  {
+    href: "/projects#featured-project",
+    label: "Browse By Project Proof",
+    desc: "See real, in-progress and completed work before you commit to a package.",
+  },
+  {
+    href: "/chennai-areas",
+    label: "Browse By Chennai Area",
+    desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones.",
+  },
+];
+
 const packageLevels: PackageLevel[] = [
   {
     id: "ls-1",
@@ -1021,6 +1039,17 @@ export default function PackagesPage() {
                     Talk To Lokra Infra
                   </Link>
                 </div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem", marginTop: "1.5rem" }}>
+                  <Link href="/projects" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                    Project Proof
+                  </Link>
+                  <Link href="/chennai-areas" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                    Browse By Area
+                  </Link>
+                  <Link href="/services" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                    All Services
+                  </Link>
+                </div>
               </div>
               <div className="packages-hero-summary" style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--charcoal)", padding: "1.5rem" }}>
                 <div style={{ display: "grid", gap: "1rem" }}>
@@ -1043,6 +1072,38 @@ export default function PackagesPage() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-py" style={{ backgroundColor: "var(--charcoal)", borderBottom: "1px solid var(--border-warm)", paddingTop: "2.5rem", paddingBottom: "2.5rem" }}>
+          <div className="container-lokra packages-page-body">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm">Choose How You Want To Start</span>
+            </div>
+            <h2 className="display-md" style={{ color: "var(--warm-white)", maxWidth: "780px", marginBottom: "1rem" }}>
+              Browse By Budget, Project Proof, Or Chennai Area.
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "720px", marginBottom: "1.75rem" }}>
+              Different buyers start from different questions. Use whichever path matches how you&rsquo;re evaluating Lokra Infra right now — you can always move between them.
+            </p>
+            <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
+              {discoveryPaths.map((path) => (
+                <Link key={path.href} href={path.href} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.1rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "0.85rem" }}>
+                  <div>
+                    <div style={{ fontFamily: "var(--font-display)", fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.4rem" }}>
+                      {path.label}
+                    </div>
+                    <div style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem", lineHeight: 1.6, color: "var(--concrete)" }}>
+                      {path.desc}
+                    </div>
+                  </div>
+                  <span className="btn-text" style={{ color: "var(--accent)" }}>
+                    Explore This Path <ArrowUpRight size={14} strokeWidth={2.2} />
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
