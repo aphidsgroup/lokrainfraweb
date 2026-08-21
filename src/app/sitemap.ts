@@ -11,6 +11,8 @@ const PUBLIC_ROUTES = [
   "/process",
   "/affordable-construction-packages-chennai",
   "/budget-home-construction-chennai",
+  "/waterproofing-construction-package-chennai",
+  "/quality-checked-structure-package-chennai",
   "/home-construction-chennai",
   "/building-contractors-chennai",
   "/civil-contractors-chennai",
