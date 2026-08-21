@@ -20,6 +20,12 @@ type FaqItem = {
   a: string;
 };
 
+type DiscoveryPath = {
+  href: string;
+  label: string;
+  desc: string;
+};
+
 type CityServiceLandingPageProps = {
   route: string;
   eyebrow: string;
@@ -31,6 +37,7 @@ type CityServiceLandingPageProps = {
   sections: ContentSection[];
   faqs: FaqItem[];
   ctaTitle: string;
+  discoveryPaths?: DiscoveryPath[];
 };
 
 const SITE_URL = "https://www.lokrainfra.in";
@@ -46,6 +53,7 @@ export default function CityServiceLandingPage({
   sections,
   faqs,
   ctaTitle,
+  discoveryPaths,
 }: CityServiceLandingPageProps) {
   const url = `${SITE_URL}${route}`;
   const isAreaRoute = route.startsWith("/builders-in-") || route === "/builders-along-gst-road-chennai";
@@ -138,6 +146,40 @@ export default function CityServiceLandingPage({
             </p>
           </div>
         </section>
+
+        {discoveryPaths && discoveryPaths.length > 0 ? (
+          <section className="section-py" style={{ backgroundColor: "var(--charcoal)", borderBottom: "1px solid var(--border-warm)", paddingTop: "2.5rem", paddingBottom: "2.5rem" }}>
+            <div className="container-lokra">
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+                <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+                <span className="label-sm">Choose How You Want To Start</span>
+              </div>
+              <h2 className="display-md" style={{ color: "var(--warm-white)", maxWidth: "780px", marginBottom: "1rem" }}>
+                Browse By Budget, Project Proof, Or Chennai Area.
+              </h2>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "720px", marginBottom: "1.75rem" }}>
+                Different buyers start from different questions. Use whichever path matches how you&rsquo;re evaluating Lokra Infra right now — you can always move between them.
+              </p>
+              <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
+                {discoveryPaths.map((path) => (
+                  <Link key={path.href} href={path.href} style={{ border: "1px solid var(--border-warm)", backgroundColor: "var(--carbon)", padding: "1.1rem", textDecoration: "none", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "0.85rem" }}>
+                    <div>
+                      <div style={{ fontFamily: "var(--font-display)", fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase", color: "var(--warm-white)", marginBottom: "0.4rem" }}>
+                        {path.label}
+                      </div>
+                      <div style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem", lineHeight: 1.6, color: "var(--concrete)" }}>
+                        {path.desc}
+                      </div>
+                    </div>
+                    <span className="btn-text" style={{ color: "var(--accent)" }}>
+                      Explore This Path <ArrowUpRight size={14} strokeWidth={2.2} />
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section className="section-py" style={{ backgroundColor: "var(--warm-white)", borderBottom: "1px solid var(--border-light)" }}>
           <div className="container-lokra">
