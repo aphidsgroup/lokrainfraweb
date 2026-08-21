@@ -29,6 +29,11 @@ export default function Page() {
       intro="Navallur is part of the stronger south/corridor demand layer in this rollout. This page is built for buyers comparing home-construction, builder, and affordable pricing paths with better scope clarity, corridor-fit logic, and execution discipline — while still grounding affordability in the real public price ladder starting from ₹1,899 / sq.ft."
       serviceName="Affordable Builders in Navallur, Chennai"
       serviceDescription="Lokra Infra supports Navallur construction planning for homes, builder comparison, and price-led project decisions with clearer scope, corridor-fit logic, and execution discipline."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a Navallur-area builder in the outward OMR growth belt." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your Navallur project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home-construction or builder-comparison service pages if you already know the scope." },
+      ]}
       summaryCards={summaryCards}
       sections={sections}
       faqs={faqs}
