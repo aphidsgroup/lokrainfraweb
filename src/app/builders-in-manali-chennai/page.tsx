@@ -29,6 +29,11 @@ export default function Page() {
       intro="Manali is treated as a practical demand area in this rollout. This page is built for buyers comparing budget home-construction, builder, and affordable price-led options with clearer scope, branded material logic, and execution discipline — without fake cheapest claims."
       serviceName="Affordable Builders in Manali, Chennai"
       serviceDescription="Lokra Infra supports Manali construction planning for homes, builder comparison, and budget-conscious project decisions with clearer scope, pricing, and execution framing."
+      discoveryPaths={[
+        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a builder in a north-industrial-edge area like Manali." },
+        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the step that fits your Manali project." },
+        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home-construction or builder-comparison service pages if you already know the scope." },
+      ]}
       summaryCards={summaryCards}
       sections={sections}
       faqs={faqs}
