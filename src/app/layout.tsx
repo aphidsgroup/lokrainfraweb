@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, DM_Sans } from "next/font/google";
 import ScrollToTop from "@/components/ScrollToTop";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import ContactAnalyticsTracker from "@/components/ContactAnalyticsTracker";
 import "./globals.css";
 import "./responsive.css";
 
@@ -99,11 +100,23 @@ export default function RootLayout({
               name: "Lokra Infra",
               description:
                 "Premium construction and infrastructure company in Chennai founded in 2026, backed by 10+ years of site experience with 50+ completed projects in previous company works and a 50-year family material supplier background.",
+              url: SITE_URL,
+              telephone: "+91 93446 43324",
+              email: "lokrainfra@gmail.com",
               address: {
                 "@type": "PostalAddress",
+                streetAddress: "343, First Floor, Kundrathur Main Rd, Subam Nagar, KK Nagar, Mangadu",
                 addressLocality: "Chennai",
                 addressRegion: "Tamil Nadu",
+                postalCode: "600122",
                 addressCountry: "IN",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91 93446 43324",
+                email: "lokrainfra@gmail.com",
+                contactType: "customer service",
+                areaServed: "Chennai, Tamil Nadu, India",
               },
               areaServed: "Chennai, Tamil Nadu, India",
               serviceType: [
@@ -121,6 +134,7 @@ export default function RootLayout({
         {children}
         <FloatingWhatsAppButton />
         <ScrollToTop />
+        <ContactAnalyticsTracker />
       </body>
     </html>
   );

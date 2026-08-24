@@ -53,6 +53,27 @@ export default function JVPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "jv_inquiry_submit_attempt", {
+        page_path: window.location.pathname,
+      });
+    }
+
+    const subject = `New JV Partnership Inquiry - ${formData.landLocation || "Chennai"}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email}`,
+      `Land Location: ${formData.landLocation}`,
+      `Approximate Land Area: ${formData.landArea}`,
+      "",
+      "Additional Context:",
+      formData.message,
+    ].join("\n");
+
+    window.location.href = `mailto:lokrainfra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setSubmitted(true);
   };
 
@@ -159,9 +180,9 @@ export default function JVPage() {
                 {submitted ? (
                   <div style={{ textAlign: "center", padding: "3rem 0" }}>
                     <div style={{ width: "48px", height: "48px", backgroundColor: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem", fontSize: "1.5rem" }}>✓</div>
-                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "1rem" }}>Inquiry Received</h3>
+                    <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "1rem" }}>Opening Your Email App</h3>
                     <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9375rem", color: "var(--text-dark-2)", lineHeight: 1.7 }}>
-                      Thank you. Our team will review your details and respond within 2 business days.
+                      We&rsquo;ve opened a prefilled email to lokrainfra@gmail.com in your email app. Your inquiry is only sent to Lokra Infra once you review and send that email yourself.
                     </p>
                   </div>
                 ) : (

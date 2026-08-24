@@ -14,6 +14,26 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "contact_form_submit_attempt", {
+        page_path: window.location.pathname,
+      });
+    }
+
+    const subject = `New Project Inquiry - ${formData.projectType || "General"}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email}`,
+      `Project Type: ${formData.projectType}`,
+      "",
+      "Project Details:",
+      formData.message,
+    ].join("\n");
+
+    window.location.href = `mailto:lokrainfra@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setSubmitted(true);
   };
 
@@ -85,10 +105,10 @@ export default function ContactPage() {
                       <Check size={24} style={{ color: "var(--carbon)" }} />
                     </div>
                     <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 700, textTransform: "uppercase", color: "var(--text-dark)", marginBottom: "0.75rem" }}>
-                      Inquiry Received
+                      Opening Your Email App
                     </h3>
                     <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9375rem", color: "var(--concrete)", lineHeight: 1.6, maxWidth: "360px", margin: "0 auto" }}>
-                      Thank you for contacting Lokra Infra. A member of our engineering team will review your inquiry and respond within 1 business day.
+                      We&rsquo;ve opened a prefilled email to lokrainfra@gmail.com in your email app. Your inquiry is only sent to Lokra Infra once you review and send that email yourself.
                     </p>
                   </div>
                 ) : (

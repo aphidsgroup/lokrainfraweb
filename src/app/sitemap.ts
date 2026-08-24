@@ -73,7 +73,6 @@ const PUBLIC_ROUTES = [
   "/builders-in-kundrathur-chennai",
   "/builders-in-mangadu-chennai",
   "/builders-in-navallur-chennai",
-  "/builders-in-omalur-chennai",
   "/builders-in-padur-chennai",
   "/builders-in-perungalathur-chennai",
   "/builders-in-singaperumal-koil-chennai",
