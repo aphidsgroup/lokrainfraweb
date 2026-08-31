@@ -32,6 +32,7 @@ const ONGOING_AREAS = [
   { name: "Kelambakkam", area: "Kelambakkam" },
   { name: "Minjur", area: "Minjur" },
   { name: "Guduvanchery", area: "Guduvanchery" },
+  { name: "Vengavasal", area: "Vengavasal" },
 ];
 
 const REASONS = [
