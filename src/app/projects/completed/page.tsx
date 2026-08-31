@@ -5,18 +5,20 @@ import { ArrowUpRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const COMPLETED_TITLE = "Completed Projects — Lokra Infra | Delivered Construction Work Chennai";
+const COMPLETED_DESCRIPTION =
+  "Completed construction work by Lokra Infra, featuring the delivered 6,000 sq.ft. Kundrathur PEB material warehouse, plus the residential, commercial, civil, and JV project categories we deliver across Chennai.";
+
 export const metadata: Metadata = {
-  title: "Projects — Lokra Infra | Construction Portfolio Chennai",
-  description:
-    "Lokra Infra construction project portfolio — residential homes, villas, apartment developments, commercial spaces, civil works, and JV development projects across Chennai.",
+  title: COMPLETED_TITLE,
+  description: COMPLETED_DESCRIPTION,
   alternates: {
-    canonical: "/projects",
+    canonical: "/projects/completed",
   },
   openGraph: {
-    title: "Projects — Lokra Infra | Construction Portfolio Chennai",
-    description:
-      "Lokra Infra construction project portfolio — residential homes, villas, apartment developments, commercial spaces, civil works, and JV development projects across Chennai.",
-    url: "https://www.lokrainfra.in/projects",
+    title: COMPLETED_TITLE,
+    description: COMPLETED_DESCRIPTION,
+    url: "https://www.lokrainfra.in/projects/completed",
     type: "website",
     siteName: "Lokra Infra",
     locale: "en_IN",
@@ -38,7 +40,7 @@ const BROWSE_PATHS = [
   {
     href: "#featured-project",
     label: "Browse By Project Proof",
-    desc: "See real, in-progress and completed work — starting with the Kundrathur PEB warehouse project below.",
+    desc: "See completed, delivered work — starting with the Kundrathur PEB warehouse project below.",
   },
   {
     href: "/chennai-areas",
@@ -78,7 +80,7 @@ const FEATURED_PROJECT = {
   ],
 };
 
-export default function ProjectsPage() {
+export default function CompletedProjectsPage() {
   return (
     <>
       <Header />
@@ -90,13 +92,13 @@ export default function ProjectsPage() {
           <div className="container-lokra">
             <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.75rem" }}>
               <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
-              <span className="label-sm">Our Work</span>
+              <span className="label-sm">Completed Work</span>
             </div>
             <h1 className="display-lg" style={{ color: "var(--warm-white)", maxWidth: "720px", marginBottom: "1.5rem" }}>
-              Our Project Portfolio
+              Our Completed Project Portfolio
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "620px", marginBottom: "2.5rem" }}>
-            Lokra Infra works across residential, commercial, civil, and partnership-led projects in Chennai with a structured execution approach. This page shows the project categories we operate in, while deeper project references are discussed directly based on scope, stage, and fit.
+            Lokra Infra works across residential, commercial, civil, and partnership-led projects in Chennai with a structured execution approach. This page shows the delivered project proof we publish along with the project categories we operate in, while deeper project references are discussed directly based on scope, stage, and fit.
             </p>
             <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)", maxWidth: "760px", marginBottom: "2rem" }}>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)", lineHeight: 1.7 }}>
@@ -107,6 +109,9 @@ export default function ProjectsPage() {
               <a href="#featured-project" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
                 Project Proof
               </a>
+              <Link href="/projects/ongoing" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
+                Ongoing Projects
+              </Link>
               <Link href="/chennai-areas" className="btn-text" style={{ color: "var(--warm-white)", border: "1px solid var(--border-warm)", padding: "0.5rem 0.9rem" }}>
                 Browse By Area
               </Link>
@@ -130,7 +135,7 @@ export default function ProjectsPage() {
               Browse By Project Proof, Area, Or Budget.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "720px", marginBottom: "1.75rem" }}>
-              Different buyers start from different questions. Use whichever path matches how you're evaluating Lokra Infra right now — you can always move between them.
+              Different buyers start from different questions. Use whichever path matches how you&apos;re evaluating Lokra Infra right now — you can always move between them.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {BROWSE_PATHS.map((path) => (
