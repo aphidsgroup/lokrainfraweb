@@ -4,9 +4,9 @@ import { ArrowUpRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const ONGOING_TITLE = "Ongoing Projects — Lokra Infra | Discussed Directly, Not Published";
+const ONGOING_TITLE = "Ongoing Projects — Lokra Infra | Current Work By Area";
 const ONGOING_DESCRIPTION =
-  "Lokra Infra does not publish live project listings. Where a current project is relevant to your requirement, it is referenced inside a direct, scope-appropriate conversation. See completed work or talk to our team.";
+  "Lokra Infra publishes its ongoing projects at area level only — Kundrathur, Manali, Red Hills, Kelambakkam, Minjur, and Guduvanchery. Project details stay private and are discussed directly. See completed work or talk to our team.";
 
 export const metadata: Metadata = {
   title: ONGOING_TITLE,
@@ -24,11 +24,21 @@ export const metadata: Metadata = {
   },
 };
 
+const ONGOING_AREAS = [
+  { name: "Kundrathur", area: "Kundrathur" },
+  { name: "Manali Project 01", area: "Manali" },
+  { name: "Manali Project 02", area: "Manali" },
+  { name: "Red Hills", area: "Red Hills" },
+  { name: "Kelambakkam", area: "Kelambakkam" },
+  { name: "Minjur", area: "Minjur" },
+  { name: "Guduvanchery", area: "Guduvanchery" },
+];
+
 const REASONS = [
   {
     num: "01",
     label: "Client Privacy Comes First",
-    desc: "Work under execution belongs to the client who commissioned it. Names, drawings, site details, and commercial terms stay private unless that client has agreed to share them.",
+    desc: "Work under execution belongs to the client who commissioned it. Beyond the area, names, drawings, site specifics, and commercial terms stay private unless that client has agreed to share them.",
   },
   {
     num: "02",
@@ -79,11 +89,11 @@ export default function OngoingProjectsPage() {
               Ongoing Projects
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "620px", marginBottom: "2.5rem" }}>
-              Lokra Infra does not publish a live project listing on this page. Where a current project is relevant to what you are planning, it is referenced inside a direct, scope-appropriate conversation with our team — not as a public showcase.
+              Lokra Infra publishes its current work at area level only. The list below names the areas where projects are ongoing. Anything beyond that — what is being built and for whom — is covered in a direct, scope-appropriate conversation with our team, not as a public showcase.
             </p>
             <div style={{ display: "inline-flex", padding: "1rem 1.5rem", backgroundColor: "var(--charcoal)", borderLeft: "2px solid var(--accent)", maxWidth: "760px", marginBottom: "2rem" }}>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.875rem", color: "var(--concrete)", lineHeight: 1.7 }}>
-                That means no site photos, client names, locations, sizes, or progress percentages for work currently under execution. The published proof we do share sits on our completed projects page, and everything else is handled in conversation.
+                That means we publish the area of each ongoing project and nothing further — no site photos, client names, project types, sizes, timelines, or progress percentages for work currently under execution. The published proof we do share sits on our completed projects page, and everything else is handled in conversation.
               </p>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
@@ -100,6 +110,54 @@ export default function OngoingProjectsPage() {
                 Full Price Ladder
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* Ongoing projects, published at area level only */}
+        <section
+          className="section-py"
+          aria-labelledby="ongoing-areas-heading"
+          style={{ backgroundColor: "var(--warm-white)", borderBottom: "1px solid var(--border-light)", paddingTop: "2.5rem", paddingBottom: "2.5rem" }}
+        >
+          <div className="container-lokra">
+            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
+              <div style={{ width: "40px", height: "2px", backgroundColor: "var(--accent)" }} />
+              <span className="label-sm light">Area-Level Reference</span>
+            </div>
+            <h2 id="ongoing-areas-heading" className="display-md" style={{ color: "var(--text-dark)", maxWidth: "780px", marginBottom: "1rem" }}>
+              Ongoing Projects by Area
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--text-dark-2)", maxWidth: "720px", marginBottom: "1.75rem" }}>
+              These are the areas where Lokra Infra currently has projects under execution. Each entry is published at area level only — the rest is discussed directly.
+            </p>
+            <ol
+              className="page-grid-3"
+              style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem", listStyle: "none", margin: 0, padding: 0 }}
+            >
+              {ONGOING_AREAS.map((project, index) => (
+                <li key={project.name} style={{ border: "1px solid var(--border-light)", backgroundColor: "var(--stone-white)", padding: "1.25rem" }}>
+                  <span style={{ fontFamily: "var(--font-display)", fontSize: "0.5625rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--accent)", display: "block", marginBottom: "0.6rem" }}>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "0.9rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "-0.01em", color: "var(--text-dark)", marginBottom: "0.6rem" }}>
+                    {project.name}
+                  </h3>
+                  <dl style={{ display: "grid", gap: "0.25rem", margin: 0, fontFamily: "var(--font-body)", fontSize: "0.85rem", lineHeight: 1.65, color: "var(--text-dark-2)" }}>
+                    <div style={{ display: "flex", gap: "0.35rem" }}>
+                      <dt style={{ fontWeight: 600 }}>Status:</dt>
+                      <dd style={{ margin: 0 }}>Ongoing</dd>
+                    </div>
+                    <div style={{ display: "flex", gap: "0.35rem" }}>
+                      <dt style={{ fontWeight: 600 }}>Area:</dt>
+                      <dd style={{ margin: 0 }}>{project.area}</dd>
+                    </div>
+                  </dl>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "0.8rem", lineHeight: 1.6, color: "var(--text-dark-2)", borderTop: "1px solid var(--border-light)", marginTop: "0.85rem", paddingTop: "0.75rem" }}>
+                    Project images will be added.
+                  </p>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 
