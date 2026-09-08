@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 const ONGOING_TITLE = "Ongoing Projects — Lokra Infra | Current Work By Area";
 const ONGOING_DESCRIPTION =
-  "Lokra Infra publishes its ongoing projects at area level only — Kundrathur, Manali, Red Hills, Kelambakkam, Minjur, and Guduvanchery. Project details stay private and are discussed directly. See completed work or talk to our team.";
+  "Lokra Infra publishes ongoing projects at area level only: Kundrathur, Manali, Red Hills, Kelambakkam, Minjur, Guduvanchery, and Vengavasal. Project details stay private and are discussed directly. See completed work or talk to our team.";
 
 export const metadata: Metadata = {
   title: ONGOING_TITLE,
@@ -154,7 +154,7 @@ export default function OngoingProjectsPage() {
                     </div>
                   </dl>
                   <p style={{ fontFamily: "var(--font-body)", fontSize: "0.8rem", lineHeight: 1.6, color: "var(--text-dark-2)", borderTop: "1px solid var(--border-light)", marginTop: "0.85rem", paddingTop: "0.75rem" }}>
-                    Project images will be added.
+                    Current-site photos are not published. Ask us about reference context that fits your requirement.
                   </p>
                 </li>
               ))}
@@ -173,7 +173,7 @@ export default function OngoingProjectsPage() {
               Live Work Stays Private Until It Is Ours To Show.
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", lineHeight: 1.8, color: "var(--concrete)", maxWidth: "720px", marginBottom: "1.75rem" }}>
-              Publishing running-site content is easy marketing and weak evidence. We hold current work back for three straightforward reasons.
+              We keep current-site information private for three reasons.
             </p>
             <div className="page-grid-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: "1rem" }}>
               {REASONS.map((reason) => (

@@ -71,7 +71,7 @@ export default function ChennaiAreasPage() {
               Chennai Area Builder Pages
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(0.9375rem,1.1vw,1.0625rem)", lineHeight: 1.75, color: "var(--concrete)", maxWidth: "720px", marginBottom: "2rem" }}>
-              Browse Lokra Infra's Chennai area pages grouped across all major city zones and growth corridors. These routes are designed to help buyers compare builders, home-construction options, and pricing-led fit across the areas you care about.
+              Browse Lokra Infra&apos;s Chennai area pages grouped across major city zones and growth corridors. These routes help buyers compare builders, home-construction options, and price-led fit across the areas they care about.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
               {AREA_GROUPS.map((group) => (
