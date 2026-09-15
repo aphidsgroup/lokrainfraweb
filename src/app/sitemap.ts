@@ -80,6 +80,7 @@ const PUBLIC_ROUTES = [
   "/builders-in-sriperumbudur-chennai",
   "/builders-in-urapakkam-chennai",
   "/builders-in-vandalur-chennai",
+  "/builders-in-vengavasal-chennai",
   "/jv-partnerships",
   "/contact",
 ] as const;
