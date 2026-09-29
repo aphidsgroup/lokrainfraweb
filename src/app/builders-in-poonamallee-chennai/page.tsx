@@ -41,6 +41,10 @@ const faqs = [
     a: "The packages page lists separate or site-dependent work such as approvals and statutory fees, borewell and connections, compound walls, abnormal foundation work, demolition, and restricted-access handling. Confirm the written scope for the actual site instead of assuming these items are included.",
   },
   {
+    q: "Are planning-permission fees included in the package rate?",
+    a: "Do not assume they are. Lokra Infra lists approvals and statutory fees as separate or site-dependent work. Planning-permission requirements depend on the plot and proposed building, so confirm the authority, documents, responsibility, fees, and expected timing for the actual site in writing.",
+  },
+  {
     q: "Can I discuss a renovation or commercial requirement in Poonamallee?",
     a: "Yes. State the project type at the start. A new home, renovation, and commercial build need different information and scope, so the residential package ladder may not apply in the same way to every requirement.",
   },
@@ -54,6 +58,10 @@ const summaryCards = [
   {
     title: "Published rates need a written scope",
     desc: "Lokra Infra's public package ladder begins at ₹1,899 per sq.ft. Compare its inclusions, allowances, exclusions, and site-dependent work before treating it as a project total.",
+  },
+  {
+    title: "Check permissions before committing",
+    desc: "Ask which planning authority applies, who will prepare the documents, and which fees or approvals sit outside the construction package.",
   },
   {
     title: "Keep decisions on record",
@@ -90,6 +98,14 @@ const sections = [
       "Allowance amounts and material selections",
       "Approval and connection responsibilities",
       "Site-specific or difficult-ground work",
+    ],
+  },
+  {
+    title: "Keep planning permission separate from a construction promise",
+    body: "Planning permission is a formal process, not something a builder can safely promise before checking the plot and proposal. CMDA provides an online planning-permission route. Confirm which authority applies, who will prepare the documents, what information is still needed, and whether statutory fees are outside the construction scope.",
+    links: [
+      { href: "https://cmdachennai.gov.in/onlineppa.html", label: "CMDA online planning-permission information" },
+      { href: "/process", label: "See Lokra Infra's published project process" },
     ],
   },
   {
