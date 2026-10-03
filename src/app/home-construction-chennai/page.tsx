@@ -4,7 +4,7 @@ import CityServiceLandingPage from "@/components/CityServiceLandingPage";
 export const metadata: Metadata = {
   title: "Home Construction Company in Chennai | Lokra Infra",
   description:
-    "Lokra Infra is a Chennai home construction company for independent homes, villas, and premium residential builds. Get engineering-led planning, clear scope, milestone visibility, and disciplined site execution.",
+    "Planning a home build in Chennai? Use Lokra Infra's published package scope and site-brief checklist to compare the work behind a construction quote.",
   keywords: [
     "home construction company chennai",
     "house construction company chennai",
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "How do I compare home construction packages before I choose one?",
-    a: "Lokra's packages page is designed to help compare engineering depth, reporting level, warranty, and package fit. The right choice depends on site conditions, quality expectations, and how much documentation and visibility you want during execution.",
+    a: "Start with the published scope, not the rate alone. Lokra Infra lists nine residential package levels from ₹1,899 to ₹3,449 per sq.ft. Compare the inclusions, allowances, waterproofing, quality checks, reporting, exclusions, and site-dependent work before treating a package as a project quote.",
   },
   {
     q: "Does Lokra handle villa-style residential construction in Chennai?",
@@ -56,11 +56,11 @@ export default function HomeConstructionChennaiPage() {
       route="/home-construction-chennai"
       eyebrow="Residential Build Planning"
       title="Home Construction Company in Chennai"
-      intro="Lokra Infra works with homeowners who want clearer scope, engineering-led planning, and disciplined execution before a residential build begins. From independent houses to villa-style homes, the focus is on site reality, package fit, and execution visibility — not vague promises."
+      intro="A home-construction quote only becomes useful once it is tied to the plot and a written scope. Lokra Infra publishes residential package levels, but site conditions, drawings, finishes, allowances, and work outside the package still need to be discussed before a project total can be defined."
       serviceName="Home Construction Company in Chennai"
       serviceDescription="Engineering-led home construction in Chennai for independent houses, villas, and residential builds with clear scope, process visibility, and disciplined execution."
       discoveryPaths={[
-        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed residential work before you commit to a construction partner." },
+        { href: "/projects/completed", label: "Browse Published Work", desc: "Review the completed-project page before you choose a construction partner." },
         { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the tier that fits your home build." },
         { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
       ]}
@@ -80,13 +80,13 @@ export default function HomeConstructionChennaiPage() {
       ]}
       sections={[
         {
-          title: "Who This Page Is For",
-          body: "This page is meant for plot owners and residential buyers who are actively comparing home construction companies in Chennai. The strongest fit is for owners who want more structure before the build starts, especially when package choice, site constraints, and quality expectations need to be made visible early.",
+          title: "Start with a short site brief",
+          body: "Bring the plot location, dimensions, intended use, likely floor count, available drawings, and a budget direction. Mention an existing structure, difficult access, a shared boundary, drainage concerns, or any report you already have. A builder can assess a real brief; a generic per-square-foot question leaves too much unstated.",
           bullets: [
-            "First-time plot owners",
-            "Independent house construction",
-            "Villa-style residential builds",
-            "Owners comparing turnkey vs managed execution",
+            "Plot location, dimensions, and access",
+            "Building use and likely floor count",
+            "Drawings, photos, and existing conditions",
+            "Budget direction and finish expectations",
           ],
         },
         {
@@ -100,13 +100,13 @@ export default function HomeConstructionChennaiPage() {
           ],
         },
         {
-          title: "What Makes Lokra Different From Generic Builder Copy",
-          body: "A lot of builder pages chase the keyword but stay vague about how the project will actually move. Lokra's stronger position is process clarity: structured planning, package depth, engineering-led execution, and one accountable team rather than a fragmented contractor chain.",
-          bullets: [
-            "Engineering-led planning",
-            "Visible project process",
-            "Package depth through /packages",
-            "Single-team accountability",
+          title: "Read a package as a scope document",
+          body: "Lokra Infra publishes nine residential package levels from ₹1,899 to ₹3,449 per sq.ft. The numbers are not interchangeable. The public tables show differences in items such as waterproofing, concrete checks, reporting, handover records, and finish allowances. They also identify approvals, statutory fees, connections, borewell work, compound walls, difficult ground, demolition, and access constraints as separate or site-dependent work. Read both sides of that boundary before comparing quotes.",
+          links: [
+            { href: "/packages", label: "Compare the published packages" },
+            { href: "/affordable-construction-packages-chennai", label: "Compare the ₹1,899 to ₹2,099 steps" },
+            { href: "/waterproofing-construction-package-chennai", label: "See the waterproofing step" },
+            { href: "/quality-checked-structure-package-chennai", label: "See the quality-record step" },
           ],
         },
         {
