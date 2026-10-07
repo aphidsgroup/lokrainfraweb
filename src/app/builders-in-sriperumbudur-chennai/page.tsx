@@ -2,13 +2,20 @@ import type { Metadata } from "next";
 import CityServiceLandingPage from "@/components/CityServiceLandingPage";
 
 export const metadata: Metadata = {
-  title: "Affordable Builders in Sriperumbudur, Chennai | Lokra Infra",
-  description: "Lokra Infra supports Sriperumbudur construction planning for homes, builder comparison, and budget-conscious project decisions with clearer scope, pricing, and execution framing.",
-  keywords: ["builders in sriperumbudur chennai", "home construction sriperumbudur chennai", "building contractors sriperumbudur chennai", "affordable builders sriperumbudur chennai", "budget construction company sriperumbudur chennai", "low cost construction company sriperumbudur chennai"],
+  title: "Builders in Sriperumbudur, Chennai | Lokra Infra",
+  description:
+    "Planning construction in Sriperumbudur? Use Lokra Infra's published package scope and a pre-quote checklist to compare a construction proposal before you decide.",
+  keywords: [
+    "builders in sriperumbudur chennai",
+    "home construction sriperumbudur chennai",
+    "building contractors sriperumbudur chennai",
+    "house construction cost sriperumbudur",
+  ],
   alternates: { canonical: "/builders-in-sriperumbudur-chennai" },
   openGraph: {
-    title: "Affordable Builders in Sriperumbudur, Chennai | Lokra Infra",
-    description: "Lokra Infra supports Sriperumbudur construction planning for homes, builder comparison, and budget-conscious project decisions with clearer scope, pricing, and execution framing.",
+    title: "Builders in Sriperumbudur, Chennai | Lokra Infra",
+    description:
+      "A Sriperumbudur construction checklist for comparing package scope, site work, permissions, and records before a quote.",
     url: "https://www.lokrainfra.in/builders-in-sriperumbudur-chennai",
     type: "website",
     siteName: "Lokra Infra",
@@ -16,28 +23,134 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [{"q": "Can Lokra support construction planning in Sriperumbudur?", "a": "Yes. Lokra can discuss home-construction, builder-comparison, and price-led planning in Sriperumbudur, using the real public pricing from ₹1,899 / sq.ft. upward and matching it to site and scope fit rather than fake cheapest claims."}, {"q": "Is Sriperumbudur better for affordable or premium comparisons?", "a": "Sriperumbudur usually fits better with practical home-construction, builder, and price-led comparison wording than with fake premium or cheapest extremes."}, {"q": "How should I compare builders in Sriperumbudur safely?", "a": "Compare waterproofing needs, quality-check expectations, reporting depth, branded material scope, and whether the builder can actually support the project type in Sriperumbudur. Lowest price alone is not enough."}, {"q": "Can I still compare ₹1,899, ₹1,999, and ₹2,099 options for Sriperumbudur?", "a": "Yes. Those public price points are useful starting steps for Sriperumbudur, but the right one depends on site condition, moisture risk, finish expectation, and how much quality-check and reporting support you want."}, {"q": "What should I share before discussing a Sriperumbudur project?", "a": "Share the exact site location, project type, and budget direction. That helps identify the right home-construction, builder, and price-step path for Sriperumbudur more quickly."}];
-const summaryCards = [{"title": "Practical Builder Fit", "desc": "Sriperumbudur works best with practical home-construction and builder-comparison framing rather than premium-only language."}, {"title": "Affordable Price Logic", "desc": "Useful for buyers comparing budget direction and public price steps without fake cheapest claims."}, {"title": "Scope Clarity First", "desc": "Helps buyers compare real site-fit, protection, and execution needs before choosing only on headline price."}];
-const sections = [{"title": "Why Sriperumbudur Works For Practical Builder Searches", "body": "Sriperumbudur is better handled as a practical home-construction and builder-comparison area rather than a premium-only page. That keeps the route aligned with realistic service fit and price-led search intent.", "bullets": ["Practical home-construction fit", "Builder comparison", "Budget-conscious relevance", "Price-step clarity"]}, {"title": "Use Price Steps The Right Way", "body": "The safe way to speak about affordable or low-cost construction is through the real public price ladder. Compare ₹1,899, ₹1,999, and ₹2,099 by waterproofing need, quality checks, reporting, and project-fit instead of reducing everything to one cheapest claim.", "bullets": ["₹1,899 starting step", "₹1,999 waterproofing-focused step", "₹2,099 quality-focused step", "Project-fit over cheapest claims"]}, {"title": "What Sriperumbudur Buyers Usually Need Clarified", "body": "The first useful split is whether the requirement is a straightforward new home build, a builder comparison, or another practical construction need. That shapes the right page path more accurately than generic city wording.", "bullets": ["Home construction", "Builder comparison", "Budget fit", "Scope clarity"]}, {"title": "Use The Right Chennai Pages Next", "body": "This area page should lead into the stronger city-wide and price-led support pages that go deeper on home-construction, builder comparison, and affordability.", "links": [{"href": "/home-construction-chennai", "label": "Home Construction Chennai"}, {"href": "/building-contractors-chennai", "label": "Building Contractors Chennai"}, {"href": "/affordable-construction-packages-chennai", "label": "Affordable Construction Cost Chennai"}, {"href": "/contact", "label": "Discuss A Sriperumbudur Requirement"}]}, {"title": "Start With A Better Sriperumbudur Brief", "body": "Bring the exact site location, project type, and budget direction into the first discussion so the right price step and service route can be identified early.", "links": [{"href": "/services", "label": "Review All Services"}, {"href": "/process", "label": "See The Delivery Process"}]}];
+const faqs = [
+  {
+    q: "What should I share before asking for a Sriperumbudur construction quote?",
+    a: "Share the plot location, dimensions, proposed use, likely floor count, drawings if available, and a budget range. Add photos and mention an existing structure, access limitation, drainage concern, or shared boundary that could affect the work.",
+  },
+  {
+    q: "Is the public package rate a final project price?",
+    a: "No. Lokra Infra's package ladder starts at ₹1,899 per sq.ft., but that figure is a comparison starting point. The final total depends on drawings, site conditions, selections, allowances, exclusions, and work outside the published package.",
+  },
+  {
+    q: "What changes between the first three package levels?",
+    a: "The ₹1,899 per sq.ft. package is the entry level. The ₹1,999 level adds waterproofing measures. The ₹2,099 level adds concrete cube testing, stage records, fortnightly photo reporting, and a 10-year structural warranty. Review the package page before treating two rates as comparable.",
+  },
+  {
+    q: "What should I ask about work outside the package?",
+    a: "Ask for a written list of allowances, exclusions, and site-dependent items. Lokra Infra identifies approvals and statutory fees, utility connections, borewell work, compound walls, demolition, access constraints, and difficult-ground work as items that may need separate treatment.",
+  },
+  {
+    q: "Can I discuss renovation or commercial construction in Sriperumbudur?",
+    a: "Yes. State the actual job at the beginning. A renovation, commercial space, and new home need different information and scope, so a residential package does not automatically apply to each one.",
+  },
+];
+
+const summaryCards = [
+  {
+    title: "A rate needs a scope",
+    desc: "A per-square-foot figure becomes comparable only when the drawings, inclusions, allowances, and exclusions sit beside it.",
+  },
+  {
+    title: "Site work affects the total",
+    desc: "Access, demolition, drainage, foundations, connections, and boundary work should be identified before comparing one quote with another.",
+  },
+  {
+    title: "Plan the permission route",
+    desc: "Confirm the authority, documents, responsible professional, fees, and timing for the actual proposal before relying on an assumed approval path.",
+  },
+];
+
+const sections = [
+  {
+    title: "Build a useful Sriperumbudur project brief",
+    body: "Before asking a builder for a number, prepare a short brief. Include the plot location, dimensions, building use, likely floor count, available drawings, and the budget range you are working with. Call out anything unusual, such as an older structure, limited vehicle access, drainage concerns, a shared wall, or a property that will stay occupied during the work. The brief is not a substitute for site assessment. It gives the first conversation something real to work from.",
+    bullets: [
+      "Location, dimensions, and road access",
+      "Building use and likely floor count",
+      "Drawings, photos, and existing structures",
+      "Budget range and decisions already made",
+    ],
+  },
+  {
+    title: "Read the rate alongside the written package",
+    body: "Lokra Infra publishes nine residential package levels from ₹1,899 to ₹3,449 per sq.ft. The steps differ in waterproofing, quality checks, reporting, documentation, and allowances. Start with the inclusions and the scope boundary, then decide whether the entry level or an upgrade fits the site and the records you want at handover. A lower rate only tells you something useful when it covers the same work.",
+    links: [
+      { href: "/packages", label: "Compare all published packages" },
+      { href: "/affordable-construction-packages-chennai", label: "Compare the ₹1,899 to ₹2,099 steps" },
+      { href: "/waterproofing-construction-package-chennai", label: "Review the waterproofing step" },
+      { href: "/quality-checked-structure-package-chennai", label: "Review the quality-record step" },
+    ],
+  },
+  {
+    title: "Separate the building from site-specific work",
+    body: "A package can describe the house, while the plot still creates separate decisions. Ask which work is included in the published package and which needs its own estimate or allowance. Lokra Infra's package page calls out approvals and statutory fees, borewell work, utility connections, compound walls, demolition, restricted access, and difficult ground conditions as separate or site-dependent. Check that list before comparing a headline rate.",
+    bullets: [
+      "Approvals and statutory fees",
+      "Water, sewer, and power connections",
+      "Boundary walls, gates, and external work",
+      "Demolition, access limits, and ground conditions",
+    ],
+  },
+  {
+    title: "Set permission responsibilities early",
+    body: "Permission is a formal part of project planning. CMDA's online information says applications and documents are submitted through online routes, but the right path depends on the plot and proposed building. Confirm the applicable authority, who will arrange drawings and submissions, which documents are still needed, and whether related fees sit outside the construction scope. Get those answers in writing before making commitments.",
+    links: [
+      { href: "https://www.cmdachennai.gov.in/onlineppa.html", label: "CMDA online planning-permission information" },
+      { href: "/process", label: "See Lokra Infra's published process" },
+    ],
+  },
+  {
+    title: "Match the service route to the job",
+    body: "Use the residential package ladder for a home-construction comparison. If the requirement is a renovation, a commercial build, or civil work, make that clear from the first enquiry. The scope, information needed, and pricing approach can change. Starting on the right route prevents a standard house package from becoming a rough answer to another job.",
+    links: [
+      { href: "/home-construction-chennai", label: "Home construction in Chennai" },
+      { href: "/renovation-contractors-chennai", label: "Renovation contractors in Chennai" },
+      { href: "/commercial-construction-chennai", label: "Commercial construction in Chennai" },
+      { href: "/services", label: "See all services" },
+    ],
+  },
+  {
+    title: "Contact Lokra Infra about a Sriperumbudur site",
+    body: "Send the site location, project type, available drawings, and budget direction for a Sriperumbudur discussion. Lokra Infra lists its main office at 343, First Floor, Kundrathur Main Road, Subam Nagar, KK Nagar, Mangadu, Chennai 600122. Call 93446 43324 or email lokrainfra@gmail.com.",
+    links: [
+      { href: "/contact", label: "Contact Lokra Infra" },
+      { href: "/builders-in-poonamallee-chennai", label: "Builders in Poonamallee" },
+      { href: "/builders-in-kundrathur-chennai", label: "Builders in Kundrathur" },
+    ],
+  },
+];
 
 export default function Page() {
   return (
     <CityServiceLandingPage
       route="/builders-in-sriperumbudur-chennai"
-      eyebrow="Sriperumbudur Area Build Planning"
-      title="Affordable Builders in Sriperumbudur, Chennai"
-      intro="Sriperumbudur is treated as a practical demand area in this rollout. This page is built for buyers comparing budget home-construction, builder, and affordable price-led options with clearer scope, branded material logic, and execution discipline — without fake cheapest claims."
-      serviceName="Affordable Builders in Sriperumbudur, Chennai"
-      serviceDescription="Lokra Infra supports Sriperumbudur construction planning for homes, builder comparison, and budget-conscious project decisions with clearer scope, pricing, and execution framing."
+      eyebrow="Sriperumbudur construction planning"
+      title="Builders in Sriperumbudur, Chennai"
+      intro="If you are planning a Sriperumbudur build, start with the plot and a written scope. Lokra Infra's published packages give you a way to compare price, waterproofing, quality records, and allowances before a builder conversation turns into a quote."
+      serviceName="Builders in Sriperumbudur, Chennai"
+      serviceDescription="Lokra Infra discusses construction planning in Sriperumbudur, Chennai, using a site brief and published package comparisons to clarify scope before a quote."
       discoveryPaths={[
-        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a builder in Sriperumbudur." },
-        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to find the step that fits your Sriperumbudur project." },
-        { href: "/services", label: "Browse By Service Type", desc: "Move straight into home-construction or builder-comparison service pages if you already know the scope." },
+        {
+          href: "/packages",
+          label: "Compare published packages",
+          desc: "Read the public construction price ladder from ₹1,899 per sq.ft. and the scope behind each level.",
+        },
+        {
+          href: "/process",
+          label: "Understand the process",
+          desc: "See the planning, site assessment, and execution stages Lokra Infra publishes for a project discussion.",
+        },
+        {
+          href: "/contact",
+          label: "Discuss a Sriperumbudur site",
+          desc: "Share the location, project type, drawings if available, and budget direction with the team.",
+        },
       ]}
       summaryCards={summaryCards}
       sections={sections}
       faqs={faqs}
-      ctaTitle="Share The Sriperumbudur Requirement And Budget Direction And We'll Help You Match It To The Right Chennai Build Path."
+      ctaTitle="Have a Sriperumbudur site in mind? Share the location, scope, and budget direction so the first discussion starts with useful project information."
     />
   );
 }
