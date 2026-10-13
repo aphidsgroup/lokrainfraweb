@@ -41,6 +41,10 @@ const faqs = [
     a: "The published ₹1,999 step adds waterproofing measures. The ₹2,099 step adds concrete quality checks and fortnightly photo reporting. Read the full package inclusions and exclusions before treating any two construction rates as comparable.",
   },
   {
+    q: "Are approvals and statutory fees included in a package rate?",
+    a: "Do not assume they are. Lokra Infra lists approvals and statutory fees as separate or site-dependent work. Confirm the applicable authority, the documents still needed, who will handle submissions, and the related fees before treating a construction package as the full project scope.",
+  },
+  {
     q: "Can I ask about a renovation or commercial requirement in Mangadu?",
     a: "Yes. State the requirement clearly when you enquire. A new home, renovation, and commercial build need different information, scope, and pricing treatment, so the published residential package ladder may not map directly to every job.",
   },
@@ -56,8 +60,8 @@ const summaryCards = [
     desc: "The public package ladder begins at ₹1,899 per sq.ft. Use it to compare inclusions and allowances, not to assume every site has the same final cost.",
   },
   {
-    title: "A written brief saves time",
-    desc: "Plot details, building type, drawings, existing conditions, and budget direction give a builder something real to assess before discussing a package.",
+    title: "Permission work needs its own answer",
+    desc: "Before committing, confirm the applicable authority, required documents, responsibility for submissions, and whether the related fees sit outside the construction package.",
   },
 ];
 
@@ -80,6 +84,14 @@ const sections = [
       { href: "/affordable-construction-packages-chennai", label: "Compare the ₹1,899 to ₹2,099 steps" },
       { href: "/waterproofing-construction-package-chennai", label: "Read the waterproofing package guide" },
       { href: "/quality-checked-structure-package-chennai", label: "Read the quality-record package guide" },
+    ],
+  },
+  {
+    title: "Keep permission planning separate from a construction promise",
+    body: "A package rate does not answer whether a proposal can be approved or which authority will handle it. For a Mangadu plot, settle the authority, drawing and document requirements, submission responsibility, statutory charges, and timing before you rely on a construction number. Put the answers in writing alongside the building scope. CMDA publishes the current Chennai Metropolitan Area jurisdiction on its official site, but the correct route for a particular plot and building still needs to be checked.",
+    links: [
+      { href: "https://cmdachennai.gov.in/", label: "Check CMDA jurisdiction information" },
+      { href: "/process", label: "See Lokra Infra's published project process" },
     ],
   },
   {
