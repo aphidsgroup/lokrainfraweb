@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import CityServiceLandingPage from "@/components/CityServiceLandingPage";
 
 export const metadata: Metadata = {
-  title: "Building Contractors in Chennai | Lokra Infra",
+  title: "Building Contractors in Chennai | Compare Scope Before a Quote | Lokra Infra",
   description:
-    "Looking for building contractors in Chennai? Lokra Infra handles residential, commercial, and turnkey construction with engineering-led planning, scope clarity, site coordination, and milestone-based execution.",
+    "Looking for building contractors in Chennai? Use this practical checklist to compare scope, package inclusions, site-dependent work, records, and project type before a quote.",
   keywords: [
     "building contractors chennai",
-    "best building contractors in chennai",
     "construction company chennai",
     "residential building contractors chennai",
     "commercial building contractors chennai",
+    "house construction cost chennai",
   ],
   alternates: {
     canonical: "/building-contractors-chennai",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Building Contractors in Chennai | Lokra Infra",
     description:
-      "Engineering-led residential, commercial, and turnkey contractor execution in Chennai with clearer scope and milestone visibility.",
+      "A practical Chennai contractor-comparison guide: define the work, read the package scope, and settle site-dependent items before a quote.",
     url: "https://www.lokrainfra.in/building-contractors-chennai",
     type: "website",
     siteName: "Lokra Infra",
@@ -28,24 +28,24 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What does Lokra handle as a building contractor in Chennai?",
-    a: "Lokra can discuss residential, commercial, turnkey, renovation, and civil-linked execution depending on the project scope. The key is to first define what the site and requirement actually demand before treating all contractor work as the same.",
+    q: "What should I send before asking a Chennai building contractor for a quote?",
+    a: "Send the plot location, dimensions, proposed building use, likely floor count, drawings if you have them, and a budget direction. Include photos or notes about an existing structure, limited access, drainage, a shared boundary, or demolition. A contractor still needs to assess the site, but this gives the first discussion something concrete to work from.",
   },
   {
-    q: "Does Lokra take both residential and commercial projects?",
-    a: "Yes. Lokra's public services already cover both residential and commercial construction, with execution framed around scope clarity, engineering coordination, and milestone-based delivery.",
+    q: "Does Lokra Infra's published package rate give me a final project cost?",
+    a: "No. The published residential package ladder runs from ₹1,899 to ₹3,449 per sq.ft. It is a way to compare scope, not a final quote for every site. Drawings, selections, allowances, exclusions, site conditions, and work outside the package can change the total.",
   },
   {
-    q: "How do I compare one contractor with another before I commit?",
-    a: "A useful comparison should go beyond a simple rate headline. Review how each contractor explains scope, site assessment, execution visibility, reporting, quality review, and what happens before handover.",
+    q: "What work may sit outside a construction package?",
+    a: "Lokra Infra lists approvals and statutory fees, rainwater harvesting, sumps, septic tanks, utility connections, borewell work, compound walls, external infrastructure, difficult ground work, rock excavation, dewatering, and shoring as site- or approval-related items. Confirm which items apply to the actual plot in writing.",
   },
   {
-    q: "Can Lokra work from existing drawings or a defined scope?",
-    a: "That can be discussed during the first requirement review. The important point is that drawings or scope documents still need to be checked against site reality and execution responsibility before work begins.",
+    q: "How should I compare two contractor proposals?",
+    a: "Put the drawings, included work, exclusions, allowances, material selections, quality checks, reporting, handover documents, and change process beside each other. A lower per-square-foot number is only comparable if the scope is comparable too.",
   },
   {
-    q: "What kind of project updates should I expect during execution?",
-    a: "The process is designed around milestone visibility and site coordination, so the owner is not left without clarity on progress, decision points, or what stage the work is currently in.",
+    q: "Can I use the residential package ladder for renovation or commercial work?",
+    a: "Not automatically. A new home, renovation, commercial build, and civil requirement have different scope questions. Describe the work first, then use the matching service discussion instead of treating a residential package as a shortcut for every job.",
   },
 ];
 
@@ -53,81 +53,102 @@ export default function BuildingContractorsChennaiPage() {
   return (
     <CityServiceLandingPage
       route="/building-contractors-chennai"
-      eyebrow="Contractor-Intent Search"
+      eyebrow="Chennai contractor comparison"
       title="Building Contractors in Chennai"
-      intro="Many buyers searching for building contractors in Chennai are really trying to avoid scope confusion, weak supervision, and fragmented delivery. Lokra Infra's contractor approach is built around engineering-led planning, accountable execution, and clearer visibility across residential, commercial, and turnkey work."
+      intro="A contractor search usually ends with a quote request. Start a step earlier. Define the site, the work, and the package boundary so you can compare proposals on the same basis instead of comparing a single rate."
       serviceName="Building Contractors in Chennai"
-      serviceDescription="Engineering-led building contractor services in Chennai across residential, commercial, and turnkey construction with clearer scope definition, site coordination, and milestone visibility."
+      serviceDescription="Lokra Infra provides construction discussions in Chennai for residential, commercial, renovation, and civil requirements, beginning with scope, site information, and published package comparisons where relevant."
       discoveryPaths={[
-        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed work before you commit to a contractor." },
-        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. to see what scope and reporting each level includes." },
-        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+        {
+          href: "/packages",
+          label: "Compare published packages",
+          desc: "Read the public residential package ladder from ₹1,899 to ₹3,449 per sq.ft., including inclusions and site-dependent work.",
+        },
+        {
+          href: "/process",
+          label: "Review the project process",
+          desc: "See the project stages Lokra Infra publishes before you start a construction discussion.",
+        },
+        {
+          href: "/chennai-areas",
+          label: "Find your Chennai area",
+          desc: "Start with the area page closest to the site, then bring the plot details to the conversation.",
+        },
       ]}
       summaryCards={[
         {
-          title: "Residential + Commercial",
-          desc: "Useful for clients comparing contractor options across homes, offices, retail, and broader building work.",
+          title: "Start with the actual site",
+          desc: "Location, dimensions, access, existing structures, and the proposed use belong in the first brief. They can affect the work before a rate means much.",
         },
         {
-          title: "Scope Before Commitment",
-          desc: "Best for buyers who want the project defined properly before execution starts and surprises begin.",
+          title: "Read the scope with the rate",
+          desc: "The published residential ladder starts at ₹1,899 per sq.ft., but the inclusions, allowances, exclusions, and site-dependent work matter just as much.",
         },
         {
-          title: "Visible Milestones",
-          desc: "A stronger fit for owners who want progress visibility rather than a vague contractor relationship.",
+          title: "Put decisions in writing",
+          desc: "Ask how selections, changes, quality checks, reporting, and handover documents will be recorded. It makes two proposals easier to compare.",
         },
       ]}
       sections={[
         {
-          title: "What Clients Usually Mean By Building Contractor",
-          body: "For most buyers, this search is not just about finding a name on a board. It usually means they want one accountable party to coordinate execution, manage site supervision, align trades, and reduce the risk of cost and timeline confusion after the project begins.",
+          title: "Build a useful first brief",
+          body: "A short brief saves time on both sides. Include the exact site location, plot dimensions, intended use, likely floor count, available drawings, and the budget direction you are working with. Add photographs or notes about access, an existing structure, drainage, a shared boundary, or demolition. This does not replace a site assessment. It stops the first conversation from becoming a guess based on a headline rate.",
           bullets: [
-            "Execution accountability",
-            "Site supervision",
-            "Trade coordination",
-            "Budget and milestone visibility",
+            "Plot location, dimensions, and access",
+            "New home, renovation, commercial, or civil work",
+            "Drawings, photos, and existing-site conditions",
+            "Budget direction and decisions already made",
           ],
         },
         {
-          title: "Residential And Commercial Contractor Scope",
-          body: "Lokra's contractor conversation can cover both residential and commercial work. That matters because many projects sit in the overlap between structure, fit-out, finishing, utility planning, and execution sequencing — and weak coordination is where projects usually start to slip.",
-          bullets: [
-            "Residential contractor work",
-            "Commercial contractor work",
-            "Turnkey execution planning",
-            "Linked civil and finishing scope",
-          ],
-        },
-        {
-          title: "Why Contractor Choice Fails On Many Projects",
-          body: "A contractor relationship often breaks down when the scope is vague, supervision is weak, subcontractors are disconnected, or the owner only sees the real complexity after work starts. Lokra's strongest answer here is not hype, but a more structured planning and execution model.",
-          bullets: [
-            "Unclear scope",
-            "Disconnected subcontractors",
-            "Weak supervision",
-            "Post-agreement surprises",
-          ],
-        },
-        {
-          title: "How Lokra Approaches Contractor Execution",
-          body: "The project starts with requirement understanding and site assessment, then moves into planning, cost direction, execution roadmap, site coordination, and handover review. That structure is already visible on Lokra's process page and is a better way to evaluate contractor quality than a generic claim of experience alone.",
+          title: "Treat a rate as a comparison point, not a project total",
+          body: "Lokra Infra publishes nine residential package levels from ₹1,899 to ₹3,449 per sq.ft. The package page explains what changes between levels, including waterproofing, testing, reporting, handover records, warranties, and finish allowances. Use that information to compare like with like. The final project total still depends on the drawings, selections, site conditions, exclusions, and work outside the package.",
           links: [
-            { href: "/process", label: "Review The 6-Phase Process" },
-            { href: "/services", label: "See All Construction Services" },
-            { href: "/packages", label: "Use The Package Comparison" },
+            { href: "/packages", label: "Compare all published packages" },
+            { href: "/affordable-construction-packages-chennai", label: "Compare the first three package steps" },
+            { href: "/waterproofing-construction-package-chennai", label: "Review the waterproofing package guide" },
+            { href: "/quality-checked-structure-package-chennai", label: "Review the quality-record package guide" },
           ],
         },
         {
-          title: "Use Better Comparison Inputs Before You Choose",
-          body: "If you are comparing contractors, use package depth, BoQ visibility, documentation, and handover discipline as decision inputs — not just the broadest quote promise. Lokra's package structure can help buyers ask better questions before they commit.",
+          title: "Separate the building scope from plot and approval work",
+          body: "A package can describe the house while the plot creates separate decisions. Lokra Infra identifies approvals and statutory fees, rainwater harvesting, sumps, septic tanks, water and electricity connections, borewell work, compound walls, external infrastructure, difficult ground work, rock excavation, dewatering, and shoring as site- or approval-related items. Ask which of these apply, who handles them, and how they will be priced before treating a package as the whole project.",
+          bullets: [
+            "Approvals, statutory fees, and submissions",
+            "Water, sewer, and electrical connections",
+            "Boundary walls, gates, and external work",
+            "Ground conditions, demolition, and site access",
+          ],
+        },
+        {
+          title: "Compare contractor proposals line by line",
+          body: "The most useful comparison is a written one. Put the drawings, included work, exclusions, allowances, material selections, testing, reporting, handover documents, and change process beside each other. Ask what happens when a selection changes or a site condition appears after work begins. A lower rate only helps if it covers the same work and leaves the same decisions outside the price.",
           links: [
-            { href: "/packages", label: "Compare Package Depth" },
-            { href: "/contact", label: "Discuss A Specific Requirement" },
+            { href: "/packages", label: "Use the package comparison as a checklist" },
+            { href: "/process", label: "See Lokra Infra's published process" },
+          ],
+        },
+        {
+          title: "Use the service route that matches the job",
+          body: "The published package ladder is for residential construction comparisons. If your requirement is an existing-home renovation, commercial work, or a civil service, say that at the start. The scope, surveys, approvals, and cost discussion may be different, and a standard house package may not answer the question you actually have.",
+          links: [
+            { href: "/home-construction-chennai", label: "Home construction in Chennai" },
+            { href: "/renovation-contractors-chennai", label: "Renovation contractors in Chennai" },
+            { href: "/commercial-construction-chennai", label: "Commercial construction in Chennai" },
+            { href: "/civil-contractors-chennai", label: "Civil contractors in Chennai" },
+          ],
+        },
+        {
+          title: "Contact Lokra Infra",
+          body: "For a Chennai construction discussion, share the site location, project type, available drawings, and budget direction. Lokra Infra lists its main office at 343, First Floor, Kundrathur Main Road, Subam Nagar, KK Nagar, Mangadu, Chennai 600122. Call 93446 43324 or email lokrainfra@gmail.com.",
+          links: [
+            { href: "/contact", label: "Contact Lokra Infra" },
+            { href: "/chennai-areas", label: "Explore Chennai construction areas" },
           ],
         },
       ]}
       faqs={faqs}
-      ctaTitle="Share The Building Requirement And We'll Help You Clarify Scope Before You Commit."
+      ctaTitle="Share the site, the work you have in mind, and your budget direction. The first conversation can start with the right questions."
     />
   );
 }
