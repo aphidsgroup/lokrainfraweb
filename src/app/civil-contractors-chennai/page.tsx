@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import CityServiceLandingPage from "@/components/CityServiceLandingPage";
 
 export const metadata: Metadata = {
-  title: "Civil Contractors in Chennai | Lokra Infra",
+  title: "Civil Contractors in Chennai | Scope Checklist Before You Quote | Lokra Infra",
   description:
-    "Lokra Infra works as civil contractors in Chennai for foundations, site development, drainage, roads, compound works, and broader construction execution with engineering-led planning and site discipline.",
+    "Looking for civil contractors in Chennai? Start with a site brief and use this checklist to compare drainage, grading, boundary, foundation-linked, and approval-related scope before a quote.",
   keywords: [
     "civil contractors in chennai",
     "civil contractor chennai",
     "civil works contractor chennai",
     "site development contractor chennai",
-    "infrastructure civil works chennai",
+    "drainage contractor chennai",
   ],
   alternates: {
     canonical: "/civil-contractors-chennai",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Civil Contractors in Chennai | Lokra Infra",
     description:
-      "Engineering-led civil contractors in Chennai for foundations, drainage, site development, compound works, and broader construction-linked civil execution.",
+      "A practical guide for comparing civil-work scope in Chennai before you request a quote for site development, drainage, boundary, or foundation-linked work.",
     url: "https://www.lokrainfra.in/civil-contractors-chennai",
     type: "website",
     siteName: "Lokra Infra",
@@ -28,24 +28,24 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What types of civil work can Lokra take up in Chennai?",
-    a: "Lokra's current public scope includes roads, drainage, compound boundary works, site grading, and foundation-level infrastructure, along with civil work that supports a larger construction project.",
+    q: "What civil work can Lokra Infra discuss in Chennai?",
+    a: "Lokra's published civil and infrastructure scope includes roads, drainage systems, compound boundary works, site grading, and foundation-level infrastructure. The right fit depends on the actual site, drawings, and whether the civil work is a standalone requirement or part of a larger build.",
   },
   {
-    q: "Can Lokra handle site development before building construction starts?",
-    a: "Yes, that can be part of the first discussion. Site development often needs to be understood before the main building phase begins, especially when access, grading, drainage, or foundation-enabling work affects the later schedule.",
+    q: "What should I share before asking for a civil-work quote?",
+    a: "Share the exact site location, photos, dimensions or survey information if available, intended work, existing levels or drainage concerns, access constraints, utility details, drawings, and the budget direction. A site assessment may still be needed, but this gives the first discussion a usable starting point.",
   },
   {
-    q: "Do civil works need a separate scope review before quotation?",
-    a: "Usually, yes. Civil work quality and cost direction depend heavily on existing conditions, access, levels, utility constraints, and how the work connects to the rest of the project.",
+    q: "Can a civil-work rate be finalised without a site visit?",
+    a: "A headline rate rarely settles the job. Existing ground conditions, access, levels, connections, demolition, dewatering, shoring, and the connection to later building work can change the scope. Ask what has been assumed and what remains to be confirmed at the site.",
   },
   {
-    q: "Can Lokra take civil work as part of a larger residential or commercial project?",
-    a: "Yes. Civil work can be discussed either as a standalone requirement or as part of a larger residential or commercial build where early enabling scope is important.",
+    q: "Does Lokra's residential package price cover standalone civil work?",
+    a: "Not automatically. Lokra's published residential packages run from ₹1,899 to ₹3,449 per sq.ft. and are intended for comparing residential construction scope. Standalone civil work needs its own scope review and should not be priced by borrowing a house-package rate.",
   },
   {
-    q: "What information should I share before the first discussion?",
-    a: "If available, share the site location, current site condition, any drawings, known scope boundaries, and what stage the project is in. That helps make the first conversation more useful.",
+    q: "How should I compare two civil contractor proposals?",
+    a: "Compare the same drawings or written scope line by line. Check measurements, material specifications, disposal, temporary works, testing, utility coordination, exclusions, change handling, payment stages, and the documents you will receive at closeout.",
   },
 ];
 
@@ -53,81 +53,99 @@ export default function CivilContractorsChennaiPage() {
   return (
     <CityServiceLandingPage
       route="/civil-contractors-chennai"
-      eyebrow="Civil Works Planning"
+      eyebrow="Civil-work scope checklist"
       title="Civil Contractors in Chennai"
-      intro="Civil work often gets treated as a generic add-on, even when it controls whether the rest of the project will move smoothly. Lokra Infra approaches civil scope through site assessment, engineering-led planning, and clearer execution framing for enabling works, infrastructure support, and broader project-linked civil activity."
+      intro="Civil work is easy to under-scope. A request for drainage, grading, a boundary wall, or foundation-linked work can hide questions about levels, access, utilities, temporary work, and what comes next. Put those questions into the first brief before comparing quotes."
       serviceName="Civil Contractors in Chennai"
-      serviceDescription="Civil contractors in Chennai for foundations, drainage, roads, site development, compound works, and construction-linked civil execution with engineering-led planning and site discipline."
+      serviceDescription="Lokra Infra discusses civil and infrastructure work in Chennai, including roads, drainage, compound boundary works, site grading, and foundation-level infrastructure, based on the actual site and scope."
       discoveryPaths={[
-        { href: "/projects#featured-project", label: "Browse By Project Proof", desc: "See real, in-progress and completed civil and construction-linked work before you commit." },
-        { href: "/packages", label: "Browse By Price Ladder", desc: "Compare the full public price ladder from ₹1,899 / sq.ft. where civil scope sits inside a larger build." },
-        { href: "/chennai-areas", label: "Browse By Chennai Area", desc: "Find pricing-led builder pages grouped by Central, South, West, North, and outer Chennai zones." },
+        {
+          href: "/services",
+          label: "Review civil services",
+          desc: "See the civil and infrastructure work Lokra Infra publishes alongside its construction services.",
+        },
+        {
+          href: "/projects#featured-project",
+          label: "Review project proof",
+          desc: "Look through published project material before deciding whether the delivery approach fits the work.",
+        },
+        {
+          href: "/chennai-areas",
+          label: "Find your Chennai area",
+          desc: "Use the area closest to the site, then bring the plot and civil-work details to the discussion.",
+        },
       ]}
       summaryCards={[
         {
-          title: "Site Development",
-          desc: "Useful when the site needs enabling work before the main structure can progress cleanly.",
+          title: "Write the site condition down",
+          desc: "Levels, access, existing structures, drainage paths, utilities, and soil-related findings can affect the work before any rate is meaningful.",
         },
         {
-          title: "Infrastructure Support",
-          desc: "Covers roads, drainage, compound works, grading, and foundation-linked civil scope.",
+          title: "Separate scope from assumptions",
+          desc: "A proposal should show what is measured and included, what still needs checking, and what is outside the quoted work.",
         },
         {
-          title: "Execution Fit",
-          desc: "A better fit for projects that need civil work defined clearly before the quote conversation gets shallow.",
+          title: "Plan the handoff",
+          desc: "Civil work often feeds into a later building phase. Agree how levels, drains, boundaries, and records will be handed over before work starts.",
         },
       ]}
       sections={[
         {
-          title: "Civil Work Scope Lokra Can Discuss",
-          body: "Lokra's civil and infrastructure scope is not limited to one narrow category. The public services page already covers roads, drainage systems, compound boundary works, site grading, and foundation-level infrastructure, which makes this route relevant for both standalone civil requirements and enabling work within a larger build.",
+          title: "Build a useful civil-work brief",
+          body: "Start with the site rather than a generic rate request. State the location, plot dimensions, photos, intended work, and any drawing or survey information you have. Add what you know about access, current ground levels, rainwater movement, existing structures, nearby boundaries, utilities, and the next construction phase. This does not replace a site assessment. It gives a contractor something concrete to assess.",
           bullets: [
-            "Roads and drainage",
-            "Compound boundary works",
-            "Site grading and development",
-            "Foundation-level infrastructure",
+            "Site location, dimensions, and access",
+            "Photos, drawings, surveys, and available levels",
+            "Existing drains, utilities, structures, and boundaries",
+            "The next phase: building, external works, or closeout",
           ],
         },
         {
-          title: "Why Civil Projects Need Clearer Technical Framing",
-          body: "Civil projects can look simple from the outside, but execution quality depends heavily on existing conditions, site levels, sequencing, structural tie-ins, and utility coordination. This is why a proper first discussion should define the site reality and not just jump to a headline rate.",
-          bullets: [
-            "Existing-condition review",
-            "Scope sequencing",
-            "Utility coordination",
-            "Execution constraints",
-          ],
-        },
-        {
-          title: "Where Civil Work Overlaps With Larger Builds",
-          body: "Some civil work stands alone, but much of it sits inside a wider residential or commercial delivery path. A better contractor conversation should explain how civil enabling works affect the rest of the construction schedule, rather than pretending the work exists in isolation.",
-          bullets: [
-            "Standalone civil works",
-            "Pre-construction enabling scope",
-            "Residential site preparation",
-            "Commercial site development",
-          ],
-        },
-        {
-          title: "How Lokra Keeps Civil Execution Visible",
-          body: "Lokra's process framing is useful here because civil work benefits from the same discipline as the rest of construction: requirement understanding, site assessment, planning direction, execution roadmap, coordination, and review before closeout.",
+          title: "Define the work before asking for a price",
+          body: "Lokra Infra's published civil and infrastructure scope includes roads, drainage systems, compound boundary works, site grading, and foundation-level infrastructure. Those labels are a starting point, not a complete scope. For each item, ask what is being measured, what material or finish is assumed, where the work starts and stops, and who coordinates any connection to the building, utility, or adjacent property.",
           links: [
-            { href: "/process", label: "See The Process Framework" },
-            { href: "/services", label: "Review Civil + Infrastructure Services" },
-            { href: "/projects", label: "Browse Project Categories" },
+            { href: "/services", label: "Review civil and infrastructure services" },
+            { href: "/building-contractors-chennai", label: "Compare broader building-contractor scope" },
+            { href: "/home-construction-chennai", label: "Plan a residential build" },
           ],
         },
         {
-          title: "Start The Discussion With The Right Inputs",
-          body: "If the civil scope is already partly defined, bring site details, drawings, or boundary conditions into the first discussion. A better first call should reduce ambiguity rather than just chase a quick quote.",
+          title: "Ask what the site can change",
+          body: "Civil work meets conditions that are not visible in a short online brief. Existing levels, access for equipment, demolition, rock, water, dewatering, shoring, buried services, and utility coordination can change the work or the sequence. Put these into a written assumptions and exclusions list. If something remains unknown, record what needs to be checked instead of treating it as included by default.",
+          bullets: [
+            "Ground, water, and existing-condition checks",
+            "Access, storage, debris removal, and temporary work",
+            "Utility routes and connection responsibilities",
+            "Boundary conditions and coordination with later work",
+          ],
+        },
+        {
+          title: "Keep authority and connection work visible",
+          body: "Do not assume a contractor's base scope includes every permission, fee, submission, or utility connection. Identify the applicable local authority, the party responsible for each submission, and the documents needed for the actual site. Lokra's package information also treats approvals, statutory fees, water and electrical connections, and external infrastructure as separate or site-dependent matters. Confirm the same boundary in writing for civil work.",
           links: [
-            { href: "/contact", label: "Share Site And Scope Details" },
-            { href: "/packages", label: "Review Package Detail Where Relevant" },
+            { href: "/packages#scope-boundary", label: "Read the published scope boundary" },
+            { href: "/process", label: "Review Lokra's published process" },
+          ],
+        },
+        {
+          title: "Compare civil proposals line by line",
+          body: "Use one written brief when you compare contractors. Check the measurements, drawings, material specifications, excavation or disposal assumptions, temporary works, testing, drainage falls, utility coordination, exclusions, change handling, payment stages, and closeout records. If a lower quote leaves any of those items unclear, it is not yet a like-for-like comparison.",
+          links: [
+            { href: "/contact", label: "Share your site and scope details" },
+            { href: "/projects", label: "Browse project categories" },
+          ],
+        },
+        {
+          title: "Contact Lokra Infra",
+          body: "For a Chennai civil-work discussion, share the site location, work required, photos or drawings, known constraints, and budget direction. You can call Lokra Infra on 93446 43324 or email lokrainfra@gmail.com. The first discussion should establish the scope and unanswered site questions before anyone treats a number as a complete quote.",
+          links: [
+            { href: "/contact", label: "Contact Lokra Infra" },
+            { href: "/chennai-areas", label: "Explore Chennai construction areas" },
           ],
         },
       ]}
       faqs={faqs}
-      ctaTitle="Share The Civil Scope, Site Condition, Or Drawings And We'll Help You Frame The Next Step Properly."
+      ctaTitle="Share the site, the civil work required, and what you already know. Start with the conditions that will shape the scope."
     />
   );
 }
