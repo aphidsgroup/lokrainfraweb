@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CityServiceLandingPage from "@/components/CityServiceLandingPage";
 
 export const metadata: Metadata = {
-  title: "Renovation Contractors in Chennai | Lokra Infra",
+  title: "Renovation Contractors in Chennai | Scope Before You Quote | Lokra Infra",
   description:
-    "Lokra Infra handles renovation and structural-upgrade discussions in Chennai with scope review, engineering-led planning, and clearer execution framing for residential and commercial properties.",
+    "Planning a renovation in Chennai? Start with the existing condition, the work that stays, the work that changes, and the decisions needed before a contractor can price it properly.",
   keywords: [
     "renovation contractors chennai",
     "home renovation chennai",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Renovation Contractors in Chennai | Lokra Infra",
     description:
-      "Renovation and structural-upgrade planning in Chennai for residential and commercial properties with clearer scope and execution discipline.",
+      "A practical guide to briefing and comparing a Chennai renovation contractor before the first quote.",
     url: "https://www.lokrainfra.in/renovation-contractors-chennai",
     type: "website",
     siteName: "Lokra Infra",
@@ -28,24 +28,24 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What types of renovation work can Lokra discuss in Chennai?",
-    a: "Lokra's public services already cover renovation and structural upgrades for both residential and commercial properties. The first step is to understand the existing condition and what level of intervention the property actually needs.",
+    q: "What renovation work can Lokra Infra discuss in Chennai?",
+    a: "Lokra Infra lists renovation and structural upgrades among its residential and commercial services. Start by explaining the existing property, the work you want changed, and whether the space will stay occupied while work is underway.",
   },
   {
-    q: "Why do renovation projects need more scope review than new builds?",
-    a: "Renovation work depends heavily on what already exists on site. Structure, access, hidden constraints, service lines, and live-use conditions can all change the execution path, so a vague early quote is rarely enough.",
+    q: "What should I share before asking for a renovation quote?",
+    a: "Share the location, photos, approximate age and use of the property, the rooms or systems you want changed, drawings if you have them, and any known leaks, cracks, access limits, or previous alterations. Say what must stay in use during the work as well.",
   },
   {
-    q: "Can Lokra discuss commercial renovation as well as residential renovation?",
-    a: "Yes. The renovation scope can include both residential and commercial situations, provided the first discussion makes the existing condition, usage, and execution boundaries clear.",
+    q: "Can I use a new-home package rate as a renovation price?",
+    a: "No. Lokra's published ₹1,899 to ₹3,449 per sq.ft. ladder is for residential construction-package comparisons. Renovation work depends on the existing condition, demolition or protection needs, access, retained elements, and the final scope, so it needs a separate review.",
   },
   {
-    q: "Does renovation always need structural review before work starts?",
-    a: "Not every renovation will need the same level of structural intervention, but many projects still need proper assessment before the scope can be defined responsibly.",
+    q: "Why can a renovation scope change after work starts?",
+    a: "Some conditions are only visible after finishes are opened or equipment is moved. A useful proposal says how discoveries, owner changes, and replacement choices will be recorded before additional work proceeds.",
   },
   {
-    q: "What should I prepare before a renovation discussion?",
-    a: "Share the site location, current condition, known problem areas, intended upgrades, and any existing drawings or photos if available. That helps make the first discussion more concrete.",
+    q: "Can Lokra discuss commercial renovation as well as home renovation?",
+    a: "Yes. For a commercial property, include the intended use, operating hours, access rules, and whether the business needs to remain open during the work. Those details can change the sequence and boundaries of the job.",
   },
 ];
 
@@ -53,76 +53,99 @@ export default function RenovationContractorsChennaiPage() {
   return (
     <CityServiceLandingPage
       route="/renovation-contractors-chennai"
-      eyebrow="Renovation + Structural Upgrade Planning"
+      eyebrow="Chennai renovation planning"
       title="Renovation Contractors in Chennai"
-      intro="Renovation projects are usually harder to scope cleanly than new construction because the site already has conditions, constraints, and partial systems in place. Lokra Infra approaches renovation work through assessment, engineering-led scope review, and clearer execution framing before promises are made."
+      intro="A renovation quote only makes sense after the existing property is described properly. Start with what stays, what changes, what is already wrong, and what cannot be disrupted. That gives a contractor something real to assess."
       serviceName="Renovation Contractors in Chennai"
-      serviceDescription="Renovation and structural-upgrade planning in Chennai for residential and commercial properties with clearer scope review, assessment, and execution discipline."
+      serviceDescription="Lokra Infra discusses residential and commercial renovation requirements in Chennai from the existing condition, proposed work, site constraints, and a written scope."
+      discoveryPaths={[
+        {
+          href: "/services",
+          label: "Check the service fit",
+          desc: "See Lokra Infra's published renovation, commercial, residential, and civil service categories before you frame the enquiry.",
+        },
+        {
+          href: "/building-contractors-chennai",
+          label: "Compare contractor proposals",
+          desc: "Use the Chennai contractor guide to compare inclusions, exclusions, records, and change handling.",
+        },
+        {
+          href: "/chennai-areas",
+          label: "Find your area route",
+          desc: "Bring the property location into the first conversation along with the existing-condition brief.",
+        },
+      ]}
       summaryCards={[
         {
-          title: "Residential + Commercial",
-          desc: "Useful for homeowners and businesses comparing renovation partners across residential and commercial property upgrades.",
+          title: "Existing condition first",
+          desc: "Photos, drawings, known defects, access limits, and parts of the property that must remain in use belong in the first brief.",
         },
         {
-          title: "Condition-Led Scope",
-          desc: "Best for projects where existing structure, systems, or usage constraints need to shape the execution plan first.",
+          title: "Separate retained work from new work",
+          desc: "A scope should show what is being removed, repaired, protected, replaced, or left untouched. That makes the quote easier to read.",
         },
         {
-          title: "Less Guesswork",
-          desc: "A stronger fit for buyers who want fewer surprises after work starts and better scope clarity before commitment.",
+          title: "Record changes as they arise",
+          desc: "Ask how discoveries behind existing finishes and owner decisions will be documented before extra work is added to the job.",
         },
       ]}
       sections={[
         {
-          title: "Who This Renovation Route Is For",
-          body: "This route is for owners comparing renovation contractors in Chennai where the property already exists and the work depends on its current condition. It can apply to residential upgrades, commercial refits, structural corrections, or broader renovation planning that should not be treated like a clean-slate new build.",
+          title: "Write a renovation brief before asking for a rate",
+          body: "You do not need a finished design to begin a renovation discussion. You do need a clear picture of the property. Note the location, how the space is used today, which rooms or systems need attention, what you want to keep, and what needs to change. Add photos, existing drawings, and anything you already know about leaks, cracks, old alterations, service lines, limited access, neighbours, or parking. If people or a business will remain on site, say that early.",
           bullets: [
-            "Home renovation planning",
-            "Commercial renovation work",
-            "Structural upgrade discussion",
-            "Existing-property execution review",
+            "Property location and current use",
+            "Photos, drawings, and known problem areas",
+            "Work to retain, protect, remove, or replace",
+            "Access, occupancy, and timing constraints",
           ],
         },
         {
-          title: "Why Renovation Needs Better Assessment First",
-          body: "Renovation work often looks simple until existing conditions are exposed. That is why a better renovation page should talk about assessment, scope review, and what needs to be clarified before execution, instead of promising certainty without understanding the property properly.",
-          bullets: [
-            "Existing-condition review",
-            "Hidden constraints",
-            "Service-line and access impact",
-            "Structural intervention risk",
-          ],
-        },
-        {
-          title: "How Lokra Frames Renovation And Structural Upgrades",
-          body: "Lokra's current services page already positions renovation and structural upgrades with prior site assessment, engineering scope review, and transparent billing logic. This route turns that into a focused Chennai renovation-intent page rather than leaving it inside a broader services list.",
+          title: "Do not price renovation work like a new build",
+          body: "New construction begins with an empty or prepared site. Renovation starts with an existing building and more unknowns. Lokra's public residential package ladder, from ₹1,899 to ₹3,449 per sq.ft., is useful for comparing new-home package scope. It is not a renovation rate card. Existing conditions, demolition, temporary protection, access, retained finishes, and the final intervention can all affect renovation pricing.",
           links: [
-            { href: "/services", label: "Review Renovation Service Scope" },
-            { href: "/process", label: "See How Lokra Works" },
-            { href: "/contact", label: "Discuss A Renovation Requirement" },
+            { href: "/packages", label: "Read the residential package scope" },
+            { href: "/building-contractors-chennai", label: "Compare contractor scope before a quote" },
           ],
         },
         {
-          title: "Residential And Commercial Renovation Fit",
-          body: "Renovation work can span from residential upgrades to commercial refits, but the right execution model depends on condition, usage, access, and whether structural changes are involved. A better contractor comparison should make those distinctions visible early.",
+          title: "Ask for a scope that separates the moving parts",
+          body: "A usable renovation proposal should make the boundaries visible. Read the included work, exclusions, allowances, material choices, protection requirements, and any work that depends on a site assessment or approval. If a wall, floor, ceiling, or service line is being changed, ask what is assumed and what happens if the condition behind it is different from expected.",
           bullets: [
-            "Home renovation",
-            "Commercial refits",
-            "Structural repair or upgrade",
-            "Mixed-scope renovation planning",
+            "Demolition, disposal, and protection",
+            "Repairs, upgrades, and new finishes",
+            "Materials, allowances, and owner selections",
+            "Items that depend on site findings or permissions",
           ],
         },
         {
-          title: "Bring Better Inputs To The First Discussion",
-          body: "If you already have site photos, drawings, problem areas, or known repair priorities, bring them into the first discussion. Renovation quality improves when the brief starts from site truth instead of rough assumptions.",
+          title: "Plan around an occupied home or operating business",
+          body: "Renovation often has a live-use constraint that a new build does not. For a home, that might be access to bedrooms, bathrooms, cooking, or parking. For a commercial space, it might be customer access, deliveries, operating hours, or the areas that must stay open. Put those constraints into the first brief so the discussion can deal with sequencing rather than treating them as a surprise later.",
           links: [
-            { href: "/projects", label: "Browse Project Categories" },
-            { href: "/packages", label: "Review Package Detail Where Relevant" },
+            { href: "/commercial-construction-chennai", label: "Review commercial construction planning" },
+            { href: "/home-construction-chennai", label: "Review residential construction planning" },
+          ],
+        },
+        {
+          title: "Agree on how changes will be handled",
+          body: "A renovation can uncover work that was not visible at the start. That is not a reason to accept an open-ended estimate. Ask how site discoveries will be explained, how options will be priced, who approves a change, and what record you will receive before added work begins. The same applies when you change a finish, fixture, layout, or material after the scope is agreed.",
+          links: [
+            { href: "/process", label: "Review Lokra Infra's published process" },
+            { href: "/contact", label: "Discuss a renovation requirement" },
+          ],
+        },
+        {
+          title: "Talk to Lokra Infra with the useful details ready",
+          body: "For a Chennai renovation discussion, share the property location, its current use, what you want changed, any existing drawings or photos, the parts of the property that must keep working, and your budget direction. Lokra Infra's services page covers renovation and structural upgrades for residential and commercial requirements.",
+          links: [
+            { href: "/contact", label: "Contact Lokra Infra" },
+            { href: "/services", label: "Browse all services" },
+            { href: "/chennai-areas", label: "Explore Chennai areas" },
           ],
         },
       ]}
       faqs={faqs}
-      ctaTitle="Share The Existing Property Condition And We'll Help You Clarify The Renovation Scope Properly."
+      ctaTitle="Share the current condition, the changes you want, and the parts of the property that cannot be disrupted."
     />
   );
 }
