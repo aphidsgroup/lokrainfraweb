@@ -7,14 +7,14 @@ import { ArrowUpRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Lokra Infra — Engineering-Led Construction, Chennai",
   description:
-    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company founded in 2026 by a team with 10+ years of site experience with 50+ completed projects in previous company works, plus 50 years of family material supplier background.",
+    "Learn about Lokra Infra — a Chennai-based company offering construction, structural engineering, project management, infrastructure, and interiors.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
     title: "About Lokra Infra — Engineering-Led Construction, Chennai",
     description:
-      "Learn about Lokra Infra — founded in 2026 by a team with 10+ years of site experience with 50+ completed projects in previous company works, plus 50 years of family material supplier background.",
+      "Learn about Lokra Infra — construction, structural engineering, project management, infrastructure, and interiors in Chennai.",
     url: "https://www.lokrainfra.in/about",
     type: "website",
     siteName: "Lokra Infra",
@@ -28,7 +28,7 @@ const aboutPageSchema = {
   name: "About Lokra Infra",
   url: "https://www.lokrainfra.in/about",
   description:
-    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company with engineering-led execution and deep material-grounded construction roots.",
+    "Learn about Lokra Infra — a Chennai-based construction and infrastructure company with engineering-led execution.",
   about: {
     "@type": "Organization",
     name: "Lokra Infra",
@@ -90,10 +90,9 @@ export default function AboutPage() {
                 marginBottom: "2.5rem",
               }}
             >
-              Lokra Infra is a Chennai-based construction and infrastructure company
-              founded in 2026 by builders with 10+ years of site experience with
-              50+ completed projects in previous company works, and deep
-              material-grounded execution roots.
+              Lokra Infra is a Chennai-based company working across
+              construction, structural engineering, project management,
+              infrastructure, and interiors.
             </p>
             <Link href="/contact" className="btn-primary">
               <span>Work With Us</span>
@@ -146,11 +145,9 @@ export default function AboutPage() {
                     color: "var(--concrete)",
                   }}
                 >
-                  The founders bring 10+ years of site experience with 50+
-                  completed projects in previous company works into Lokra Infra,
-                  while the family business brings 50 years of material supplier
-                  knowledge that sharpens cost, quality, and procurement judgment
-                  on every project.
+                  Structural engineering, project management, and site execution
+                  are handled together, so design intent, scope, and on-site
+                  work stay aligned from planning through handover.
                 </p>
               </div>
               <div>
@@ -182,10 +179,8 @@ export default function AboutPage() {
                     color: "var(--concrete)",
                   }}
                 >
-                  From independent homes to commercial structures, our experience is
-                  rooted in Chennai&rsquo;s built environment and strengthened by practical
-                  material knowledge passed through a long-standing family supply
-                  business.
+                  From independent homes to commercial structures and interiors,
+                  our work is focused on Chennai&rsquo;s built environment.
                 </p>
               </div>
             </div>
