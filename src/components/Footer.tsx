@@ -69,8 +69,8 @@ export default function Footer() {
                 marginBottom: "2rem",
               }}
             >
-              Expert PhD-led Engineering team making Smart Homes & Infra truely
-              Future-Ready.
+              Construction, structural engineering, project management,
+              infrastructure, and interiors in Chennai.
             </p>
 
             <div
@@ -268,7 +268,7 @@ export default function Footer() {
                   color: "var(--concrete)",
                 }}
               >
-                Chennai & surrounding districts, Tamil Nadu
+                Chennai, Tamil Nadu
               </p>
             </div>
           </div>
@@ -305,29 +305,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Lokra Infra. All rights reserved.
             Chennai, Tamil Nadu, India.
           </p>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
-            {["Privacy", "Terms"].map((t) => (
-              <Link
-                key={t}
-                href={`/${t.toLowerCase()}`}
-                style={{
-                  fontFamily: "var(--font-body)",
-                  fontSize: "0.75rem",
-                  color: "var(--text-tertiary)",
-                  textDecoration: "none",
-                  transition: "color 0.2s",
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = "var(--warm-white)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = "var(--text-tertiary)")
-                }
-              >
-                {t}
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

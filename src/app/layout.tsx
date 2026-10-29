@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
   description:
-    "Lokra Infra is a Chennai construction company founded in 2026 by a team with 10+ years of site experience with 50+ completed projects in previous company works, plus 50 years of family material supplier background.",
+    "Lokra Infra offers construction, structural engineering, project management, infrastructure, and interiors in Chennai.",
   keywords: [
     "construction company Chennai",
     "residential construction Chennai",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Engineering-led residential and commercial construction in Chennai, backed by 10+ years of site experience with 50+ completed projects in previous company works.",
+      "Engineering-led residential and commercial construction in Chennai, with structural engineering, project management, infrastructure, and interiors.",
     type: "website",
     locale: "en_IN",
     url: SITE_URL,
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lokra Infra — Premium Construction & Infrastructure, Chennai",
     description:
-      "Engineering-led construction in Chennai with 10+ years of site experience with 50+ completed projects in previous company works.",
+      "Engineering-led construction, structural engineering, project management, infrastructure, and interiors in Chennai.",
   },
   robots: {
     index: true,
@@ -99,7 +99,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Lokra Infra",
               description:
-                "Premium construction and infrastructure company in Chennai founded in 2026, backed by 10+ years of site experience with 50+ completed projects in previous company works and a 50-year family material supplier background.",
+                "Construction, structural engineering, project management, infrastructure, and interiors company in Chennai.",
               url: SITE_URL,
               telephone: "+91 93446 43324",
               email: "lokrainfra@gmail.com",
