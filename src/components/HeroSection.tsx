@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import gsap from "gsap";
@@ -102,12 +103,14 @@ export default function HeroSection() {
           overflow: "hidden",
         }}
       >
-        <img
+        <Image
           src="/hero-bg.png"
           alt="Lokra Infra construction project — premium architectural structure in Chennai"
+          fill
+          sizes="100vw"
+          loading="eager"
+          fetchPriority="high"
           style={{
-            width: "100%",
-            height: "100%",
             objectFit: "cover",
             objectPosition: "center 40%",
             filter: "brightness(0.45) saturate(0.8)",

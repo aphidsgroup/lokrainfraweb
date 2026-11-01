@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -175,12 +176,13 @@ export default function ValueProposition() {
                 backgroundColor: "var(--graphite)",
               }}
             >
-              <img
+              <Image
                 src="/project-residential.png"
                 alt="Lokra Infra premium residential construction project in Chennai"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 600px"
+                loading="lazy"
                 style={{
-                  width: "100%",
-                  height: "100%",
                   objectFit: "cover",
                   filter: "brightness(0.85)",
                 }}
